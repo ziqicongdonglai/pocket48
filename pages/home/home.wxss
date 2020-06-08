@@ -1,0 +1,29 @@
+/* 导航栏 */
+.navbar {
+  flex: none;
+  display: flex;
+  background: #fff;
+  font-size: 30rpx;
+  color: #bbb;
+}
+.navbar .item {
+  font-size: 36rpx;
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 90rpx;
+}
+.navbar .item.active {
+  font-weight: 700;
+  color: #7766e6;
+  border-bottom: 8rpx solid #7766e6;
+}
+.navbar .item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rpx;
+}

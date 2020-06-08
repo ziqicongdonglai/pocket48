@@ -1,0 +1,3 @@
+<view>
+    <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>
