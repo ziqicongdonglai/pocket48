@@ -1,3 +1,43 @@
 <view>
     <tabbar tabbar="{{tabbar}}"></tabbar>
+    <view class="top">
+        <!-- 顶部带头像的部分 -->
+        <!-- 顶部背景图 -->
+        <view>
+            <image class="top_img" mode="widthFix" src="../../images/my/mine_background.png"></image>
+        </view>
+        <!-- 头像 -->
+        <view class="head center_item">
+            <image src="../../images/my/head_img.jpg"></image>
+            <view class="user_name">紫气从东来</view>
+            <view class="level">
+                <image mode="widthFix" src="../../images/my/contributionlist_four.png"></image>
+                <view> <text>未实名认证</text></view>
+            </view>
+            <view class="id_number">口袋ID：662493</view>
+        </view>
+        <!-- 顶部 个人信息 粉丝 关注 鸡腿 徽章 应援力 -->
+        <view class="inform">
+            <view class="inform_item">
+                <text>0</text>
+                <text>粉丝</text>
+            </view>
+            <view class="inform_item">
+                <text>263</text>
+                <text>关注</text>
+            </view>
+            <view class="inform_item">
+                <text>1050</text>
+                <text>鸡腿</text>
+            </view>
+            <view class="inform_item">
+                <text>5</text>
+                <text>徽章</text>
+            </view>
+            <view class="inform_item">
+                <text>86</text>
+                <text>应援力</text>
+            </view>
+        </view>
+    </view>
 </view>

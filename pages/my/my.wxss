@@ -1,1 +1,63 @@
-/* pages/my/my.wxss */
+.top .top_img {
+  width: 100%;
+  height: 470rpx;
+}
+.top .head {
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -355rpx;
+}
+.top .head image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.top .head .user_name {
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 20rpx;
+}
+.top .head .level {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 20rpx;
+}
+.top .head .level image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+.top .head view {
+  background-color: rgba(0, 0, 0, 0);
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.top .head view text {
+  text-align: center;
+  font-size: 24rpx;
+  background-color: #da536b;
+  border-radius: 10rpx;
+}
+.top .head .id_number {
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+.top .inform {
+  display: flex;
+  flex-direction: row;
+  margin-top: 82rpx;
+}
+.top .inform .inform_item {
+  height: 123rpx;
+  color: #848484;
+  font-size: 28rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.top .inform .inform_item text {
+  margin-bottom: 10rpx;
+}

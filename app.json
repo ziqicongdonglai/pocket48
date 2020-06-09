@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/my/my",
     "pages/home/home",
     "pages/juju/juju",
     "pages/found/found",
     "pages/middle/middle",
-    "pages/my/my",
     "pages/index/index",
     "pages/logs/logs"
   ],

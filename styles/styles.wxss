@@ -1,3 +1,18 @@
+Page {
+  background-color: #f1f1f1;
+}
+
+view {
+  background-color: #fff;
+}
+
+/* 居中 */
+.center_item {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 /* 导航栏 */
 .navbar {
   /* flex: none; */
