@@ -71,15 +71,33 @@
 
 /* 中部的 我的主页 和 我的收藏夹 */
 .my_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
   margin-top: 14rpx;
   background-color: #fff;
-  .item_img {
-    width: 50rpx;
-    height: 50rpx;
+  padding: 0 50rpx 0 40rpx;
+  height: 90rpx;
+  box-sizing: border-box;
+  .item_left {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    .item_img {
+      width: 50rpx;
+      height: 50rpx;
+    }
+    text {
+      height: 50rpx;
+      line-height: 50rpx;
+    }
   }
-  text {
-    height: 50rpx;
-    line-height: 50rpx;
+  .item_right {
+    text {
+      color: #707070;
+      padding-right: 20rpx;
+    }
   }
   .arrow {
     width: 28rpx;
@@ -90,6 +108,7 @@
 /* 九宫格功能区 */
 .my_features {
   width: 750rpx;
+  color: #707070;
   display: grid;
   grid-template-columns: 250rpx 250rpx 250rpx;
   grid-auto-rows: 210rpx 210rpx 210rpx;

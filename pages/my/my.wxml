@@ -1,6 +1,6 @@
 <view>
     <tabbar tabbar="{{tabbar}}"></tabbar>
-    <scroll-view style="height: 760px;" scroll-y>
+    <scroll-view style="height: 780px;" scroll-y>
         <view class="top">
             <!-- 顶部带头像的部分 -->
             <!-- 顶部背景图 -->
@@ -45,21 +45,24 @@
         </view>
         <view class="my_item">
             <!-- 左边的文字和图片 -->
-            <!-- <view> -->
-            <image class="item_img" src="../../images/my/mine_club.png"></image>
-            <text>我的主页</text>
-            <!-- </view> -->
+            <view class="item_left">
+                <image class="item_img" src="../../images/my/mine_club.png"></image>
+                <text>我的主页</text>
+            </view>
             <!-- 右边的箭头 -->
             <image class="arrow" src="../../images/my/mine_enter.png"></image>
         </view>
         <view class="my_item">
             <!-- 左边的图片和文字 -->
-            <!-- <view> -->
-            <image class="item_img" src="../../images/my/ic_collection.png"></image>
-            <text>我的收藏夹</text>
-            <!-- </view> -->
+            <view class="item_left">
+                <image class="item_img" src="../../images/my/ic_collection.png"></image>
+                <text>我的收藏夹</text>
+            </view>
             <!-- 右边的箭头 -->
-            <image class="arrow" src="../../images/my/mine_enter.png"></image>
+            <view class="item_right">
+                <text>2个收藏内容</text>
+                <image class="arrow" src="../../images/my/mine_enter.png"></image>
+            </view>
         </view>
         <!-- 九宫格 功能区 -->
         <view class="my_features">
