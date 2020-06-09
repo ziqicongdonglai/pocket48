@@ -1,43 +1,104 @@
 <view>
     <tabbar tabbar="{{tabbar}}"></tabbar>
-    <view class="top">
-        <!-- 顶部带头像的部分 -->
-        <!-- 顶部背景图 -->
-        <view>
-            <image class="top_img" mode="widthFix" src="../../images/my/mine_background.png"></image>
+    <scroll-view style="height: 760px;" scroll-y>
+        <view class="top">
+            <!-- 顶部带头像的部分 -->
+            <!-- 顶部背景图 -->
+            <view>
+                <image class="top_img" mode="widthFix" src="../../images/my/mine_background.png"></image>
+            </view>
+            <!-- 头像 -->
+            <view class="head center_item">
+                <image src="../../images/my/head_img.jpg"></image>
+                <view class="user_name">紫气从东来</view>
+                <view class="level">
+                    <image mode="widthFix" src="../../images/my/contributionlist_four.png"></image>
+                    <view>
+                        <text>未实名认证</text>
+                    </view>
+                </view>
+                <view class="id_number">口袋ID：662493</view>
+            </view>
+            <!-- 顶部 个人信息 粉丝 关注 鸡腿 徽章 应援力 -->
+            <view class="inform">
+                <view class="inform_item">
+                    <text>0</text>
+                    <text>粉丝</text>
+                </view>
+                <view class="inform_item">
+                    <text>263</text>
+                    <text>关注</text>
+                </view>
+                <view class="inform_item">
+                    <text>1050</text>
+                    <text>鸡腿</text>
+                </view>
+                <view class="inform_item">
+                    <text>5</text>
+                    <text>徽章</text>
+                </view>
+                <view class="inform_item">
+                    <text>86</text>
+                    <text>应援力</text>
+                </view>
+            </view>
         </view>
-        <!-- 头像 -->
-        <view class="head center_item">
-            <image src="../../images/my/head_img.jpg"></image>
-            <view class="user_name">紫气从东来</view>
-            <view class="level">
-                <image mode="widthFix" src="../../images/my/contributionlist_four.png"></image>
-                <view> <text>未实名认证</text></view>
-            </view>
-            <view class="id_number">口袋ID：662493</view>
+        <view class="my_item">
+            <!-- 左边的文字和图片 -->
+            <!-- <view> -->
+            <image class="item_img" src="../../images/my/mine_club.png"></image>
+            <text>我的主页</text>
+            <!-- </view> -->
+            <!-- 右边的箭头 -->
+            <image class="arrow" src="../../images/my/mine_enter.png"></image>
         </view>
-        <!-- 顶部 个人信息 粉丝 关注 鸡腿 徽章 应援力 -->
-        <view class="inform">
-            <view class="inform_item">
-                <text>0</text>
-                <text>粉丝</text>
+        <view class="my_item">
+            <!-- 左边的图片和文字 -->
+            <!-- <view> -->
+            <image class="item_img" src="../../images/my/ic_collection.png"></image>
+            <text>我的收藏夹</text>
+            <!-- </view> -->
+            <!-- 右边的箭头 -->
+            <image class="arrow" src="../../images/my/mine_enter.png"></image>
+        </view>
+        <!-- 九宫格 功能区 -->
+        <view class="my_features">
+            <view class="features">
+                <image class="item_icon" src="../../images/my/message.png"></image>
+                <text>消息盒子</text>
             </view>
-            <view class="inform_item">
-                <text>263</text>
-                <text>关注</text>
+            <view class="features">
+                <image class="item_icon" src="../../images/my/accountrecords.png"></image>
+                <text>账户记录</text>
             </view>
-            <view class="inform_item">
-                <text>1050</text>
-                <text>鸡腿</text>
+            <view class="features">
+                <image class="item_icon" src="../../images/my/privilege.png"></image>
+                <text>我的特权</text>
             </view>
-            <view class="inform_item">
-                <text>5</text>
-                <text>徽章</text>
+            <view class="features">
+                <image class="item_icon" src="../../images/my/mine_wallet.png"></image>
+                <text>充值中心</text>
             </view>
-            <view class="inform_item">
-                <text>86</text>
-                <text>应援力</text>
+            <view class="features">
+                <image class="item_icon" src="../../images/my/mall.png"></image>
+                <text>官方商城</text>
+            </view>
+            <view class="features">
+                <image class="item_icon" src="../../images/my/welfare.png"></image>
+                <text>福利中心</text>
+            </view>
+            <view class="features">
+                <image class="item_icon" src="../../images/my/wo.png"></image>
+                <text>丝芭星沃卡</text>
+            </view>
+            <view class="features">
+                <image class="item_icon" src="../../images/my/freeflow.png"></image>
+                <text>免流激活</text>
+            </view>
+            <view class="features">
+                <image class="item_icon" src="../../images/my/problem.png"></image>
+                <text>帮助和反馈</text>
             </view>
         </view>
-    </view>
+    </scroll-view>
 </view>

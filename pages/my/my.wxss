@@ -1,3 +1,9 @@
+/* 顶部样式 */
+.top {
+  /* 头像 */
+  /* 头像之外的在有颜色的背景里的信息 */
+  /* 粉丝 关注 鸡腿等 */
+}
 .top .top_img {
   width: 100%;
   height: 470rpx;
@@ -47,7 +53,8 @@
 .top .inform {
   display: flex;
   flex-direction: row;
-  margin-top: 82rpx;
+  padding-top: 82rpx;
+  background-color: #fff;
 }
 .top .inform .inform_item {
   height: 123rpx;
@@ -60,4 +67,44 @@
 }
 .top .inform .inform_item text {
   margin-bottom: 10rpx;
+}
+/* 中部的 我的主页 和 我的收藏夹 */
+.my_item {
+  margin-top: 14rpx;
+  background-color: #fff;
+}
+.my_item .item_img {
+  width: 50rpx;
+  height: 50rpx;
+}
+.my_item text {
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.my_item .arrow {
+  width: 28rpx;
+  height: 28rpx;
+}
+/* 九宫格功能区 */
+.my_features {
+  width: 750rpx;
+  display: grid;
+  grid-template-columns: 250rpx 250rpx 250rpx;
+  grid-auto-rows: 210rpx 210rpx 210rpx;
+  margin-top: 10rpx;
+}
+.my_features .features {
+  background-color: #fff;
+  margin: 0 4rpx 4rpx 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.my_features .features .item_icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+.my_features .features:nth-of-type(3n) {
+  margin: 0 0 4rpx 0;
 }

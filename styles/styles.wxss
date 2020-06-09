@@ -2,8 +2,14 @@ Page {
   background-color: #f1f1f1;
 }
 
-view {
+/* view {
   background-color: #fff;
+} */
+
+/* 图片不要默认宽高 */
+image {
+  width: 0;
+  height: 0;
 }
 
 /* 居中 */
