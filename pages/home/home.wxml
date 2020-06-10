@@ -11,7 +11,8 @@
             </text>
         </view>
         <!-- 滑动的主体部分 -->
-        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2000rpx'>
+        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange"
+            style='height: 2000rpx'>
             <swiper-item>
                 <scroll-view style="height: 100%" scroll-y>
                     <!-- 搜索栏 和 右侧的 扫码 领应援力 -->
@@ -27,25 +28,46 @@
                     </view>
                     <!-- 轮播图 -->
                     <view class="head_swiper">
-                        <swiper indicator-dots="true" autoplay="true" interval='5000' indicator-active-color="white"
-                            circular="true">
-                            <swiper-item>
-                                <image class='top-img mode="widthFix"'
-                                    src='http://img2.imgtn.bdimg.com/it/u=303109588,2792157112&fm=26&gp=0.jpg'></image>
-                            </swiper-item>
-                            <swiper-item>
-                                <image class='top-img mode="widthFix"'
-                                    src='http://img0.imgtn.bdimg.com/it/u=2185894372,2832041052&fm=26&gp=0.jpg'></image>
-                            </swiper-item>
-                            <swiper-item>
-                                <image class='top-img mode="widthFix"'
-                                    src='http://img2.imgtn.bdimg.com/it/u=2301213464,1249620606&fm=26&gp=0.jpg'></image>
-                            </swiper-item>
-                        </swiper>
+                        <!-- 用来给轮播图来个左右间距 -->
+                        <view class="paddinglr">
+                            <swiper indicator-dots="true" autoplay="true" interval='2000' indicator-color="rgba(255, 255, 255, .4)" indicator-active-color="#574845"
+                                circular="true" style='height: 400rpx'>
+                                <swiper-item>
+                                    <image class='top-img' mode="aspectFill left"
+                                        src='https://www.snh48.com/attached/ad/2020-06-08/663048%E6%96%B0%E5%AE%98%E7%BD%91.jpg'>
+                                    </image>
+                                </swiper-item>
+                                <swiper-item>
+                                    <image class='top-img' mode="aspectFill center"
+                                        src='https://www.snh48.com/attached/ad/2020-06-05/9032211.jpg'>
+                                    </image>
+                                </swiper-item>
+                                <swiper-item>
+                                    <image class='top-img' mode="aspectFill"
+                                        src='/images/home/startschool.png'>
+                                    </image>
+                                </swiper-item>
+                                <swiper-item>
+                                    <image class='top-img' mode="aspectFill"
+                                        src='/images/home/czy2020.png'>
+                                    </image>
+                                </swiper-item>
+                                <swiper-item>
+                                    <image class='top-img' mode="aspectFill"
+                                        src='/images/home/ckkys.png'>
+                                    </image>
+                                </swiper-item>
+                                <swiper-item>
+                                    <image class='top-img' mode="aspectFill"
+                                        src='/images/home/funnytime.png'>
+                                    </image>
+                                </swiper-item>
+                            </swiper>
+                        </view>
                     </view>
                     <!-- 首页中间功能区 -->
                     <view class="middle_features">
-                        hhhhhhhhhhh
+                        <swiper></swiper>
                     </view>
                     <!-- 热门公演 -->
                     <view class="hot_show">

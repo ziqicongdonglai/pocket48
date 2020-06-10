@@ -14,13 +14,29 @@
 .head_swiper {
   width: 100%;
   height: 400rpx;
-  margin-top: 8px;
+  margin-top: 16rpx;
   background-color: #fff;
-  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
 }
-.head_swiper .top-img {
+.head_swiper .paddinglr {
+  margin: 0 20rpx 0 20rpx;
+}
+.head_swiper .paddinglr .top-img {
+  border-radius: 20rpx;
   width: 100%;
   height: 400rpx;
+}
+.wx-swiper-dots {
+  position: relative;
+  left: unset !important;
+  right: 0;
+  width: 120rpx;
+  height: 10rpx;
+  padding-right: 10rpx;
+}
+.wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: -5rpx;
 }
 /* 中间功能区 */
 .middle_features {
