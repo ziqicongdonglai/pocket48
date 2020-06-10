@@ -29,13 +29,14 @@ image {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -120rpx;
 }
 .navbar .item {
   font-size: 36rpx;
   position: relative;
   /* flex: auto; */
   text-align: center;
-  line-height: 60rpx;
+  line-height: 100rpx;
   /* height: 80rpx; */
 }
 .navbar .item:last-child {
