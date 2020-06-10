@@ -124,6 +124,15 @@
                             <text>热门公演</text>
                             <image class="title_icon" src="/images/home/home_square_more.png"></image>
                         </view>
+                        <view class="content_item_group">
+                            <scroll-view class="scroll-wrap" scroll-x style="width: 100%">
+                                <view class="content_item" wx:for="{{showlist}}">
+                                    <view class="content">
+                                        <image src="{{item.showUrl}}"></image>
+                                    </view>
+                                </view>
+                            </scroll-view>
+                        </view>
                     </view>
                     <!-- 应援榜 -->
                     <view class="yinyuan">
@@ -131,6 +140,17 @@
                             <image class="title_icon" src="/images/home/home_square_rankings.png"></image>
                             <text>应援榜</text>
                             <image class="title_icon" src="/images/home/home_square_more.png"></image>
+                        </view>
+                        <view class="rankings">
+                            <view class="ranking_item" wx:for="{{rankinglist}}">
+                                <view class="head">
+                                    <view class="head_img" style="border: 2rpx solid {{item.headcolor}}">
+                                        <image src="{{item.imgUrl}}"></image>
+                                    </view>
+                                    <image class="rank_img" src="{{item.rankimg}}"></image>
+                                </view>
+                                <text>{{item.memberName}}</text>
+                            </view>
                         </view>
                     </view>
                     <!-- 今日有缘成员 生日祝福 -->

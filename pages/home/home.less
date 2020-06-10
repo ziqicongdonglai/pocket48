@@ -132,6 +132,30 @@
   height: 386rpx;
   background-color: #fff;
   box-sizing: border-box;
+  .content_item_group {
+    .content_item {
+      padding: 0 20rpx 0 20rpx;
+      display: inline-block;
+      height: 260rpx;
+      .content {
+        image {
+          width: 460rpx;
+          height: 260rpx;
+          border-radius: 20rpx;
+        }
+      }
+    }
+    .scroll-wrap {
+      height: 260rpx;
+      white-space: nowrap;
+    }
+    /* 隐藏滚动条 */
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      color: transparent;
+    }
+  }
 }
 
 /* 应援榜 */
@@ -141,6 +165,45 @@
   height: 330rpx;
   background-color: #fff;
   box-sizing: border-box;
+  .rankings {
+    display: flex;
+    flex-direction: row;
+    .ranking_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      .head {
+        position: relative;
+        margin-bottom: 20rpx;
+        .head_img {
+          overflow: hidden;
+          border-radius: 50%;
+          width: 130rpx;
+          height: 130rpx;
+          // border: 2rpx solid #ffcb09;
+          image {
+            width: 130rpx;
+            height: 130rpx;
+          }
+        }
+        .rank_img {
+          width: 40rpx;
+          height: 40rpx;
+          position: absolute;
+          left: 100rpx;
+          top: 95rpx;
+          &:nth-child(2) {
+            height: 24rpx;
+          }
+          &:nth-child(3) {
+            height: 24rpx;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* 今日有缘成员 生日祝福 */
