@@ -10,7 +10,7 @@
             </text>
         </view>
         <!-- 滑动的主体部分 -->
-        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2000rpx'>
+        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2300rpx'>
             <swiper-item>
                 <scroll-view style="height: 100%" scroll-y>
                     <!-- 搜索栏 和 右侧的 扫码 领应援力 -->
@@ -21,9 +21,9 @@
                                 <input adjust-position placeholder="搜索" confirm-type="search"></input>
                             </view>
                             <view class="top_right">
-                            <image src="/images/home/home_square_scanning.png"></image>
-                            <image class="gift" src="/images/home/home_nav_gift.png"></image>
-                        </view>
+                                <image src="/images/home/home_square_scanning.png"></image>
+                                <image class="gift" src="/images/home/home_nav_gift.png"></image>
+                            </view>
                         </view>
                     </view>
                     <!-- 轮播图 -->
@@ -54,14 +54,95 @@
                     </view>
                     <!-- 首页中间功能区 -->
                     <view class="middle_features">
-                        <swiper></swiper>
+                        <swiper indicator-dots="true" style='height: 200rpx'>
+                            <swiper-item>
+                                <view class="features_group">
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>应援力兑换</text>
+                                    </view>
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>云握手</text>
+                                    </view>
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>演出</text>
+                                    </view>
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>偶像</text>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                            <swiper-item>
+                                <view class="features_group">
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>行程</text>
+                                    </view>
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>榜单</text>
+                                    </view>
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>音乐</text>
+                                    </view>
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>视频</text>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                            <swiper-item>
+                                <view class="features_group">
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>电台</text>
+                                    </view>
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>MC话题</text>
+                                    </view>
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>消息盒子</text>
+                                    </view>
+                                    <view class="features">
+                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <text>网络MVP</text>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                        </swiper>
                     </view>
                     <!-- 热门公演 -->
-                    <view class="hot_show">功能</view>
+                    <view class="hot_show">
+                        <view class="home_title">
+                            <image class="title_icon" src="/images/home/home_square_hot.png"></image>
+                            <text>热门公演</text>
+                            <image class="title_icon" src="/images/home/home_square_more.png"></image>
+                        </view>
+                    </view>
                     <!-- 应援榜 -->
-                    <view class="yinyuan">应援榜</view>
+                    <view class="yinyuan">
+                        <view class="home_title">
+                            <image class="title_icon" src="/images/home/home_square_rankings.png"></image>
+                            <text>应援榜</text>
+                            <image class="title_icon" src="/images/home/home_square_more.png"></image>
+                        </view>
+                    </view>
                     <!-- 今日有缘成员 生日祝福 -->
-                    <view class="top_bottom"></view>
+                    <view class="top_bottom">今日有缘成员 生日祝福</view>
+                    <!-- 正在直播 -->
+                    <view class="live">
+                        <view class="home_title">
+                            <image class="title_icon" src="/images/home/home_square_live.png"></image>
+                            <text>正在直播</text>
+                            <image class="title_icon" src="/images/home/home_square_more.png"></image>
+                        </view>
+                    </view>
                 </scroll-view>
             </swiper-item>
             <swiper-item>创造营2020</swiper-item>

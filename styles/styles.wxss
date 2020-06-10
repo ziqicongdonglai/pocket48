@@ -56,3 +56,16 @@ image {
   right: 0;
   height: 5rpx;
 }
+
+/* 主页 标题栏 热门公演 应援榜 正在直播 */
+.home_title {
+  padding: 10rpx 0 10rpx 10rpx;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+.home_title .title_icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}

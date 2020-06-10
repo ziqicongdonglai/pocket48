@@ -85,15 +85,34 @@
 /* 中间功能区 */
 .middle_features {
   height: 200rpx;
-  background-color: #ff0;
+  background-color: #fff;
   box-sizing: border-box;
+  font-size: 26rpx;
+}
+.middle_features .features_group {
+  display: flex;
+  flex-direction: row;
+}
+.middle_features .features_group .features {
+  height: 200rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.middle_features .features_group .features .item_icon {
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 30rpx;
 }
 /* 热门公演 */
 .hot_show {
   margin-top: 10rpx;
   width: 100%;
   height: 386rpx;
-  background-color: blue;
+  background-color: #fff;
   box-sizing: border-box;
 }
 /* 应援榜 */
@@ -110,4 +129,9 @@
   height: 186rpx;
   background-color: skyblue;
   box-sizing: border-box;
+}
+/* 正在直播 */
+.live {
+  background-color: pink;
+  height: 460rpx;
 }
