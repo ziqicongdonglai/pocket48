@@ -5,10 +5,54 @@
 /*顶部搜索栏 及右边的两个*/
 .toprow {
   height: 60rpx;
-  background-color: green;
   padding: 16rpx 0 16rpx 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   /* 搜索栏 */
+}
+.toprow .search {
+  display: flex;
+  padding: 20rpx 30rpx;
+  background: #fff;
+  width: 100%;
   /* 右侧的两个 */
+}
+.toprow .search .input-wrapper {
+  background: #f2f2f2;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68rpx;
+  border-radius: 68rpx;
+  margin-right: 40rpx;
+}
+.toprow .search .input-wrapper .searchImg {
+  width: 32rpx;
+  height: 32rpx;
+}
+.toprow .search .input-wrapper input {
+  height: 68rpx;
+  font-size: 26rpx;
+  width: calc(16%);
+  margin-left: 20rpx;
+}
+.toprow .search .top_right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.toprow .search .top_right image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.toprow .search .top_right .gift {
+  width: 65rpx;
+  height: 70rpx;
+  margin-left: 20rpx;
 }
 /* 轮播图 */
 .head_swiper {
