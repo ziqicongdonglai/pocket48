@@ -8,7 +8,7 @@
                 <image class="top_img" mode="widthFix" src="../../images/my/mine_background.png"></image>
             </view>
             <!-- 头像 -->
-            <view class="head center_item">
+            <view class="top_head center_item">
                 <image src="../../images/my/head_img.jpg"></image>
                 <view class="user_name">紫气从东来</view>
                 <view class="level">
