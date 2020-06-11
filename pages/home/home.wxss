@@ -148,6 +148,7 @@
 .yinyuan .rankings {
   display: flex;
   flex-direction: row;
+  margin-top: 20rpx;
 }
 .yinyuan .rankings .ranking_item {
   display: flex;
@@ -172,16 +173,10 @@
 }
 .yinyuan .rankings .ranking_item .head .rank_img {
   width: 40rpx;
-  height: 40rpx;
+  height: 24rpx;
   position: absolute;
   left: 100rpx;
-  top: 95rpx;
-}
-.yinyuan .rankings .ranking_item .head .rank_img:nth-child(2) {
-  height: 24rpx;
-}
-.yinyuan .rankings .ranking_item .head .rank_img:nth-child(3) {
-  height: 24rpx;
+  top: 104rpx;
 }
 /* 今日有缘成员 生日祝福 */
 .top_bottom {
