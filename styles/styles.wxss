@@ -18,11 +18,22 @@ image {
   align-items: center;
   justify-content: center;
 }
-
+.head {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  /* 顶部导航栏固定 */
+  position:fixed; 
+  top:0;
+  /* 设置元素的堆叠顺序 */
+  z-index: 999;
+}
 /* 导航栏 */
 .navbar {
   /* flex: none; */
-  display: flex;
   background: #fff;
   font-size: 30rpx;
   color: #bbb;
@@ -30,6 +41,7 @@ image {
   justify-content: center;
   align-items: center;
   margin-top: -120rpx;
+  /* position: fixed; */
 }
 .navbar .item {
   font-size: 36rpx;

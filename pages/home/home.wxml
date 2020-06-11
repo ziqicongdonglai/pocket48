@@ -4,10 +4,12 @@
     <!-- 标签页导航 -->
     <view>
         <!-- 导航条 -->
-        <view class="navbar">
-            <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
-                {{item}}
-            </text>
+        <view class="head">
+            <view class="navbar">
+                <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+                    {{item}}
+                </text>
+            </view>
         </view>
         <!-- 滑动的主体部分 -->
         <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2300rpx'>
@@ -175,7 +177,9 @@
                                         </div>
                                         <text>{{item.memberName}}</text>
                                         <!-- 队名 -->
-                                        <view class="team" style="background-color: {{item.teamColor}}">{{item.team}}</view>
+                                        <view class="team" style="background-color: {{item.teamColor}}">
+                                            {{item.team}}
+                                        </view>
                                         <!-- 当前的直播名称 -->
                                         <text class="live_title">{{item.liveTitle}}</text>
                                     </view>

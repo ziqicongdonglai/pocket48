@@ -4,10 +4,12 @@
     <!-- 标签页导航 -->
     <view>
         <!-- 导航条 -->
-        <view class="navbar">
-            <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
-                {{item}}
-            </text>
+        <view class="head">
+            <view class="navbar">
+                <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+                    {{item}}
+                </text>
+            </view>
         </view>
         <!-- 滑动的主体部分 -->
         <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2170rpx'>
@@ -33,7 +35,9 @@
                                 </view>
                                 <view class="room_mid">
                                     <text class="member_name">{{item.memberName}}</text>
-                                    <text class="team" style="background-color: {{item.teamColor}};">{{item.team}}</text>
+                                    <view class="team" style="background-color: {{item.teamColor}};">
+                                        {{item.team}}
+                                    </view>
                                 </view>
                                 <view class="room_btm">
                                     <text class="latestinf">{{item.latestInf}}</text>

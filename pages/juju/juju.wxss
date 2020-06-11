@@ -8,6 +8,7 @@
   padding: 20rpx 20rpx;
   background: #fff;
   width: 100%;
+  margin-top: 85rpx;
 }
 .search .input-wrapper {
   background: #f2f2f2;
@@ -69,6 +70,11 @@
 .roomlist .room .room_inform .room_top .update_time {
   color: #9d9d9d;
   font-size: 20rpx;
+}
+.roomlist .room .room_inform .room_mid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .roomlist .room .room_inform .room_mid .member_name {
   font-weight: 700;
