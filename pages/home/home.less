@@ -145,10 +145,6 @@
         }
       }
     }
-    .scroll-wrap {
-      height: 260rpx;
-      white-space: nowrap;
-    }
     /* 隐藏滚动条 */
     ::-webkit-scrollbar {
       width: 0;
@@ -205,12 +201,76 @@
 .top_bottom {
   width: 100%;
   height: 186rpx;
-  background-color: skyblue;
-  box-sizing: border-box;
+  background-color: #fff;
+  // box-sizing: border-box;
+  padding-bottom: 56rpx;
+  display: flex;
+  // align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  image {
+    width: 340rpx;
+    height: 190rpx;
+    margin-right: 5rpx;
+  }
 }
 
 /* 正在直播 */
 .live {
-  background-color: pink;
+  background-color: #fff;
   height: 460rpx;
+  .memberblive {
+    .scroll-wrap {
+      height: 460rpx;
+      .live_item {
+        width: 264rpx;
+        height: 366rpx;
+        display: inline-block;
+        margin: 0 20rpx;
+        border: 2rpx solid #f5f2fbd0;
+        box-shadow: 4rpx 10rpx 10rpx 5rpx #fbf6fd96;
+        border-radius: 8rpx;
+        // background-color: green;
+        .live_bg {
+          width: 264rpx;
+          height: 366rpx;
+          // padding-bottom: 28rpx;
+          border-radius: 8rpx;
+        }
+        .live_head {
+          margin-top: -335rpx;
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          .head_img {
+            // overflow: hidden;
+            width: 120rpx;
+            height: 120rpx;
+            margin-bottom: 20rpx;
+            image {
+              width: 120rpx;
+              height: 120rpx;
+              border-radius: 50%;
+              border: 2rpx solid #c7c2d7;
+            }
+          }
+          .team {
+            color: #fff;
+            height: 25rpx;
+            line-height: 25rpx;
+            padding: 0 10rpx;
+            margin-top: 5rpx;
+            font-size: 22rpx;
+            background-color: #87ceeb;
+            border-radius: 8rpx;
+          }
+          .live_title {
+            margin-top: 20rpx;
+            color: #cccccc;
+            font-size: 22rpx;
+          }
+        }
+      }
+    }
+  }
 }

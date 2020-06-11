@@ -69,3 +69,9 @@ image {
   height: 40rpx;
   margin-right: 10rpx;
 }
+
+/* 横向滚动 */
+.scroll-wrap {
+  height: 260rpx;
+  white-space: nowrap;
+}

@@ -154,13 +154,33 @@
                         </view>
                     </view>
                     <!-- 今日有缘成员 生日祝福 -->
-                    <view class="top_bottom">今日有缘成员 生日祝福</view>
+                    <view class="top_bottom">
+                        <image src="/images/home/destined_idol.png"></image>
+                        <image src="/images/home/birthdaywishes.png"></image>
+                    </view>
                     <!-- 正在直播 -->
                     <view class="live">
                         <view class="home_title">
                             <image class="title_icon" src="/images/home/home_square_live.png"></image>
                             <text>正在直播</text>
                             <image class="title_icon" src="/images/home/home_square_more.png"></image>
+                        </view>
+                        <view class="memberblive">
+                            <scroll-view class="scroll-wrap" scroll-x style="width: 100%">
+                                <view class="live_item" wx:for="{{livinglist}}">
+                                    <image class="live_bg" src="/images/home/user_photo_bg.png"></image>
+                                    <view class="live_head center_item">
+                                        <div class="head_img">
+                                            <image src="{{item.imgUrl}}"></image>
+                                        </div>
+                                        <text>{{item.memberName}}</text>
+                                        <!-- 队名 -->
+                                        <view class="team" style="background-color: {{item.teamColor}}">{{item.team}}</view>
+                                        <!-- 当前的直播名称 -->
+                                        <text class="live_title">{{item.liveTitle}}</text>
+                                    </view>
+                                </view>
+                            </scroll-view>
                         </view>
                     </view>
                 </scroll-view>
