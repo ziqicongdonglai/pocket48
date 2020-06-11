@@ -78,11 +78,11 @@
                             <swiper-item>
                                 <view class="features_group">
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/mine_trip.png" class="item_icon"></image>
                                         <text>行程</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/mine_rank.png" class="item_icon"></image>
                                         <text>榜单</text>
                                     </view>
                                     <view class="features">
@@ -106,7 +106,7 @@
                                         <text>MC话题</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/message.png" class="item_icon"></image>
                                         <text>消息盒子</text>
                                     </view>
                                     <view class="features">

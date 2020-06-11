@@ -59,7 +59,7 @@ image {
 
 /* 主页 标题栏 热门公演 应援榜 正在直播 */
 .home_title {
-  padding: 10rpx 0 10rpx 10rpx;
+  padding: 20rpx 0 10rpx 20rpx;
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -74,4 +74,16 @@ image {
 .scroll-wrap {
   height: 260rpx;
   white-space: nowrap;
+}
+
+/* 队名 大小及背景色 */
+.team {
+  color: #fff;
+  height: 25rpx;
+  line-height: 25rpx;
+  padding: 0 10rpx;
+  margin-top: 5rpx;
+  font-size: 22rpx;
+  /* background-color: #87ceeb; */
+  border-radius: 8rpx;
 }

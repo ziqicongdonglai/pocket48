@@ -192,7 +192,10 @@
 /* 正在直播 */
 .live {
   background-color: #fff;
-  height: 460rpx;
+  height: 500rpx;
+}
+.live .memberblive {
+  margin-top: 20rpx;
 }
 .live .memberblive .scroll-wrap {
   height: 460rpx;
@@ -227,16 +230,6 @@
   height: 120rpx;
   border-radius: 50%;
   border: 2rpx solid #c7c2d7;
-}
-.live .memberblive .scroll-wrap .live_item .live_head .team {
-  color: #fff;
-  height: 25rpx;
-  line-height: 25rpx;
-  padding: 0 10rpx;
-  margin-top: 5rpx;
-  font-size: 22rpx;
-  background-color: #87ceeb;
-  border-radius: 8rpx;
 }
 .live .memberblive .scroll-wrap .live_item .live_head .live_title {
   margin-top: 20rpx;

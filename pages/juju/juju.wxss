@@ -2,3 +2,96 @@
 .navbar .item {
   margin-right: 120rpx;
 }
+/* 搜索栏 */
+.search {
+  display: flex;
+  padding: 20rpx 20rpx;
+  background: #fff;
+  width: 100%;
+}
+.search .input-wrapper {
+  background: #f2f2f2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76rpx;
+  border-radius: 68rpx;
+  margin-right: 40rpx;
+}
+.search .input-wrapper .searchImg {
+  width: 44rpx;
+  height: 44rpx;
+}
+.search .input-wrapper input {
+  color: #e4e4e4;
+  height: 68rpx;
+  font-size: 32rpx;
+  width: calc(16%);
+  margin-left: 10rpx;
+}
+/*房间列表*/
+.roomlist {
+  padding: 0 20rpx;
+  background-color: #fff;
+}
+.roomlist .room {
+  width: 100%;
+  height: 194rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+.roomlist .room .room_img {
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.roomlist .room .room_img image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.roomlist .room .room_inform {
+  width: 590rpx;
+}
+.roomlist .room .room_inform .room_top {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.roomlist .room .room_inform .room_top .room_title {
+  font-weight: 700;
+}
+.roomlist .room .room_inform .room_top .update_time {
+  color: #9d9d9d;
+  font-size: 20rpx;
+}
+.roomlist .room .room_inform .room_mid .member_name {
+  font-weight: 700;
+  font-size: 28rpx;
+}
+.roomlist .room .room_inform .room_mid .team {
+  margin-left: 20rpx;
+}
+.roomlist .room .room_inform .room_btm {
+  display: flex;
+  justify-content: space-between;
+}
+.roomlist .room .room_inform .room_btm .latestinf {
+  color: #9d9d9d;
+  font-size: 28rpx;
+}
+.roomlist .room .room_inform .room_btm .infnumber {
+  height: 40rpx;
+  line-height: 40rpx;
+  background-color: #ff0000;
+  color: #f2f2f2;
+  font-size: 26rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  padding: 0 10rpx;
+}

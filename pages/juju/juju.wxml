@@ -5,14 +5,45 @@
     <view>
         <!-- 导航条 -->
         <view class="navbar">
-            <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}"
-                wx:key="unique" bindtap="navbarTap">
+            <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
                 {{item}}
             </text>
         </view>
         <!-- 滑动的主体部分 -->
-        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" height="100%">
-            <swiper-item>房间</swiper-item>
+        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2170rpx'>
+            <swiper-item>
+                <scroll-view style="height: 100%" scroll-y>
+                    <!-- 搜索栏 -->
+                    <view class="search">
+                        <view class="input-wrapper">
+                            <image class="searchImg" src="/images/juju/search.png"></image>
+                            <input adjust-position placeholder="搜索" confirm-type="search"></input>
+                        </view>
+                    </view>
+                    <!-- 房间列表 -->
+                    <view class="roomlist">
+                        <view class="room" wx:for="{{roomlist}}">
+                            <view class="room_img">
+                                <image src="{{item.imgUrl}}"></image>
+                            </view>
+                            <view class="room_inform">
+                                <view class="room_top">
+                                    <text class="room_title">{{item.roomTitle}}</text>
+                                    <text class="update_time">{{item.updateTime}}</text>
+                                </view>
+                                <view class="room_mid">
+                                    <text class="member_name">{{item.memberName}}</text>
+                                    <text class="team" style="background-color: {{item.teamColor}};">{{item.team}}</text>
+                                </view>
+                                <view class="room_btm">
+                                    <text class="latestinf">{{item.latestInf}}</text>
+                                    <text class="infnumber">{{item.infNumber}}</text>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </scroll-view>
+            </swiper-item>
             <swiper-item>动态</swiper-item>
         </swiper>
     </view>
