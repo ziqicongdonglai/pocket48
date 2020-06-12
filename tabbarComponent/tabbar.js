@@ -51,13 +51,44 @@ Component({
    * 组件的初始数据
    */
   data: {
-    isIphoneX: app.globalData.systemInfo.model.search('iPhone X') != -1 ? true : false
+    isIphoneX: app.globalData.systemInfo.model.search('iPhone X') != -1 ? true : false,
+    actionSheetHidden: true
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-
+    // showActionSheet: function () {
+    //   wx.showActionSheet({
+    //     itemList: ['你好'],
+    //     itemColor: ''
+    //   })
+    // }
+    actionSheetTap: function (e) {
+      console.log(this);
+      this.setData({
+        actionSheetHidden: !this.data.actionSheetHidden
+      })
+    },
+    actionSheetChange: function (e) {
+      this.setData({
+        actionSheetHidden: !this.data.actionSheetHidden
+      });
+      console.log("点击ation-sheet-cancel，会触发action-sheet绑定的事件。在这里可以通过改变hidden控制菜单的隐藏");
+    },
+    // 跳转到帖子编辑界面
+    tomiddle: function (e) {
+      const that = this;
+      wx.navigateTo({
+        url: '/pages/middle/middle',
+        success: function (res) {
+          // 跳转页面的同时改变是否隐藏
+          that.setData({
+            actionSheetHidden: !that.data.actionSheetHidden
+          });
+        }
+      })
+    }
   }
 })

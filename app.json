@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/found/found",
     "pages/home/home",
     "pages/juju/juju",
+    "pages/found/found",
     "pages/my/my",
     "pages/middle/middle",
     "pages/index/index",
@@ -11,7 +11,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "口袋48",
     "navigationBarTextStyle": "black",
     "navigationStyle": "default"
   },
