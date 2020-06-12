@@ -2,6 +2,12 @@
 .navbar .item {
   margin-right: 60rpx;
 }
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
 /*顶部搜索栏 及右边的两个*/
 .toprow {
   height: 60rpx;
@@ -116,9 +122,6 @@
   background-color: #fff;
   box-sizing: border-box;
 }
-.hot_show .content_item_group {
-  /* 隐藏滚动条 */
-}
 .hot_show .content_item_group .content_item {
   padding: 0 20rpx 0 20rpx;
   display: inline-block;
@@ -128,11 +131,6 @@
   width: 460rpx;
   height: 260rpx;
   border-radius: 20rpx;
-}
-.hot_show .content_item_group ::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-  color: transparent;
 }
 /* 应援榜 */
 .yinyuan {

@@ -10,7 +10,22 @@ Page({
     tabbar: {},
     // 导航条文字
     navbar: ['最新', '精选'],
-    currentTab: 0
+    currentTab: 0,
+    // 热门话题列表
+    topiclist: [
+      {
+        'topicTitle': '塞纳河攻略'
+      },
+
+      {
+        'topicTitle': '我是新粉，求指导'
+      },
+
+      {
+        'topicTitle': '创造营2020'
+      }
+
+    ]
   },
   // 切换bar
   navbarTap: function (e) {
