@@ -25,6 +25,38 @@ Page({
         'topicTitle': '创造营2020'
       }
 
+    ],
+    // 帖子列表
+    postlist: [
+      {
+        // 粉丝头像地址
+        'imgUrl': '',
+        // 粉丝名字
+        'fansName': '',
+        // VIP标识
+        'vip': '',
+        // 等级数字图标
+        'level': '',
+        // 等级徽章
+        'badgeLevel': '',
+        // 成就徽章
+        'badgeActive': '',
+        // 帖子发布日期
+        'createDate': '',
+        // 帖子发布时间
+        'createTime': '',
+        // 帖子标题
+        'postTitle': '',
+        // 帖子内容
+        'postContent': '',
+        // 喜爱数
+        'likeTimes': '',
+        // 评论（条数及内容：评论人名称及评论内容 超过3条只显示最早的3条）
+        // 最早的在最上面
+        'comments': '',
+        // 看过（次数 及 看过的人的头像 超过4个只显示4个）
+        'lookTimes': ''
+      }
     ]
   },
   // 切换bar

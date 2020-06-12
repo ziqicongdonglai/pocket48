@@ -38,6 +38,58 @@
                                 </view>
                             </view>
                         </view>
+                        <view class="postsgroup">
+                            <view class="post">
+                                <!-- 帖子顶部 -->
+                                <view class="post_top">
+                                    <!-- 头像 -->
+                                    <view>
+                                        <image></image>
+                                    </view>
+                                    <!-- 头像右边的内容 -->
+                                    <view class="post_top_r">
+                                        <!-- 右侧信息的上部 用户的名称 及 等级 各种徽章 -->
+                                        <view class="userinf">
+                                            <!-- 用户名 -->
+                                            <view class="fans_name"></view>
+                                            <!-- vip标识（可无） -->
+                                            <view class="vip"></view>
+                                            <!-- 等级图标 -->
+                                            <view class="level"></view>
+                                            <!-- 等级徽章（可无） -->
+                                            <view class="badge_level"></view>
+                                            <!-- 成就徽章（可无） -->
+                                            <view class="badge_activity"></view>
+                                        </view>
+                                        <!-- 帖子的发布时间 -->
+                                        <view class="post_create">
+                                            <!-- 日期 -->
+                                            <view class="post_date"></view>
+                                            <!-- 时间 -->
+                                            <view class="post_time"></view>
+                                        </view>
+                                    </view>
+                                </view>
+                                <!-- 帖子的主体部分 帖子标题 帖子内容（图片文字等） -->
+                                <view class="post_main">
+                                    <!-- 帖子的标题 -->
+                                    <view class="post_title"></view>
+                                    <!-- 帖子的内容 -->
+                                    <view class="post_content"></view>
+                                </view>
+                                <!-- 用户对这个帖子的操作 谁人看过 礼物 是否喜爱 评论数及内容 -->
+                                <view class="post_opt">
+                                    <!-- 谁人看过 及 次数 头像 -->
+                                    <view class="lookTimes"></view>
+                                    <!-- 礼物图标 -->
+                                    <view class="gift"></view>
+                                    <!-- 是否喜爱 -->
+                                    <view class="like"></view>
+                                    <!-- 评论数 及 评论内容 -->
+                                    <view class="comments"></view>
+                                </view>
+                            </view>
+                        </view>
                     </view>
                 </scroll-view>
             </swiper-item>
