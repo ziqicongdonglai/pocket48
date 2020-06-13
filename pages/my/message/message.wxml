@@ -1,8 +1,10 @@
 <view>
     <!-- 顶部区域 消息盒子 返回 全部已读 -->
     <view class="titlebar_top">
-        <view class="titlebar_cancel" bindtap="handleCancel">取消</view>
-        <view class="titlebar_title">编辑</view>
+        <view class="titlebar_cancel" bindtap="handleCancel">
+            <image src="/images/my/message/titlebar_return_black.png"></image>
+        </view>
+        <view class="titlebar_title">消息盒子</view>
         <view class="titlebar_right_features">全部已读</view>
     </view>
     <!-- 导航条 -->
@@ -17,14 +19,48 @@
     <swiper class="bar_swiper navbar_mt" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2170rpx'>
         <swiper-item>
             <view>
-                <view class="comment_content">
+                <view class="nodata_content">
                     <image src="/images/my/message/emptystate_nomessage.png"></image>
                     <view>评论暂无数据</view>
                 </view>
             </view>
         </swiper-item>
-        <swiper-item>消息</swiper-item>
-        <swiper-item>@我</swiper-item>
+        <swiper-item>
+            <!-- <scroll-view style="height: 100%" scroll-y> -->
+                <view class="messages_list">
+                    <view class="message" wx:for="{{messagelist}}">
+                        <view class="member_img">
+                            <image src="{{item.imgUrl}}"></image>
+                        </view>
+                        <view class="message_inform">
+                            <view class="message_top">
+                                <view class="message_mid">
+                                    <text class="member_name">{{item.memberName}}</text>
+                                    <view class="team" style="background-color: {{item.teamColor}};">
+                                        {{item.team}}
+                                    </view>
+                                </view>
+                                <text class="update_time">{{item.sendTime}}</text>
+                            </view>
+                            <view class="message_btm">
+                                <text class="latestinf">{{item.latestInf}}</text>
+                                <view class="infnumber {{item.infNumber<10 ? 'number_radius' : ''}} {{item.infNumber==0 ? 'number_hide' : ''}}">
+                                    {{item.infNumber}}
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            <!-- </scroll-view> -->
+        </swiper-item>
+        <swiper-item>
+            <view>
+                <view class="nodata_content">
+                    <image src="/images/my/message/emptystate_nomessage.png"></image>
+                    <view>动态暂无数据</view>
+                </view>
+            </view>
+        </swiper-item>
         <swiper-item>通知</swiper-item>
     </swiper>
 </view>

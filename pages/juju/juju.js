@@ -28,7 +28,7 @@ Page({
         'updateTime': '18:26',
         'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfon4yqam9j306y06ymx0.jpg',
         'memberName': 'GNZ48-洪静雯',
-        'team': 'NII',
+        'team': 'NIII',
         'teamColor': '#ffd801',
         'latestInf': '[直播消息]',
         'infNumber': '99+'

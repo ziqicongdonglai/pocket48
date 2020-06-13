@@ -17,8 +17,12 @@
   z-index: 99;
 }
 .titlebar_top .titlebar_cancel {
-  width: 150rpx;
+  width: 155rpx;
   display: flex;
+}
+.titlebar_top .titlebar_cancel image {
+  width: 45rpx;
+  height: 45rpx;
 }
 .titlebar_top .titlebar_title {
   color: #000;
@@ -27,12 +31,7 @@
 }
 .titlebar_top .titlebar_right_features {
   display: flex;
-  flex-direction: row;
-  width: 150rpx;
-  justify-content: space-between;
-}
-.titlebar_top .titlebar_right_features .titlebar_feature .titlebar_feature_look {
-  padding-right: 40rpx;
+  width: 175rpx;
 }
 /* 导航栏 */
 .head {
@@ -57,7 +56,72 @@
   margin-top: 200rpx;
 }
 /* 评论列表 */
-.comment_content image {
+.nodata_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1000rpx;
+  color: #ababab;
+}
+.nodata_content image {
   width: 345rpx;
   height: 345rpx;
+}
+/*消息列表*/
+.messages_list {
+  background-color: #fff;
+}
+.messages_list .message {
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+.messages_list .message .member_img {
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.messages_list .message .member_img image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.messages_list .message .message_inform {
+  width: 590rpx;
+}
+.messages_list .message .message_inform .message_top {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.messages_list .message .message_inform .message_top .message_mid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.messages_list .message .message_inform .message_top .message_mid .member_name {
+  font-weight: 700;
+  font-size: 28rpx;
+}
+.messages_list .message .message_inform .message_top .message_mid .team {
+  margin-left: 20rpx;
+}
+.messages_list .message .message_inform .message_top .update_time {
+  color: #9d9d9d;
+  font-size: 20rpx;
+}
+.messages_list .message .message_inform .message_btm {
+  display: flex;
+  justify-content: space-between;
+}
+.messages_list .message .message_inform .message_btm .latestinf {
+  color: #9d9d9d;
+  font-size: 28rpx;
 }

@@ -25,22 +25,29 @@
                     <!-- 房间列表 -->
                     <view class="roomlist">
                         <view class="room" wx:for="{{roomlist}}">
+                            <!-- 房间头像 -->
                             <view class="room_img">
                                 <image src="{{item.imgUrl}}"></image>
                             </view>
                             <view class="room_inform">
                                 <view class="room_top">
+                                    <!-- 房间标题 -->
                                     <text class="room_title">{{item.roomTitle}}</text>
+                                    <!-- 更新时间 -->
                                     <text class="update_time">{{item.updateTime}}</text>
                                 </view>
                                 <view class="room_mid">
+                                    <!-- 成员名称 -->
                                     <text class="member_name">{{item.memberName}}</text>
+                                    <!-- 成员队伍 -->
                                     <view class="team" style="background-color: {{item.teamColor}};">
                                         {{item.team}}
                                     </view>
                                 </view>
                                 <view class="room_btm">
+                                    <!-- 最后一次消息内容 -->
                                     <text class="latestinf">{{item.latestInf}}</text>
+                                    <!-- 未读消息条数 -->
                                     <text class="infnumber">{{item.infNumber}}</text>
                                 </view>
                             </view>

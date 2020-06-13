@@ -16,8 +16,12 @@
   width: 100%;
   z-index: 99;
   .titlebar_cancel {
-    width: 150rpx;
+    width: 155rpx;
     display: flex;
+    image {
+      width: 45rpx;
+      height: 45rpx;
+    }
   }
   .titlebar_title {
     color: #000;
@@ -26,14 +30,7 @@
   }
   .titlebar_right_features {
     display: flex;
-    flex-direction: row;
-    width: 150rpx;
-    justify-content: space-between;
-    .titlebar_feature {
-      .titlebar_feature_look {
-        padding-right: 40rpx;
-      }
-    }
+    width: 175rpx;
   }
 }
 
@@ -62,9 +59,79 @@
 }
 
 /* 评论列表 */
-.comment_content {
+.nodata_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1000rpx;
+  color: #ababab;
   image {
-      width: 345rpx;
-      height: 345rpx;
+    width: 345rpx;
+    height: 345rpx;
+  }
+}
+
+/*消息列表*/
+.messages_list {
+  // padding: 0 20rpx;
+  background-color: #fff;
+  .message {
+    display: flex;
+    width: 100%;
+    height: 140rpx;
+    // background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2rpx solid #f1f1f1;
+    .member_img {
+      width: 100rpx;
+      height: 100rpx;
+      overflow: hidden;
+      border-radius: 50%;
+      // flex: 1;
+      margin-right: 20rpx;
+      image {
+        width: 100rpx;
+        height: 100rpx;
+      }
+    }
+    .message_inform {
+      // display: flex;
+      // flex-direction: column;
+      width: 590rpx;
+      .message_top {
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        .message_mid {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .member_name {
+            font-weight: 700;
+            font-size: 28rpx;
+          }
+          .team {
+            margin-left: 20rpx;
+          }
+        }
+        .update_time {
+          color: #9d9d9d;
+          font-size: 20rpx;
+        }
+      }
+      .message_btm {
+        display: flex;
+        justify-content: space-between;
+        .latestinf {
+          color: #9d9d9d;
+          font-size: 28rpx;
+        }
+      }
+    }
   }
 }
