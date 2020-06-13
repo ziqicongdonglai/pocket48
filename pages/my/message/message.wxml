@@ -1,0 +1,30 @@
+<view>
+    <!-- 顶部区域 消息盒子 返回 全部已读 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel" bindtap="handleCancel">取消</view>
+        <view class="titlebar_title">编辑</view>
+        <view class="titlebar_right_features">全部已读</view>
+    </view>
+    <!-- 导航条 -->
+    <view class="head">
+        <view class="navbar">
+            <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+                {{item}}
+            </text>
+        </view>
+    </view>
+    <!-- 滑动的主体部分 -->
+    <swiper class="bar_swiper navbar_mt" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2170rpx'>
+        <swiper-item>
+            <view>
+                <view class="comment_content">
+                    <image src="/images/my/message/emptystate_nomessage.png"></image>
+                    <view>评论暂无数据</view>
+                </view>
+            </view>
+        </swiper-item>
+        <swiper-item>消息</swiper-item>
+        <swiper-item>@我</swiper-item>
+        <swiper-item>通知</swiper-item>
+    </swiper>
+</view>

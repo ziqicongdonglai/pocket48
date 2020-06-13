@@ -1,6 +1,6 @@
 <view>
     <!-- 顶部区域 取消 编辑 预览 发布 -->
-    <view class="edt_top">
+    <view class="titlebar_top">
         <view class="edt_cancel" bindtap="handleCancel">取消</view>
         <view class="edt_title">编辑</view>
         <view class="edt_right_features">

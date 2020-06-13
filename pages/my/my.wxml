@@ -66,7 +66,7 @@
         </view>
         <!-- 九宫格 功能区 -->
         <view class="my_features">
-            <view class="features">
+            <view class="features" bindtap="toMessage">
                 <image class="item_icon" src="../../images/my/message.png"></image>
                 <text>消息盒子</text>
             </view>

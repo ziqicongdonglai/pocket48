@@ -1,0 +1,63 @@
+/* 顶部部分 */
+.titlebar_top {
+  height: 100rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  font-size: 28rpx;
+  padding: 0 20rpx;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #8876ec;
+  margin-bottom: 15rpx;
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  z-index: 99;
+}
+.titlebar_top .titlebar_cancel {
+  width: 150rpx;
+  display: flex;
+}
+.titlebar_top .titlebar_title {
+  color: #000;
+  font-weight: 500;
+  font-size: 32rpx;
+}
+.titlebar_top .titlebar_right_features {
+  display: flex;
+  flex-direction: row;
+  width: 150rpx;
+  justify-content: space-between;
+}
+.titlebar_top .titlebar_right_features .titlebar_feature .titlebar_feature_look {
+  padding-right: 40rpx;
+}
+/* 导航栏 */
+.head {
+  margin-top: 160rpx;
+  top: 100rpx;
+  z-index: 80;
+}
+.navbar {
+  width: 100%;
+  margin-top: -285rpx;
+}
+.navbar .item {
+  margin-right: 120rpx;
+  font-size: 32rpx;
+  color: #000000;
+  line-height: 100rpx;
+}
+.navbar .item.active {
+  font-weight: normal;
+}
+.navbar_mt {
+  margin-top: 200rpx;
+}
+/* 评论列表 */
+.comment_content image {
+  width: 345rpx;
+  height: 345rpx;
+}

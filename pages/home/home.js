@@ -134,5 +134,14 @@ Page({
     })
     // 全局变量
     app.globalData.currentTab = e.detail.current
+  },
+  // 跳转消息盒子
+  toMessage: function() {
+    wx.navigateTo({
+      url: '/pages/my/message/message',
+      success: function(res){
+        // success
+      }
+    })
   }
 })

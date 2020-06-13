@@ -12,7 +12,7 @@
             </view>
         </view>
         <!-- 滑动的主体部分 -->
-        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2300rpx'>
+        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2270rpx'>
             <swiper-item>
                 <scroll-view style="height: 100%" scroll-y>
                     <!-- 搜索栏 和 右侧的 扫码 领应援力 -->
@@ -107,7 +107,7 @@
                                         <image src="/images/home/mine_mc.png" class="item_icon"></image>
                                         <text>MC话题</text>
                                     </view>
-                                    <view class="features">
+                                    <view class="features" bindtap="toMessage">
                                         <image src="/images/home/message.png" class="item_icon"></image>
                                         <text>消息盒子</text>
                                     </view>
@@ -189,7 +189,12 @@
                     </view>
                 </scroll-view>
             </swiper-item>
-            <swiper-item>创造营2020</swiper-item>
+            <swiper-item>
+                <!-- <scroll-view style="height: 100%" scroll-y>
+                    创造营2020
+                    <image></image>
+                </scroll-view> -->
+            </swiper-item>
         </swiper>
     </view>
 </view>
