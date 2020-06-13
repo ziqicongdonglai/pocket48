@@ -1,2 +1,34 @@
-<!--pages/middle/middle.wxml-->
-<text>pages/middle/middle.wxml</text>
+<view>
+    <!-- 顶部区域 取消 编辑 预览 发布 -->
+    <view class="edt_top">
+        <view class="edt_cancel" bindtap="handleCancel">取消</view>
+        <view class="edt_title">编辑</view>
+        <view class="edt_right_features">
+            <view class="edt_feature_look">预览</view>
+            <view class="edt_feature_ release">发布</view>
+        </view>
+    </view>
+    <!-- 标题 -->
+    <view class="edt_post_title">
+        <input type="text" placeholder="标题（可选）" />
+    </view>
+    <!-- 帖子内容 -->
+    <view class="edt_post_content">
+        <input type="text" placeholder="写下你的想法" />
+    </view>
+    <!-- 底部功能区 -->
+    <view class="edt_bottom_feature">
+        <view class="bottom_feature">
+            <image class="feature_icon" src="/images/middle/post_emotion_ic.png"></image>
+            <image class="feature_icon" src="/images/middle/post_image_ic.png"></image>
+            <image class="feature_icon" src="/images/middle/post_topic_ic.png"></image>
+            <image class="feature_icon" src="/images/middle/post_at_ic.png"></image>
+            <image class="feature_icon" src="/images/middle/post_url_ic.png"></image>
+        </view>
+        <view class="remaining_words">
+            还剩下
+            <view class="words">1000</view>
+            字
+        </view>
+    </view>
+</view>
