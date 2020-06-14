@@ -71,13 +71,16 @@
   }
 }
 
-.goods {
+.essence {
   width: 100%;
-  margin-top: 85rpx;
+  margin-top: 90rpx;
+  background-color: #fff;
+  display: flex;
 }
 /* 单个图片容器的样式 */
 .img_item {
-  width: 48.5%;
+  // width: 48.5%;
+  flex: 1;
   margin: 2px;
   display: inline-block;
   vertical-align: top;
@@ -85,34 +88,67 @@
   font-size: 24rpx;
 }
 .item_info {
-  border-top: 1px dashed red;
+  // border-top: 1px dashed red;
+  padding: 0 10rpx;
 }
-.product-postTitle {
+.post_title {
   color: #000;
   /* height: 28px; */
   text-align: left;
   margin: 0px 5px;
   margin-bottom: 5px;
   font-weight: 700;
+  font-size: 38rpx;
 }
-.product-price-wrap .product-price-new {
-  color: #888;
-  margin-left: 5px;
-  width: 40rpx;
-  height: 40rpx;
-  border-radius: 50%;
-  border: 3rpx solid goldenrod;
-}
-.product-price-wrap .product-price-old {
-  color: #888;
-  // text-decoration: line-through;
-  padding-left: 2px;
-}
-.product-price-wrap .like_num {
-  margin-left: 30px;
-  color: #888;
-  .post_like {
-    width: 40rpx;
-    height: 40rpx;
+.post_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+  /* 粉丝信息 */
+  .fans_inf {
+    display: flex;
+    align-items: center;
+    /* 粉丝头像 */
+    .post_headimg {
+      color: #888;
+      margin-right: 10rpx;
+      width: 40rpx;
+      height: 40rpx;
+      border-radius: 50%;
+      border: 3rpx solid goldenrod;
+    }
+    /* 粉丝名字 */
+    .post_fansname {
+      color: #888;
+      padding-left: 2px;
+    }
   }
+  .like_num {
+    margin-left: 10rpx;
+    color: #888;
+    display: flex;
+    align-items: center;
+    .post_like {
+      width: 40rpx;
+      height: 40rpx;
+      padding-right: 5rpx;
+    }
+  }
+}
+/* 左侧列表的每一项 */
+.jx_post_item_lf {
+  border-radius: 10rpx;
+  box-shadow: #66666666 0px 0px 5rpx;
+  margin-right: 10rpx;
+  // margin-bottom: 10prx;
+}
+/* 右侧列表的每一项 */
+.jx_post_item_rg {
+  border-radius: 10rpx;
+  box-shadow: #66666666 0px 0px 5rpx;
+  margin-left: 10rpx;
+  // margin-bottom: 10prx;
 }
