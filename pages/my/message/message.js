@@ -173,7 +173,7 @@ Page({
       currentTab: e.currentTarget.dataset.idx
     })
     // 全局变量
-    app.globalData.currentTab = e.currentTarget.dataset.idx;
+    app.globalData.currentTab4 = e.currentTarget.dataset.idx;
   },
   /**
    * 生命周期函数--监听页面加载
@@ -186,7 +186,7 @@ Page({
    */
   onShow: function () {
     this.setData({
-      currentTab: app.globalData.currentTab
+      currentTab: app.globalData.currentTab4
     })
   },
   swiperChange: function (e) {
@@ -194,7 +194,7 @@ Page({
       currentTab: e.detail.current
     })
     // 全局变量
-    app.globalData.currentTab = e.detail.current
+    app.globalData.currentTab4 = e.detail.current
   },
   // 取消事件 返回到上一个页面
   handleCancel: function () {

@@ -9,7 +9,11 @@
             </view>
             <!-- 头像 -->
             <view class="top_head center_item">
-                <image src="/images/my/head_img.jpg"></image>
+                <view class="top_features">
+                    <image src="/images/my/mine_editor.png"></image>
+                    <image src="/images/my/mine_setting.png"></image>
+                </view>
+                <image class="head_img" src="/images/my/head_img.jpg"></image>
                 <view class="user_name">紫气从东来</view>
                 <view class="level">
                     <image mode="widthFix" src="/images/my/contributionlist_four.png"></image>
