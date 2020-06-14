@@ -60,3 +60,47 @@
   height: 30rpx;
   padding: 0 15rpx;
 }
+.goods {
+  width: 100%;
+  margin-top: 85rpx;
+}
+/* 单个图片容器的样式 */
+.img_item {
+  width: 48.5%;
+  margin: 2px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+  font-size: 24rpx;
+}
+.item_info {
+  border-top: 1px dashed red;
+}
+.product-postTitle {
+  color: #000;
+  /* height: 28px; */
+  text-align: left;
+  margin: 0px 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.product-price-wrap .product-price-new {
+  color: #888;
+  margin-left: 5px;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  border: 3rpx solid goldenrod;
+}
+.product-price-wrap .product-price-old {
+  color: #888;
+  padding-left: 2px;
+}
+.product-price-wrap .like_num {
+  margin-left: 30px;
+  color: #888;
+}
+.product-price-wrap .like_num .post_like {
+  width: 40rpx;
+  height: 40rpx;
+}
