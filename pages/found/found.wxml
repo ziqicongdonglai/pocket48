@@ -115,7 +115,7 @@
                                     </view>
                                     <!-- 帖子点赞相关 爱心 点赞数 -->
                                     <view class="like_num">
-                                        <image class="post_like" src="/images/found/dynamic_like.png"></image>
+                                        <image class="post_like" data-islike="{{islike}}" data-idx1="{{index}}" data-likeimg1="{{item.likeimg}}" bindtap="beenLikedL" src="{{likeimg}}"></image>
                                         <view class="likes_num">{{item.likeNum}}</view>
                                     </view>
                                 </view>
@@ -140,7 +140,7 @@
                                     </view>
                                     <!-- 帖子点赞相关 爱心 点赞数 -->
                                     <view class="like_num">
-                                        <image class="post_like" src="/images/found/dynamic_like.png"></image>
+                                        <image class="post_like" data-islike="{{islike}}" data-idx2="{{index}}" data-likeimg2="{{item.likeimg}}" bindtap="beenLikedR" src="{{likeimg}}"></image>
                                         <view class="likes_num">{{item.likeNum}}</view>
                                     </view>
                                 </view>
