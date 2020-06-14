@@ -40,16 +40,16 @@
                                     <image class='top-img' mode="aspectFill center" src='https://www.snh48.com/attached/ad/2020-06-05/9032211.jpg'></image>
                                 </swiper-item>
                                 <swiper-item>
-                                    <image class='top-img' mode="aspectFill" src='/images/home/startschool.png'></image>
+                                    <image class='top-img' mode="aspectFill" src='https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfs2bi4jl6j30ak06owiv.jpg'></image>
                                 </swiper-item>
                                 <swiper-item>
-                                    <image class='top-img' mode="aspectFill" src='/images/home/czy2020.png'></image>
+                                    <image class='top-img' mode="aspectFill" src='https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfs29qml1gj30ak06o77f.jpg'></image>
                                 </swiper-item>
                                 <swiper-item>
-                                    <image class='top-img' mode="aspectFill" src='/images/home/ckkys.png'></image>
+                                    <image class='top-img' mode="aspectFill" src='https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfs29mvk7rj30b406xwhg.jpg'></image>
                                 </swiper-item>
                                 <swiper-item>
-                                    <image class='top-img' mode="aspectFill" src='/images/home/funnytime.png'></image>
+                                    <image class='top-img' mode="aspectFill" src='https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfs29y4tsmj30ak06o0vo.jpg'></image>
                                 </swiper-item>
                             </swiper>
                         </view>
@@ -157,8 +157,8 @@
                     </view>
                     <!-- 今日有缘成员 生日祝福 -->
                     <view class="top_bottom">
-                        <image src="/images/home/destined_idol.png"></image>
-                        <image src="/images/home/birthdaywishes.png"></image>
+                        <image src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfs29v9wg8j30a805i0u3.jpg"></image>
+                        <image src="https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfs29it0w8j30a805i75f.jpg"></image>
                     </view>
                     <!-- 正在直播 -->
                     <view class="live">

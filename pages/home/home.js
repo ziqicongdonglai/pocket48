@@ -19,7 +19,7 @@ Page({
         "showUrl": 'https://wx3.sinaimg.cn/mw690/a04b2a1dgy1ga0v1omp5xj20u00u07wh.jpg'
       },
       {
-        "showUrl": '/images/home/shizhijuan.png'
+        "showUrl": 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfs2benppzj30ak06on0r.jpg'
       },
       {
         "showUrl": 'https://wx1.sinaimg.cn/mw690/006c5eFZgy1gf2h8bzdlxj31hc0u04qp.jpg'
