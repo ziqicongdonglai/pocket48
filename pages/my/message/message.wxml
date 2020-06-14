@@ -26,7 +26,7 @@
             </view>
         </swiper-item>
         <swiper-item>
-            <!-- <scroll-view style="height: 100%" scroll-y> -->
+            <scroll-view style="height: 100%" scroll-y>
                 <view class="messages_list">
                     <view class="message" wx:for="{{messagelist}}">
                         <view class="member_img">
@@ -51,7 +51,7 @@
                         </view>
                     </view>
                 </view>
-            <!-- </scroll-view> -->
+            </scroll-view>
         </swiper-item>
         <swiper-item>
             <view>
@@ -61,6 +61,29 @@
                 </view>
             </view>
         </swiper-item>
-        <swiper-item>通知</swiper-item>
+        <swiper-item>
+            <view class="notice_list">
+                <view class="notice">
+                    <image src="/images/my/message/news_notice_system.png"></image>
+                    <view>系统消息</view>
+                </view>
+                <view class="notice">
+                    <image src="/images/my/message/news_notice_likes.png"></image>
+                    <view>点赞消息</view>
+                </view>
+                <view class="notice">
+                    <image src="/images/my/message/news_notice_recommended.png"></image>
+                    <view>帖子推荐</view>
+                </view>
+                <view class="notice">
+                    <image src="/images/my/message/news_notice_concern.png"></image>
+                    <view>关注消息</view>
+                </view>
+                <view class="notice">
+                    <image src="/images/my/message/news_notice_gift.png"></image>
+                    <view>礼物消息</view>
+                </view>
+            </view>
+        </swiper-item>
     </swiper>
 </view>

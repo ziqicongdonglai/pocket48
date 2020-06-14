@@ -125,3 +125,21 @@
   color: #9d9d9d;
   font-size: 28rpx;
 }
+/* 消息通知列表 */
+.notice_list {
+  margin-top: 20rpx;
+  font-weight: 700;
+}
+.notice_list .notice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 2rpx;
+  height: 155rpx;
+}
+.notice_list .notice image {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 20rpx;
+}

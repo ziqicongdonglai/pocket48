@@ -1,5 +1,5 @@
 /* 顶部部分 */
-.titlebar_top {
+.edt_top {
   height: 100rpx;
   background-color: #fff;
   display: flex;
@@ -11,22 +11,22 @@
   text-align: center;
   color: #8876ec;
   margin-bottom: 15rpx;
-  .titlebar_cancel {
+  .edt_cancel {
     width: 150rpx;
     display: flex;
   }
-  .titlebar_title {
+  .edt_title {
     color: #000;
     font-weight: 500;
     font-size: 32rpx;
   }
-  .titlebar_right_features {
+  .edt_right_features {
     display: flex;
     flex-direction: row;
     width: 150rpx;
     justify-content: space-between;
-    .titlebar_feature {
-      .titlebar_feature_look {
+    .edt_feature {
+      .edt_feature_look {
         padding-right: 40rpx;
       }
     }
@@ -34,49 +34,49 @@
 }
 
 /* 帖子标题 */
-.titlebar_post_title {
-    display: flex;
-    background-color: #fff;
-    height: 90rpx;
-    align-items: center;
-    padding-left: 20rpx;
-    margin-bottom: 15rpx;
+.edt_post_title {
+  display: flex;
+  background-color: #fff;
+  height: 90rpx;
+  align-items: center;
+  padding-left: 20rpx;
+  margin-bottom: 15rpx;
 }
 
 /* 帖子内容 */
-.titlebar_post_content {
-    background-color: #fff;
-    height: 900rpx;
-    padding-left: 20rpx;
+.edt_post_content {
+  background-color: #fff;
+  height: 900rpx;
+  padding-left: 20rpx;
 }
 
 /* 帖子底部小功能 */
-.titlebar_bottom_feature {
-    height: 80rpx;
-    background-color: #fff;
+.edt_bottom_feature {
+  height: 80rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  .bottom_feature {
     display: flex;
-    flex-direction: row;
-    // justify-content: center;
-    justify-content: space-between;
-    padding: 0 20rpx;
-    .bottom_feature {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        image {
-            display: flex;
-            flex: 1;
-            width: 40rpx;
-            height: 40rpx;
-            margin-right: 40rpx;
-        }
+    justify-content: center;
+    align-items: center;
+    image {
+      display: flex;
+      flex: 1;
+      width: 40rpx;
+      height: 40rpx;
+      margin-right: 40rpx;
     }
-    .remaining_words {
-        color: #848484;
-        display: flex;
-        align-items: center;
-        .words {
-            color: #8876ec;
-        }
+  }
+  .remaining_words {
+    color: #848484;
+    display: flex;
+    align-items: center;
+    .words {
+      color: #8876ec;
     }
+  }
 }

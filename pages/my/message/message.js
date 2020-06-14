@@ -13,7 +13,7 @@ Page({
     // 消息列表
     messagelist: [
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrj4tvnkcj306y06y3yk.jpg',
         'memberName': 'SNH48-冉蔚',
         'team': 'X',
         'teamColor': '#a8cd25',
@@ -22,7 +22,7 @@ Page({
         'infNumber': 1
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfrj5k70ecj306y06ydfu.jpg',
         'memberName': 'BEJ48-吕蕊',
         'team': 'B',
         'teamColor': '#e6356c',
@@ -31,7 +31,7 @@ Page({
         'infNumber': 1
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrj66rzj7j306y06ydfu.jpg',
         'memberName': 'GNZ48-罗可嘉',
         'team': 'G',
         'teamColor': '#a8cd25',
@@ -40,16 +40,16 @@ Page({
         'infNumber': 2
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfrj6vlzdmj306y06yq2x.jpg',
         'memberName': 'GNZ48-吴羽霏',
-        'team': 'NII',
+        'team': 'NIII',
         'teamColor': '#ffd801',
         'sendTime': '前天',
         'latestInf': '虽然知道你一天要收到很多xox的信息...',
         'infNumber': 1
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfom6iwkkej306i06yq31.jpg',
         'memberName': 'SNH48-周诗雨',
         'team': 'NII',
         'teamColor': '#ad87b8',
@@ -58,7 +58,7 @@ Page({
         'infNumber': 1
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrj7u5sipj306y06y0sq.jpg',
         'memberName': 'GNZ48-司珀琳',
         'team': 'Z',
         'teamColor': '#eb627c',
@@ -67,7 +67,7 @@ Page({
         'infNumber': 1
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfrj8bwh4dj306y06y3yi.jpg',
         'memberName': 'GNZ48-王翠菲',
         'team': 'Z',
         'teamColor': '#eb627c',
@@ -76,7 +76,7 @@ Page({
         'infNumber': 0
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfrj8u8p6xj306y06y0sp.jpg',
         'memberName': 'BEJ48-张智杰',
         'team': 'E',
         'teamColor': '#29b8b6',
@@ -85,7 +85,7 @@ Page({
         'infNumber': 0
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfrj99wn4xj306y06y0sv.jpg',
         'memberName': 'IDFT-高蔚然',
         'team': 'IDFT',
         'teamColor': '#b4006e',
@@ -94,7 +94,7 @@ Page({
         'infNumber': 0
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfrj9tzdogj306y06y0so.jpg',
         'memberName': 'GNZ48-冼燊楠',
         'team': 'NIII',
         'teamColor': '#ffd801',
@@ -103,7 +103,7 @@ Page({
         'infNumber': 0
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrja6xheij306y06yglj.jpg',
         'memberName': 'IDFT-高雪逸',
         'team': 'IDFT',
         'teamColor': '#b4006e',
@@ -112,7 +112,7 @@ Page({
         'infNumber': 0
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfrjaod81dj306y06yq2z.jpg',
         'memberName': 'BEJ48-熊鑫',
         'team': 'E',
         'teamColor': '#29b8b6',
@@ -121,7 +121,7 @@ Page({
         'infNumber': 0
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrjb6jfcaj306y06ymx9.jpg',
         'memberName': 'SNH48-赵佳蕊',
         'team': 'NII',
         'teamColor': '#ad87b8',
@@ -130,7 +130,7 @@ Page({
         'infNumber': 0
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrjbm485dj306y06y74b.jpg',
         'memberName': 'SNH48-由淼',
         'team': 'SII',
         'teamColor': '#87ceeb',
@@ -139,7 +139,7 @@ Page({
         'infNumber': 0
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrjbyc5h1j305c06yq2z.jpg',
         'memberName': 'BEJ48-曲美霖',
         'team': 'B',
         'teamColor': '#e6356c',
@@ -148,7 +148,7 @@ Page({
         'infNumber': 0
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrjcdhoa7j306y06ymx8.jpg',
         'memberName': 'BEJ48-周湘',
         'team': 'J',
         'teamColor': '#006ab6',
@@ -157,7 +157,7 @@ Page({
         'infNumber': 0
       },
       {
-        'imgUrl': '',
+        'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrjcs0jevj306y06y0sr.jpg',
         'memberName': 'SNH48-潘瑛琪',
         'team': 'X',
         'teamColor': '#a8cd25',
