@@ -178,10 +178,23 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex: 1;
-      // width: 150rpx;
+      // flex: 1;
+      width: 130rpx;
       height: 7rpx;
-      background-color: #ddd;
+      background-color: #cebbbe;
+      // background-color: #7a42e3;
+    }
+    .progress_item:nth-child(4) {
+      // background-color: #7a42e3;
+      width: 75rpx;
+    }
+    .progress_item:nth-child(5) {
+      background-color: #7a42e3;
+      width: 145rpx;
+    }
+    .progress_item:nth-child(6) {
+      background-color: #7a42e3;
+      width: 145rpx;
     }
   }
   .experience_now {
@@ -217,7 +230,7 @@
     color: #848484;
     height: 80rpx;
     line-height: 80rpx;
-    background-color: #eee;
+    background-color: #f6f6f6;
     padding-left: 20rpx;
   }
   .record_item {
@@ -244,7 +257,7 @@
       color: #bbb;
       font-size: 28rpx;
       text {
-        color: red;
+        color: #ff6600;
         padding-right: 10rpx;
       }
     }
@@ -259,6 +272,9 @@
   }
   .top_head {
     margin-top: -205rpx;
+    .user_name {
+      font-size: 38rpx;
+    }
   }
   .experience_record {
     margin-top: 15rpx;
@@ -298,5 +314,87 @@
     font-size: 36rpx;
     color: #000;
     margin-bottom: 30rpx;
+  }
+}
+
+/* 丝瓜 */
+.shigua {
+  .top_img {
+    width: 100%;
+    height: 310rpx;
+  }
+  .top_head {
+    margin-top: -265rpx;
+    .user_name {
+      background-color: rgba(0, 0, 0, 0);
+      margin-top: 20rpx;
+      font-size: 38rpx;
+    }
+    .shigua_points {
+      height: 34rpx;
+      line-height: 34rpx;
+      width: 170rpx;
+      font-size: 24rpx;
+      color: #f2f2f2;
+      background-color: #8693ff;
+      text-align: center;
+      border-radius: 10rpx;
+      margin-top: 10rpx;
+    }
+    .register_member {
+      font-size: 24rpx;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      margin-top: 20rpx;
+      .register_item {
+        display: flex;
+        flex-direction: row;
+        // width: 210rpx;
+        align-items: center;
+        margin-right: 20rpx;
+        image {
+          width: 130rpx;
+          height: 32rpx;
+        }
+        view {
+          margin-left: -100rpx;
+        }
+      }
+    }
+  }
+  .experience_record {
+    margin-top: 15rpx;
+    .experience_record_title {
+      border-bottom: 3rpx solid #eee;
+    }
+    .experience_record_topinfrm {
+      color: #848484;
+      background-color: #f6f6f6;
+      padding: 0 20rpx;
+      border-bottom: 3rpx solid #eee;
+      .anchor {
+        color: #8876ec;
+      }
+    }
+    .record_item {
+      .item_points {
+        color: #bbb;
+        margin-top: 40rpx;
+        font-size: 24rpx;
+        .points_add {
+          color: #ff6600;
+          padding: 0 5rpx;
+        }
+      }
+      .experience_num {
+        border: 2rpx solid #bbb;
+        border-radius: 10rpx;
+        width: 160rpx;
+        height: 60rpx;
+        line-height: 60rpx;
+        text-align: center;
+      }
+    }
   }
 }

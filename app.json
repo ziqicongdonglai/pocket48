@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/my/accountrecords/accountrecords",
-    "pages/my/my",
     "pages/home/home",
     "pages/juju/juju",
     "pages/found/found",
+    "pages/my/my",
     "pages/my/message/message",
+    "pages/my/accountrecords/accountrecords",
     "pages/middle/middle",
     "pages/index/index",
     "pages/logs/logs"

@@ -183,6 +183,27 @@ Page({
         experDate: '2019-03-07 23:02:25',
         experNum: '+5',
       },
+    ],
+    // 消费列表
+    recordList: [
+      {
+        id: 1,
+        amount: '消费金额：38.00元',
+        points: '+38',
+        experDate: '2019.06.08',
+      },
+      {
+        id: 2,
+        amount: '消费金额：0.05元',
+        points: '+5',
+        experDate: '2018.06.09',
+      },
+      {
+        id: 3,
+        amount: '消费金额：0.50元',
+        points: '+50',
+        experDate: '2018.06.09',
+      }
     ]
   },
   // 切换bar

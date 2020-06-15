@@ -161,6 +161,65 @@
                 </view>
             </view>
         </swiper-item>
-        <swiper-item>丝瓜</swiper-item>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="shigua">
+                    <view class="account_top">
+                        <!-- 顶部带头像的部分 -->
+                        <!-- 顶部背景图 -->
+                        <view>
+                            <image class="top_img" src="/images/my/accountrecords/experience_bg.png"></image>
+                        </view>
+                        <!-- 头像 -->
+                        <view class="top_head center_item">
+                            <image class="head_img" src="/images/my/head_img.jpg"></image>
+                            <view class="user_name">ZK2000zqcdl</view>
+                            <view class="shigua_points">丝瓜积分：93</view>
+                            <view class="register_member">
+                                <view class="register_item">
+                                    <image src="/images/my/accountrecords/snh.png"></image>
+                                    <view>注册会员</view>
+                                </view>
+                                <view class="register_item">
+                                    <image src="/images/my/accountrecords/bej.png"></image>
+                                    <view>注册会员</view>
+                                </view>
+                                <view class="register_item">
+                                    <image src="/images/my/accountrecords/gnz.png"></image>
+                                    <view>注册会员</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="experience_record">
+                        <view class="experience_record_title">积分记录</view>
+                        <view class="experience_record_topinfrm">
+                            注意未经过实名认证的丝瓜账号积分封顶1.8万积分。详细请点击
+                            <!-- 链接 -->
+                            <text class="anchor">网页链接</text>
+                            查看
+                        </view>
+                        <view class="record_item" wx:for="{{recordList}}" wx:key="id">
+                            <!-- 每条记录的左侧内容 标题和时间 -->
+                            <view class="record_item_leftinf">
+                                <!-- 消费金额 -->
+                                <view class="item_title">{{item.amount}}</view>
+                                <!-- 获得的积分 -->
+                                <view class="item_points">
+                                    总选投票券购买<text class="points_add">{{item.points}}</text>积分
+                                </view>
+                                <!-- 时间 -->
+                                <view class="item_date">{{item.experDate}}</view>
+                            </view>
+                            <!-- 具体加多少成长值 -->
+                            <view class="experience_num">
+                                <!-- <text>{{item.experNum}}</text> -->
+                                已领取
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
     </swiper>
 </view>

@@ -158,9 +158,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  width: 130rpx;
   height: 7rpx;
-  background-color: #ddd;
+  background-color: #cebbbe;
+}
+.account_top .progress .progress_item:nth-child(4) {
+  width: 75rpx;
+}
+.account_top .progress .progress_item:nth-child(5) {
+  background-color: #7a42e3;
+  width: 145rpx;
+}
+.account_top .progress .progress_item:nth-child(6) {
+  background-color: #7a42e3;
+  width: 145rpx;
 }
 .account_top .experience_now {
   height: 80rpx;
@@ -194,7 +205,7 @@
   color: #848484;
   height: 80rpx;
   line-height: 80rpx;
-  background-color: #eee;
+  background-color: #f6f6f6;
   padding-left: 20rpx;
 }
 .experience_record .record_item {
@@ -221,7 +232,7 @@
   font-size: 28rpx;
 }
 .experience_record .record_item .experience_num text {
-  color: red;
+  color: #ff6600;
   padding-right: 10rpx;
 }
 /* 鸡腿部分 */
@@ -231,6 +242,9 @@
 }
 .jitui .top_head {
   margin-top: -205rpx;
+}
+.jitui .top_head .user_name {
+  font-size: 38rpx;
 }
 .jitui .experience_record {
   margin-top: 15rpx;
@@ -268,4 +282,79 @@
   font-size: 36rpx;
   color: #000;
   margin-bottom: 30rpx;
+}
+/* 丝瓜 */
+.shigua .top_img {
+  width: 100%;
+  height: 310rpx;
+}
+.shigua .top_head {
+  margin-top: -265rpx;
+}
+.shigua .top_head .user_name {
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 20rpx;
+  font-size: 38rpx;
+}
+.shigua .top_head .shigua_points {
+  height: 34rpx;
+  line-height: 34rpx;
+  width: 170rpx;
+  font-size: 24rpx;
+  color: #f2f2f2;
+  background-color: #8693ff;
+  text-align: center;
+  border-radius: 10rpx;
+  margin-top: 10rpx;
+}
+.shigua .top_head .register_member {
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.shigua .top_head .register_member .register_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20rpx;
+}
+.shigua .top_head .register_member .register_item image {
+  width: 130rpx;
+  height: 32rpx;
+}
+.shigua .top_head .register_member .register_item view {
+  margin-left: -100rpx;
+}
+.shigua .experience_record {
+  margin-top: 15rpx;
+}
+.shigua .experience_record .experience_record_title {
+  border-bottom: 3rpx solid #eee;
+}
+.shigua .experience_record .experience_record_topinfrm {
+  color: #848484;
+  background-color: #f6f6f6;
+  padding: 0 20rpx;
+  border-bottom: 3rpx solid #eee;
+}
+.shigua .experience_record .experience_record_topinfrm .anchor {
+  color: #8876ec;
+}
+.shigua .experience_record .record_item .item_points {
+  color: #bbb;
+  margin-top: 40rpx;
+  font-size: 24rpx;
+}
+.shigua .experience_record .record_item .item_points .points_add {
+  color: #ff6600;
+  padding: 0 5rpx;
+}
+.shigua .experience_record .record_item .experience_num {
+  border: 2rpx solid #bbb;
+  border-radius: 10rpx;
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
 }
