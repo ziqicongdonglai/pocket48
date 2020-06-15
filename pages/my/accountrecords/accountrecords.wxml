@@ -1,5 +1,5 @@
 <view>
-    <!-- 顶部区域 消息盒子 返回 全部已读 -->
+    <!-- 顶部区域 账户记录 返回 -->
     <view class="titlebar_top">
         <view class="titlebar_cancel" bindtap="handleCancel">
             <image src="/images/my/message/titlebar_return_black.png"></image>
@@ -83,11 +83,11 @@
                     </view>
                     <!-- 每日领礼物 -->
                     <view class="getgift">
-                        <image src="/images/my/accountrecords/getthegiftbag.png"></image>
+                        <image src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gftdugy6ilj30i204ogne.jpg"></image>
                     </view>
                 </view>
                 <view class="experience_record">
-                    <view class="experience_record_title">成长值记录</view>
+                    <view class="item_list_title">成长值记录</view>
                     <view class="record_item" wx:for="{{experList}}" wx:key="id">
                         <!-- 每条记录的左侧内容 标题和时间 -->
                         <view class="record_item_leftinf">
@@ -129,7 +129,7 @@
                         </view>
                     </view>
                     <view class="experience_record">
-                        <view class="experience_record_title">鸡腿详情</view>
+                        <view class="item_list_title">鸡腿详情</view>
                         <view class="record_item" wx:for="{{jituiList}}" wx:key="id">
                             <!-- 每条记录的左侧内容 标题和时间 -->
                             <view class="record_item_leftinf">
@@ -192,7 +192,7 @@
                         </view>
                     </view>
                     <view class="experience_record">
-                        <view class="experience_record_title">积分记录</view>
+                        <view class="item_list_title">积分记录</view>
                         <view class="experience_record_topinfrm">
                             注意未经过实名认证的丝瓜账号积分封顶1.8万积分。详细请点击
                             <!-- 链接 -->

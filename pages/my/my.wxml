@@ -1,16 +1,16 @@
 <view>
     <tabbar tabbar="{{tabbar}}"></tabbar>
-    <scroll-view style="height: 100%;" scroll-y>
+    <scroll-view style="height: 780px" scroll-y>
         <view class="top">
             <!-- 顶部带头像的部分 -->
             <!-- 顶部背景图 -->
             <view>
-                <image class="top_img" mode="widthFix" src="/images/my/mine_background.png"></image>
+                <image class="top_img" mode="widthFix" src="https://wx4.sinaimg.cn/mw690/005FbhyYgy1gftdtj3dubj30ku0ckwfk.jpg"></image>
             </view>
             <!-- 头像 -->
             <view class="top_head center_item">
                 <view class="top_features">
-                    <image src="/images/my/mine_editor.png"></image>
+                    <image bindtap="toEditor" src="/images/my/mine_editor.png"></image>
                     <image src="/images/my/mine_setting.png"></image>
                 </view>
                 <image class="head_img" src="/images/my/head_img.jpg"></image>

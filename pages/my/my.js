@@ -16,7 +16,16 @@ Page({
   onLoad: function (options) {
     app.editTabbar();
   },
-  // 跳转消息盒子
+  // 跳转到个人信息页面
+  toEditor: function () {
+    wx.navigateTo({
+      url: '/pages/my/personalinformation/personalinformation',
+      success: function (res) {
+        // success
+      }
+    })
+  },
+  // 跳转到消息盒子
   toMessage: function () {
     wx.navigateTo({
       url: '/pages/my/message/message',

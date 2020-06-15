@@ -1,0 +1,175 @@
+<view>
+    <!-- 顶部区域 个人信息 返回 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel" bindtap="handleCancel">
+            <image src="/images/my/message/titlebar_return_black.png"></image>
+        </view>
+        <view class="titlebar_title">个人信息</view>
+    </view>
+    <!-- 顶部背景图 -->
+    <view class="top">
+        <image class="top_img" src="/images/my/personalinformation/user_photo_bg.png"></image>
+        <view class="head_img">
+            <!-- 头像 -->
+            <image src="/images/my/head_img.jpg"></image>
+            <!-- 编辑头像 -->
+            <view class="head_img_editor">编辑头像</view>
+        </view>
+    </view>
+    <!-- 个人资料 -->
+    <view class="personal_detail title_mt">
+        <view class="item_list_title">个人资料</view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/user_nickname.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">昵称</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail">紫气从东来</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/pocket_id.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">口袋号</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail" style="color: #848484">662493</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/rankings_birthday_icon.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">生日</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail">2020.04.08</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/user_sex.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">性别</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail">保密</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/user_location.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">位置</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail"></view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 账号绑定 -->
+    <view class="personal_detail">
+        <view class="item_list_title">账号绑定</view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/user_weibo.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">微博</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail account_bind">未绑定</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/weixin.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">微信</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail account_bind">未绑定</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/qq.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">QQ</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail account_bind">紫气从东来</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/baidu.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">百度</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail account_bind">未绑定</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/sigua.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">丝瓜</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail account_bind">ZK2000zqcdl</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/editor_huawei_icon.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">华为</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail account_bind">未绑定</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 账号管理 -->
+    <view class="personal_detail">
+        <view class="item_list_title">账号管理</view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/phone.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">手机</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail">199****646</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/user_lock.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">密码</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail"></view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 账号信息 -->
+    <view class="personal_detail">
+        <view class="item_list_title">账号管理</view>
+        <view class="user_inform_item">
+            <image src="/images/my/personalinformation/icon_lv.png" class="inform_item_icon"></image>
+            <view class="inform_item_text">
+                <view class="inform_item_name">等级</view>
+                <view class="inform_item_right">
+                    <view class="inform_item_detail">lv4</view>
+                    <image src="/images/my/personalinformation/user_enter.png" class="inform_item_enter"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

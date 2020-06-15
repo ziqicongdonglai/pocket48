@@ -18,7 +18,7 @@
                     <view class="found_main">
                         <!-- 顶部的图片 -->
                         <view class="top_img">
-                            <image src="/images/found/topic_topimg.png"></image>
+                            <image src="https://wx3.sinaimg.cn/mw690/005FbhyYgy1gftdt6lo2pj30e604ftbh.jpg"></image>
                         </view>
                         <!-- 顶部文字部分 -->
                         <view class="top_text">

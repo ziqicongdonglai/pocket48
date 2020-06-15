@@ -4,6 +4,7 @@
     "pages/juju/juju",
     "pages/found/found",
     "pages/my/my",
+    "pages/my/personalinformation/personalinformation",
     "pages/my/message/message",
     "pages/my/accountrecords/accountrecords",
     "pages/middle/middle",

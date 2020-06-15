@@ -8,7 +8,6 @@
   padding: 0 20rpx;
   align-items: center;
   text-align: center;
-  color: #8876ec;
   margin-bottom: 15rpx;
   position: fixed;
   top: 0rpx;
@@ -200,13 +199,6 @@
 }
 .experience_record {
   /* 成长值（经验）具体的每次记录 */
-}
-.experience_record .experience_record_title {
-  color: #848484;
-  height: 80rpx;
-  line-height: 80rpx;
-  background-color: #f6f6f6;
-  padding-left: 20rpx;
 }
 .experience_record .record_item {
   display: flex;
