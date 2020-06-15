@@ -73,7 +73,7 @@
                         <view class="progress_item"></view>
                     </view>
                     <!-- 当前成长值 -->
-                    <view class="jinyan">
+                    <view class="experience_now">
                         当前成长值
                         <text>1598</text>
                         还差
@@ -86,13 +86,81 @@
                         <image src="/images/my/accountrecords/getthegiftbag.png"></image>
                     </view>
                 </view>
+                <view class="experience_record">
+                    <view class="experience_record_title">成长值记录</view>
+                    <view class="record_item" wx:for="{{experList}}" wx:key="id">
+                        <!-- 每条记录的左侧内容 标题和时间 -->
+                        <view class="record_item_leftinf">
+                            <view class="item title">{{item.experTitle}}</view>
+                            <view class="item_date">{{item.experDate}}</view>
+                        </view>
+                        <!-- 具体加多少成长值 -->
+                        <view class="experience_num">
+                            <text>{{item.experNum}}</text>
+                            成长值
+                        </view>
+                    </view>
+                </view>
             </scroll-view>
         </swiper-item>
         <swiper-item>
-            <scroll-view style="height: 100%" scroll-y>鸡腿</scroll-view>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="jitui">
+                    <view class="account_top">
+                        <!-- 顶部带头像的部分 -->
+                        <!-- 顶部背景图 -->
+                        <view>
+                            <image class="top_img" src="/images/my/accountrecords/experience_bg.png"></image>
+                        </view>
+                        <!-- 头像 -->
+                        <view class="top_head center_item">
+                            <image class="head_img" src="/images/my/head_img.jpg"></image>
+                            <view class="name_level">
+                                <view class="user_name">紫气从东来</view>
+                                <view class="level">
+                                    <image mode="widthFix" src="/images/my/contributionlist_four.png"></image>
+                                    <!-- <view>
+                                    <text>未实名认证</text>
+                                </view> -->
+                                    <image mode="widthFix" src="/images/my/accountrecords/level_icon.png"></image>
+                                </view>
+                            </view>
+                            <view class="jitui_number">鸡腿 1050</view>
+                        </view>
+                    </view>
+                    <view class="experience_record">
+                        <view class="experience_record_title">鸡腿详情</view>
+                        <view class="record_item" wx:for="{{jituiList}}" wx:key="id">
+                            <!-- 每条记录的左侧内容 标题和时间 -->
+                            <view class="record_item_leftinf">
+                                <view class="item title">{{item.experTitle}}</view>
+                                <view class="item_date">{{item.experDate}}</view>
+                            </view>
+                            <!-- 具体加多少成长值 -->
+                            <view class="experience_num">
+                                <text>{{item.experNum}}</text>
+                                鸡腿
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
         </swiper-item>
-        <swiper-item>翻牌</swiper-item>
-        <swiper-item>应援力</swiper-item>
+        <swiper-item>
+            <view class="question_title">
+                <view class="my_question">我的提问记录</view>
+                <view class="deleteall">全部删除</view>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <view>
+                <view class="nodata_content">
+                    <image src="/images/my/message/emptystate_nomessage.png"></image>
+                    <view class="no_new_data">当前没有新数据</view>
+                    <view>请稍后再试</view>
+                </view>
+            </view>
+        </swiper-item>
         <swiper-item>丝瓜</swiper-item>
     </swiper>
 </view>

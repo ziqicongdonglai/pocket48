@@ -105,6 +105,10 @@
   height: 50rpx;
   margin-right: 10rpx;
 }
+.account_top .top_head .jitui_numbe {
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
 .account_top .inform {
   display: flex;
   flex-direction: row;
@@ -158,7 +162,7 @@
   height: 7rpx;
   background-color: #ddd;
 }
-.account_top .jinyan {
+.account_top .experience_now {
   height: 80rpx;
   display: flex;
   justify-content: center;
@@ -167,7 +171,7 @@
   font-size: 26rpx;
   margin-top: 60rpx;
 }
-.account_top .jinyan text {
+.account_top .experience_now text {
   color: gold;
 }
 .account_top .getgift {
@@ -182,4 +186,86 @@
 .account_top .getgift image {
   width: 630rpx;
   height: 162rpx;
+}
+.experience_record {
+  /* 成长值（经验）具体的每次记录 */
+}
+.experience_record .experience_record_title {
+  color: #848484;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #eee;
+  padding-left: 20rpx;
+}
+.experience_record .record_item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  background-color: #fff;
+  height: 280rpx;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+.experience_record .record_item .record_item_leftinf {
+  flex-direction: column;
+}
+.experience_record .record_item .record_item_leftinf .item_date {
+  color: #bbb;
+  margin-top: 40rpx;
+  font-size: 28rpx;
+}
+.experience_record .record_item .experience_num {
+  flex-direction: row;
+  color: #bbb;
+  font-size: 28rpx;
+}
+.experience_record .record_item .experience_num text {
+  color: red;
+  padding-right: 10rpx;
+}
+/* 鸡腿部分 */
+.jitui .top_img {
+  width: 100%;
+  height: 250rpx;
+}
+.jitui .top_head {
+  margin-top: -205rpx;
+}
+.jitui .experience_record {
+  margin-top: 15rpx;
+}
+/* 翻牌 */
+.question_title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.question_title .my_question {
+  color: #848484;
+}
+.question_title .deleteall {
+  color: #8876ec;
+}
+/* 应援力 */
+.nodata_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1000rpx;
+  color: #ababab;
+  /* 当前没有新数据 */
+}
+.nodata_content image {
+  width: 345rpx;
+  height: 345rpx;
+}
+.nodata_content .no_new_data {
+  font-size: 36rpx;
+  color: #000;
+  margin-bottom: 30rpx;
 }
