@@ -59,7 +59,7 @@ image {
   color: #7766e6;
   border-bottom: 6rpx solid #7766e6;
 }
-.navbar .item.active:after {
+/* .navbar .item.active:after {
   content: "";
   display: block;
   position: absolute;
@@ -67,7 +67,7 @@ image {
   left: 0;
   right: 0;
   height: 5rpx;
-}
+} */
 
 /* 解决因为导航栏固定 带来的swiper-item内容看不见 */
 .navbar_mt {

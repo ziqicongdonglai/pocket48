@@ -1,6 +1,6 @@
 <view>
     <tabbar tabbar="{{tabbar}}"></tabbar>
-    <scroll-view style="height: 780px;" scroll-y>
+    <scroll-view style="height: 100%;" scroll-y>
         <view class="top">
             <!-- 顶部带头像的部分 -->
             <!-- 顶部背景图 -->
@@ -74,7 +74,7 @@
                 <image class="item_icon" src="/images/my/message.png"></image>
                 <text>消息盒子</text>
             </view>
-            <view class="features">
+            <view class="features" bindtap="toAccountrecords">
                 <image class="item_icon" src="/images/my/accountrecords.png"></image>
                 <text>账户记录</text>
             </view>

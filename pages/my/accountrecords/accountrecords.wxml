@@ -1,0 +1,98 @@
+<view>
+    <!-- 顶部区域 消息盒子 返回 全部已读 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel" bindtap="handleCancel">
+            <image src="/images/my/message/titlebar_return_black.png"></image>
+        </view>
+        <view class="titlebar_title">账户记录</view>
+    </view>
+    <!-- 导航条 -->
+    <view class="head">
+        <view class="navbar">
+            <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+                {{item}}
+            </text>
+        </view>
+    </view>
+    <!-- 滑动的主体部分 -->
+    <swiper class="bar_swiper navbar_mt" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2170rpx'>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="account_top">
+                    <!-- 顶部带头像的部分 -->
+                    <!-- 顶部背景图 -->
+                    <view>
+                        <image class="top_img" src="/images/my/accountrecords/experience_bg.png"></image>
+                    </view>
+                    <!-- 头像 -->
+                    <view class="top_head center_item">
+                        <view class="top_features">升级规则</view>
+                        <image class="head_img" src="/images/my/head_img.jpg"></image>
+                        <view class="name_level">
+                            <view class="user_name">紫气从东来</view>
+                            <view class="level">
+                                <image mode="widthFix" src="/images/my/contributionlist_four.png"></image>
+                                <!-- <view>
+                                    <text>未实名认证</text>
+                                </view> -->
+                                <image mode="widthFix" src="/images/my/accountrecords/level_icon.png"></image>
+                            </view>
+                        </view>
+                        <!-- <view class="id_number">口袋ID：662493</view> -->
+                    </view>
+                    <!-- 经验等级横向圆形图标 -->
+                    <view class="inform">
+                        <view class="inform_item sel">
+                            <image src="/images/my/accountrecords/experiencevalue_sel.png"></image>
+                            <view class="level_number">lv2</view>
+                        </view>
+                        <view class="inform_item sel">
+                            <image src="/images/my/accountrecords/experiencevalue_sel.png"></image>
+                            <view class="level_number">lv3</view>
+                        </view>
+                        <view class="inform_item level_now">
+                            <image src="/images/my/accountrecords/experiencevalue_sel.png"></image>
+                            <view class="level_number">Lv4</view>
+                        </view>
+                        <view class="inform_item">
+                            <image src="/images/my/accountrecords/experiencevalue_unsel.png"></image>
+                            <view class="level_number">lv5</view>
+                        </view>
+                        <view class="inform_item">
+                            <image src="/images/my/accountrecords/experiencevalue_unsel.png"></image>
+                            <view class="level_number">lv6</view>
+                        </view>
+                    </view>
+                    <!-- 等级进度条 -->
+                    <view class="progress">
+                        <view class="progress_item"></view>
+                        <view class="progress_item"></view>
+                        <view class="progress_item"></view>
+                        <view class="progress_item"></view>
+                        <view class="progress_item"></view>
+                        <view class="progress_item"></view>
+                    </view>
+                    <!-- 当前成长值 -->
+                    <view class="jinyan">
+                        当前成长值
+                        <text>1598</text>
+                        还差
+                        <text>251</text>
+                        成长值升级
+                        <text>LV5</text>
+                    </view>
+                    <!-- 每日领礼物 -->
+                    <view class="getgift">
+                        <image src="/images/my/accountrecords/getthegiftbag.png"></image>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>鸡腿</scroll-view>
+        </swiper-item>
+        <swiper-item>翻牌</swiper-item>
+        <swiper-item>应援力</swiper-item>
+        <swiper-item>丝瓜</swiper-item>
+    </swiper>
+</view>

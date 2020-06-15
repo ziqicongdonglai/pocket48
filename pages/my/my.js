@@ -24,5 +24,14 @@ Page({
         // success
       }
     })
+  },
+  // 跳转到账户记录
+  toAccountrecords: function() {
+    wx.navigateTo({
+      url: '/pages/my/accountrecords/accountrecords',
+      success: function(res){
+        // success
+      }
+    })
   }
 })
