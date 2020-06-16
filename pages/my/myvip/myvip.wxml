@@ -1,0 +1,74 @@
+<view>
+    <!-- 顶部区域 我的特权 返回 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel" bindtap="handleCancel">
+            <image src="/images/my/vip/publicpage_return.png"></image>
+        </view>
+        <view class="titlebar_title">我的特权</view>
+    </view>
+    <scroll-view style="height: 100%" scroll-y>
+    <!-- 顶部背景图 -->
+    <image class="top_img" mode="widthFix" src="/images/my/vip/mine_privilege_bg.png"></image>
+    <view class="top">
+        <!-- 顶部vip图标 及 等级 图标 手机是否绑定 -->
+        <view class="vip_level_icon">
+            <!-- vip是否开通的图标 -->
+            <image class="vip_icon" src="/images/my/vip/vip_avatar_no_open.png"></image>
+            <!-- vip等级图标? -->
+            <image class="level_icon" src="/images/my/vip/contributionlist_one.png"></image>
+            <!-- 手机绑定 -->
+            <view class="phone_bind">手机已绑定</view>
+        </view>
+        <!-- 开通VIP会员 按钮 -->
+        <view class="apply_vip_button">
+            <image src="/images/my/vip/vip_product_pay_bg.png"></image>
+            <view class="apply_text">开通VIP会员</view>
+        </view>
+    </view>
+    <!-- VIP会员特权 了解会员详情 -->
+    <view class="member_privilege">
+        <view class="privilege_title">
+            <view class="vip_titlebar_title">VIP会员特权</view>
+            <view class="vip_titlebar_right">
+                <view class="privilege_title_text">了解会员详情</view>
+                <image src="/images/my/vip/vip_more.png"></image>
+            </view>
+        </view>
+        <!-- 具体有哪些特权 特权的内容 8个 -->
+        <view class="privileges">
+            <view class="privilege_item">
+                <image src="/images/my/vip/yinyuan_add_speed.png"></image>
+                <view class="privilege_text">应援力加速</view>
+            </view>
+            <view class="privilege_item">
+                <image src="/images/my/vip/exper_add_speed.png"></image>
+                <view class="privilege_text">升级加速</view>
+            </view>
+            <view class="privilege_item">
+                <image src="/images/my/vip/xioahao_vip.png"></image>
+                <view class="privilege_text">小号特权</view>
+            </view>
+            <view class="privilege_item">
+                <image src="/images/my/vip/juju_room_vip.png"></image>
+                <view class="privilege_text">聚聚房间特权</view>
+            </view>
+            <view class="privilege_item">
+                <image src="/images/my/vip/live_vip.png"></image>
+                <view class="privilege_text">直播特权</view>
+            </view>
+            <view class="privilege_item">
+                <image src="/images/my/vip/birth_vip.png"></image>
+                <view class="privilege_text">生日弹幕特权</view>
+            </view>
+            <view class="privilege_item">
+                <image src="/images/my/vip/content_only_vip.png"></image>
+                <view class="privilege_text">独享专属内容</view>
+            </view>
+            <view class="privilege_item">
+                <image src="/images/my/vip/update_name.png"></image>
+                <view class="privilege_text">改名特权</view>
+            </view>
+        </view>
+    </view>
+    </scroll-view>
+</view>

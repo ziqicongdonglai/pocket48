@@ -42,5 +42,14 @@ Page({
         // success
       }
     })
+  },
+  // 跳转到我的特权
+  toMyVip: function () {
+    wx.navigateTo({
+      url: '/pages/my/myvip/myvip',
+      success: function(res){
+        // success
+      }
+    })
   }
 })

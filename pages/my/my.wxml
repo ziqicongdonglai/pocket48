@@ -78,7 +78,7 @@
                 <image class="item_icon" src="/images/my/accountrecords.png"></image>
                 <text>账户记录</text>
             </view>
-            <view class="features">
+            <view class="features" bindtap="toMyVip">
                 <image class="item_icon" src="/images/my/privilege.png"></image>
                 <text>我的特权</text>
             </view>

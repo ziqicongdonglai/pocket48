@@ -1,0 +1,149 @@
+/* 顶部标题部分 */
+.titlebar_top {
+  height: 100rpx;
+  background-color: #a280fa;
+  display: flex;
+  flex-direction: row;
+  font-size: 28rpx;
+  padding: 0 20rpx;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15rpx;
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  z-index: 99;
+  padding-top: 25rpx;
+}
+.titlebar_top .titlebar_cancel {
+  width: 155rpx;
+  display: flex;
+  width: 290rpx;
+}
+.titlebar_top .titlebar_cancel image {
+  width: 45rpx;
+  height: 45rpx;
+}
+.titlebar_top .titlebar_title {
+  color: #fff;
+}
+/* 顶部背景图 */
+.top_img {
+  width: 100%;
+  height: 450rpx;
+}
+.top {
+  /* 开通VIP服务按钮 */
+}
+.top .vip_level_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -520rpx;
+}
+.top .vip_level_icon .vip_icon {
+  width: 300rpx;
+  height: 198rpx;
+}
+.top .vip_level_icon .level_icon {
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: -40rpx;
+}
+.top .vip_level_icon .phone_bind {
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #f1f1ff;
+  text-align: center;
+  font-size: 24rpx;
+  background-color: #715dca;
+  border-radius: 10rpx;
+  padding: 0 10rpx;
+  margin-top: 10rpx;
+}
+.top .apply_vip_button {
+  padding: 0 20rpx;
+  margin-top: 40rpx;
+}
+.top .apply_vip_button image {
+  width: 100%;
+  height: 108rpx;
+}
+.top .apply_vip_button .apply_text {
+  height: 108rpx;
+  line-height: 108rpx;
+  text-align: center;
+  font-size: 45rpx;
+  color: #f1f1f1;
+  margin-top: -115rpx;
+}
+/* VIP会员特权 */
+.member_privilege {
+  background-color: #fff;
+  box-shadow: #66666680 0px 0px 5rpx;
+  width: 710rpx;
+  margin: 40rpx auto;
+  border-radius: 20rpx;
+  /* vip顶部标题？ */
+}
+.member_privilege .privilege_title {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.member_privilege .privilege_title .vip_titlebar_title {
+  color: #3d3d3d;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+  background-color: #fff;
+  display: flex;
+  width: 355rpx;
+  border-top-left-radius: 20rpx;
+}
+.member_privilege .privilege_title .vip_titlebar_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20rpx;
+  background: #fff;
+  width: 355rpx;
+  border-top-right-radius: 20rpx;
+}
+.member_privilege .privilege_title .vip_titlebar_right .privilege_title_text {
+  color: #848484;
+  font-size: 30rpx;
+}
+.member_privilege .privilege_title .vip_titlebar_right image {
+  width: 20rpx;
+  height: 20rpx;
+  padding-left: 20rpx;
+}
+.member_privilege .privileges {
+  width: 710rpx;
+  height: 710rpx;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+.member_privilege .privileges .privilege_item {
+  box-sizing: border-box;
+  flex: 0 0 33.3%;
+  height: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.member_privilege .privileges .privilege_item image {
+  width: 100rpx;
+  height: 100rpx;
+  padding-bottom: 20rpx;
+}
+.member_privilege .privileges .privilege_item .privilege_text {
+  font-size: 24rpx;
+  color: #b4b4b4;
+}

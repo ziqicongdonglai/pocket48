@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/my/myvip/myvip",
     "pages/home/home",
     "pages/juju/juju",
     "pages/found/found",
