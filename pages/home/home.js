@@ -9,7 +9,7 @@ Page({
     tabbar: {},
     // 导航条文字
     navbar: ['广场', '创造营2020'],
-    currentTab: 1,
+    currentTab: 0,
     // 首页公演数据（6条）
     showlist: [
       {

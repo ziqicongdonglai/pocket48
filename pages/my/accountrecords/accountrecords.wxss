@@ -330,9 +330,6 @@
   padding: 0 20rpx;
   border-bottom: 3rpx solid #eee;
 }
-.shigua .experience_record .experience_record_topinfrm .anchor {
-  color: #8876ec;
-}
 .shigua .experience_record .record_item .item_points {
   color: #bbb;
   margin-top: 40rpx;

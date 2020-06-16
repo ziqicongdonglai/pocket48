@@ -90,3 +90,89 @@
   color: #9d9d9d;
   font-size: 28rpx;
 }
+/* 小偶像动态 */
+.mt {
+  margin-top: 90rpx;
+  /* 每条动态 */
+}
+.mt .idol_post_item {
+  padding: 40rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 3rpx;
+  /* 顶部 */
+  /* 动态内容 */
+  /* 动态底部信息 */
+}
+.mt .idol_post_item .idol_post_top {
+  display: flex;
+}
+.mt .idol_post_item .idol_post_top .head_img {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.mt .idol_post_item .idol_post_top .post_top_right {
+  display: flex;
+  flex-direction: column;
+}
+.mt .idol_post_item .idol_post_top .post_top_right .name_team {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mt .idol_post_item .idol_post_top .post_top_right .name_team .team {
+  margin-left: 20rpx;
+}
+.mt .idol_post_item .idol_post_top .post_top_right .date_time {
+  font-size: 24rpx;
+  color: #bbb;
+}
+.mt .idol_post_item .idol_post_content {
+  /* 文字内容 */
+  /* 图片内容 */
+}
+.mt .idol_post_item .idol_post_content .post_content_text {
+  line-height: 60rpx;
+}
+.mt .idol_post_item .idol_post_content .post_content_img {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.mt .idol_post_item .idol_post_content .post_content_img image {
+  width: 30%;
+  height: 300rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+  border-radius: 20rpx;
+}
+.mt .idol_post_item .idol_post_bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #bbb;
+  align-items: center;
+  margin-top: 20rpx;
+  /* 浏览次数 */
+}
+.mt .idol_post_item .idol_post_bottom .bottom_right {
+  display: flex;
+}
+.mt .idol_post_item .idol_post_bottom .bottom_right .right_item {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20rpx;
+  align-items: center;
+}
+.mt .idol_post_item .idol_post_bottom .bottom_right .right_item image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.mt .idol_post_item .idol_post_bottom .bottom_right .right_item:last-child {
+  margin-right: 0;
+}

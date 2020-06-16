@@ -188,3 +188,8 @@ image {
   display: inline-block;
   -webkit-box-shadow: -10rpx 10rpx 32rpx #fca7bb80;
 }
+
+/* 链接（网页链接） */
+.anchor {
+  color: #8876ec;
+}
