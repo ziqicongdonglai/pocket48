@@ -32,7 +32,7 @@
                     <view class="head_swiper">
                         <!-- 用来给轮播图来个左右间距 -->
                         <view class="paddinglr">
-                            <swiper indicator-dots="true" autoplay="true" interval='2000' indicator-color="rgba(255, 255, 255, .4)" indicator-active-color="#574845" circular="true" style='height: 400rpx'>
+                            <swiper indicator-dots="true" class="img_swiper" autoplay="true" interval='2000' indicator-color="rgba(255, 255, 255, .4)" indicator-active-color="#574845" circular="true" style='height: 400rpx'>
                                 <swiper-item>
                                     <image class='top-img' mode="aspectFill left" src='https://www.snh48.com/attached/ad/2020-06-08/663048%E6%96%B0%E5%AE%98%E7%BD%91.jpg'></image>
                                 </swiper-item>
@@ -56,23 +56,23 @@
                     </view>
                     <!-- 首页中间功能区 -->
                     <view class="middle_features">
-                        <swiper indicator-dots="true" style='height: 200rpx'>
+                        <swiper indicator-dots="true" class="swiper-features" style='height: 200rpx'>
                             <swiper-item>
                                 <view class="features_group">
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/mine_yinyuan_exchange.png" class="item_icon"></image>
                                         <text>应援力兑换</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/mine_cloud_handshakes.png" class="item_icon"></image>
                                         <text>云握手</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/mine_show.png" class="item_icon"></image>
                                         <text>演出</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/mine_idol.png" class="item_icon"></image>
                                         <text>偶像</text>
                                     </view>
                                 </view>
@@ -88,11 +88,11 @@
                                         <text>榜单</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/mine_music.png" class="item_icon"></image>
                                         <text>音乐</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/mine_video.png" class="item_icon"></image>
                                         <text>视频</text>
                                     </view>
                                 </view>
@@ -100,7 +100,7 @@
                             <swiper-item>
                                 <view class="features_group">
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/mine_radio.png" class="item_icon"></image>
                                         <text>电台</text>
                                     </view>
                                     <view class="features">
@@ -108,11 +108,11 @@
                                         <text>MC话题</text>
                                     </view>
                                     <view class="features" bindtap="toMessage">
-                                        <image src="/images/home/message.png" class="item_icon"></image>
+                                        <image src="/images/home/mine_message.png" class="item_icon"></image>
                                         <text>消息盒子</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/mine_mvp.png" class="item_icon"></image>
                                         <text>网络MVP</text>
                                     </view>
                                 </view>

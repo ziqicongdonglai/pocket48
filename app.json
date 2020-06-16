@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/my/myvip/myvip",
     "pages/home/home",
     "pages/juju/juju",
     "pages/found/found",
@@ -8,6 +7,7 @@
     "pages/my/personalinformation/personalinformation",
     "pages/my/message/message",
     "pages/my/accountrecords/accountrecords",
+    "pages/my/myvip/myvip",
     "pages/middle/middle",
     "pages/index/index",
     "pages/logs/logs"
