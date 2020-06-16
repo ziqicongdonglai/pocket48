@@ -19,12 +19,12 @@
                     <view class="toprow">
                         <view class="search">
                             <view class="input-wrapper">
-                                <image class="searchImg" src="/images/home/home_square_search.png"></image>
+                                <image class="searchImg" src="/images/home/square/home_square_search.png"></image>
                                 <input adjust-position placeholder="搜索" confirm-type="search"></input>
                             </view>
                             <view class="top_right">
-                                <image src="/images/home/home_square_scanning.png"></image>
-                                <image class="gift" src="/images/home/home_nav_gift.png"></image>
+                                <image src="/images/home/square/home_square_scanning.png"></image>
+                                <image class="gift" src="/images/home/square/home_nav_gift.png"></image>
                             </view>
                         </view>
                     </view>
@@ -60,19 +60,19 @@
                             <swiper-item>
                                 <view class="features_group">
                                     <view class="features">
-                                        <image src="/images/home/mine_yinyuan_exchange.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_yinyuan_exchange.png" class="item_icon"></image>
                                         <text>应援力兑换</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_cloud_handshakes.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_cloud_handshakes.png" class="item_icon"></image>
                                         <text>云握手</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_show.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_show.png" class="item_icon"></image>
                                         <text>演出</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_idol.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_idol.png" class="item_icon"></image>
                                         <text>偶像</text>
                                     </view>
                                 </view>
@@ -80,19 +80,19 @@
                             <swiper-item>
                                 <view class="features_group">
                                     <view class="features">
-                                        <image src="/images/home/mine_trip.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_trip.png" class="item_icon"></image>
                                         <text>行程</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_rank.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_rank.png" class="item_icon"></image>
                                         <text>榜单</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_music.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_music.png" class="item_icon"></image>
                                         <text>音乐</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_video.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_video.png" class="item_icon"></image>
                                         <text>视频</text>
                                     </view>
                                 </view>
@@ -100,19 +100,19 @@
                             <swiper-item>
                                 <view class="features_group">
                                     <view class="features">
-                                        <image src="/images/home/mine_radio.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_radio.png" class="item_icon"></image>
                                         <text>电台</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_mc.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_mc.png" class="item_icon"></image>
                                         <text>MC话题</text>
                                     </view>
                                     <view class="features" bindtap="toMessage">
-                                        <image src="/images/home/mine_message.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_message.png" class="item_icon"></image>
                                         <text>消息盒子</text>
                                     </view>
                                     <view class="features">
-                                        <image src="/images/home/mine_mvp.png" class="item_icon"></image>
+                                        <image src="/images/home/square/mine_mvp.png" class="item_icon"></image>
                                         <text>网络MVP</text>
                                     </view>
                                 </view>
@@ -122,9 +122,9 @@
                     <!-- 热门公演 -->
                     <view class="hot_show">
                         <view class="home_title">
-                            <image class="title_icon" src="/images/home/home_square_hot.png"></image>
+                            <image class="title_icon" src="/images/home/square/home_square_hot.png"></image>
                             <text>热门公演</text>
-                            <image class="title_icon" src="/images/home/home_square_more.png"></image>
+                            <image class="title_icon" src="/images/home/square/home_square_more.png"></image>
                         </view>
                         <view class="content_item_group">
                             <scroll-view class="scroll-wrap" scroll-x style="width: 100%">
@@ -139,9 +139,9 @@
                     <!-- 应援榜 -->
                     <view class="yinyuan">
                         <view class="home_title">
-                            <image class="title_icon" src="/images/home/home_square_rankings.png"></image>
+                            <image class="title_icon" src="/images/home/square/home_square_rankings.png"></image>
                             <text>应援榜</text>
-                            <image class="title_icon" src="/images/home/home_square_more.png"></image>
+                            <image class="title_icon" src="/images/home/square/home_square_more.png"></image>
                         </view>
                         <view class="rankings">
                             <view class="ranking_item" wx:for="{{rankinglist}}">
@@ -163,14 +163,14 @@
                     <!-- 正在直播 -->
                     <view class="live">
                         <view class="home_title">
-                            <image class="title_icon" src="/images/home/home_square_live.png"></image>
+                            <image class="title_icon" src="/images/home/square/home_square_live.png"></image>
                             <text>正在直播</text>
-                            <image class="title_icon" src="/images/home/home_square_more.png"></image>
+                            <image class="title_icon" src="/images/home/square/home_square_more.png"></image>
                         </view>
                         <view class="memberblive">
                             <scroll-view class="scroll-wrap" scroll-x style="width: 100%">
                                 <view class="live_item" wx:for="{{livinglist}}">
-                                    <image class="live_bg" src="/images/home/user_photo_bg.png"></image>
+                                    <image class="live_bg" src="/images/home/square/user_photo_bg.png"></image>
                                     <view class="live_head center_item">
                                         <div class="head_img">
                                             <image src="{{item.imgUrl}}"></image>
@@ -190,10 +190,48 @@
                 </scroll-view>
             </swiper-item>
             <swiper-item>
-                <!-- <scroll-view style="height: 100%" scroll-y>
-                    创造营2020
-                    <image></image>
-                </scroll-view> -->
+                <scroll-view style="height: 100%" scroll-y>
+                    <view class="czy">
+                        <!-- 顶部图片 -->
+                        <view class="banner_box">
+                            <image mode="widthFix" src="https://h5.48.cn/2020apppage/creative/img/banner.jpg" class="banner"></image>
+                            <image mode="widthFix" src="https://h5.48.cn/2020apppage/creative/img/btn-rule.png" class="btn_rule"></image>
+                            <image src="/images/home/czy/lookback_share.png" class="btn_share"></image>
+                        </view>
+                        <!-- 导航 -->
+                        <view class="nav_bar">
+                            <view class="nav_bar_item active">训练生</view>
+                            <view class="nav_bar_item">应援榜</view>
+                            <view class="nav_bar_item">往期榜单</view>
+                        </view>
+                        <!-- 内容 -->
+                        <view class="content">
+                            <!-- 训练生列表 -->
+                            <view class="list_member">
+                                <image mode="widthFix" src="https://h5.48.cn/2020apppage/creative/img/title1.png" class="title"></image>
+                                <!-- 塞纳河成员 -->
+                                <view class="member_list">
+                                    <view class="member_item" wx:for="{{memberList}}" wx:key="id">
+                                        <!-- 学员头像 -->
+                                        <view class="avatar">
+                                            <image src="{{item.avatar}}"></image>
+                                        </view>
+                                        <!-- 学员名字 -->
+                                        <view class="member_name">{{item.memberName}}</view>
+                                        <text class="member_btn">为她助力</text>
+                                    </view>
+                                </view>
+                                <!-- 河外成员 隐藏 -->
+                                <view class="member_list" style="display:none;"></view>
+                                <image mode="widthFix" src="https://h5.48.cn/2020apppage/creative/img/arrow-down.png" class="arrow_down"></image>
+                            </view>
+                            <!-- 应援榜 -->
+                            <view class="list_top"></view>
+                            <!-- 往期榜单 -->
+                            <view class="list_top"></view>
+                        </view>
+                    </view>
+                </scroll-view>
             </swiper-item>
         </swiper>
     </view>

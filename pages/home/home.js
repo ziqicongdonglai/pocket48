@@ -9,7 +9,7 @@ Page({
     tabbar: {},
     // 导航条文字
     navbar: ['广场', '创造营2020'],
-    currentTab: 0,
+    currentTab: 1,
     // 首页公演数据（6条）
     showlist: [
       {
@@ -39,20 +39,20 @@ Page({
         // 头像边框颜色
         'headcolor': '#ffcb09',
         // 排名图标
-        'rankimg': '/images/home/one.png',
+        'rankimg': '/images/home/square/one.png',
         // 成员名称
         'memberName': 'SNH48-孙芮'
       },
       {
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfnlkq1ubmj305706ydfx.jpg',
         'headcolor': '#bebebe',
-        'rankimg': '/images/home/two.png',
+        'rankimg': '/images/home/square/two.png',
         'memberName': 'SNH48-宋昕冉'
       },
       {
         'imgUrl': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfnlkvwqk9j306y06yq2u.jpg',
         'headcolor': '#f0a639',
-        'rankimg': '/images/home/three.png',
+        'rankimg': '/images/home/square/three.png',
         'memberName': 'SNH48-莫寒'
       }
     ],
@@ -103,6 +103,34 @@ Page({
         'team': 'NII',
         'teamColor': '#ffd801',
         'liveTitle': '唠唠 '
+      }
+    ],
+    // 创造营成员列表
+    memberList: [
+      {
+        id: 1,
+        avatar: 'https://source3.48.cn/20200408/15863425781500mG9XTK186.jpg',
+        memberName: '赵粤'
+      },
+      {
+        id: 2,
+        avatar: 'https://source.48.cn/20200408/1586342581671Xuory4TXk9.jpg',
+        memberName: '陈珂'
+      },
+      {
+        id: 3,
+        avatar: 'https://source3.48.cn/20200408/158634258440979A6O0894E.jpg',
+        memberName: '孙珍妮'
+      },
+      {
+        id: 4,
+        avatar: 'https://source2.48.cn/20200408/15863425749964nhv7g1a87.jpg',
+        memberName: '陈倩楠'
+      },
+      {
+        id: 5,
+        avatar: 'https://source3.48.cn/20200408/1586342575962BTUgw7KI3P.jpg',
+        memberName: '李佳恩'
       }
     ]
   },

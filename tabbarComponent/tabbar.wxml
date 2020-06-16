@@ -26,7 +26,7 @@
   </block>
   <action-sheet-cancel>
     <view class="close">
-      <image src="/images/home/home_close_icon.png"></image>
+      <image src="/images/home/square/home_close_icon.png"></image>
     </view>
   </action-sheet-cancel>
 </action-sheet>

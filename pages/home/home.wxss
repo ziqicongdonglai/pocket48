@@ -236,3 +236,99 @@
   color: #cccccc;
   font-size: 22rpx;
 }
+/* 创造营部分 */
+.czy {
+  margin-top: 90rpx;
+  position: relative;
+  /*顶部图片*/
+  /* 导航栏部分 */
+}
+.czy .banner_box {
+  position: relative;
+}
+.czy .banner_box .banner {
+  width: 100%;
+  vertical-align: middle;
+}
+.czy .banner_box .btn_rule {
+  width: 24%;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+.czy .banner_box .btn_share {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 200rpx;
+  top: 1rem;
+}
+.czy .nav_bar {
+  text-align: center;
+  background: url(https://h5.48.cn/2020apppage/creative/img/nav-bg.jpg);
+  background-size: 100% 100%;
+}
+.czy .nav_bar .nav_bar_item {
+  width: 33.3%;
+  color: #e386b8;
+  display: inline-block;
+  height: 3.7rem;
+  line-height: 3.7rem;
+  font-size: 1.08rem;
+}
+.czy .nav_bar .active {
+  color: #fff !important;
+  background: -webkit-linear-gradient(left, #ff7595, #ff7595);
+}
+.czy .content {
+  min-height: 50%;
+  margin: 0 auto;
+  background-color: #fbf4f5;
+  padding: 5% 0;
+  position: relative;
+  z-index: 1;
+  background: url(https://h5.48.cn/2020apppage/creative/img/bg.jpg);
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+.czy .content .list_member .title {
+  width: 40%;
+  vertical-align: middle;
+}
+.czy .content .list_member .arrow_down {
+  width: 20%;
+  vertical-align: middle;
+}
+.czy .content .list_member .member_list .member_item {
+  width: 31%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 5% 0;
+}
+.czy .content .list_member .member_list .member_item .avatar {
+  margin: auto;
+  width: 132rpx;
+  height: 132rpx;
+}
+.czy .content .list_member .member_list .member_item .avatar image {
+  width: 132rpx;
+  height: 132rpx;
+  vertical-align: middle;
+}
+.czy .content .list_member .member_list .member_item .member_name {
+  color: #000;
+  font-size: 26rpx;
+  margin: 11rpx 0;
+  font-weight: 700;
+}
+.czy .content .list_member .member_list .member_item .member_btn {
+  width: 154rpx;
+  height: 62rpx;
+  font-size: 22rpx;
+  box-sizing: border-box;
+}
+.czy .content .list_top {
+  text-align: center;
+}
