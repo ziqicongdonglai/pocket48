@@ -192,10 +192,11 @@
 /* 正在直播 */
 .live {
   background-color: #fff;
-  height: 500rpx;
+  height: 550rpx;
+  margin-bottom: 3rpx;
 }
 .live .memberblive {
-  margin-top: 20rpx;
+  margin-top: 50rpx;
 }
 .live .memberblive .scroll-wrap {
   height: 460rpx;

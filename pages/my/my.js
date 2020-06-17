@@ -51,5 +51,14 @@ Page({
         // success
       }
     })
+  },
+  // 跳转到充值中心
+  toVoucherCentre: function () {
+    wx.navigateTo({
+      url: '/pages/my/vouchercentre/vouchercentre',
+      success: function(res){
+        // success
+      }
+    })
   }
 })

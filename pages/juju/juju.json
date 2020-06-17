@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "tabbar": "../../tabbarComponent/tabbar"
+    "tabbar": "../../tabbarComponent/tabbar",
+    "idolpost": "../../components/idolpost/idolpost"
   }
 }

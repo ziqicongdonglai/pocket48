@@ -1,0 +1,47 @@
+<view>
+    <!-- 顶部区域 鸡腿充值 返回 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel" bindtap="handleCancel">
+            <image src="/images/my/message/titlebar_return_black.png"></image>
+        </view>
+        <view class="titlebar_title">鸡腿充值</view>
+    </view>
+    <scroll-view style="height: 100%" scroll-y>
+        <view class="mt">
+            <!-- 顶部 -->
+            <view class="top">
+                <!-- 顶部背景图 -->
+                <image class="top_img" src="/images/my/vouchercentre/bg_money.png"></image>
+                <!-- 现在的总的鸡腿数 -->
+                <view class="jitui_num_now">
+                    <view class="num_title">总鸡腿</view>
+                    <view class="jitui_num">1050</view>
+                </view>
+                <!-- 帮助 -->
+                <image class="help" mode="widthFix" src="/images//my/vouchercentre/ic_help.png"></image>
+            </view>
+            <!-- 购买鸡腿 -->
+            <view class="recharge">
+                <view class="recharge_titlebar">
+                    <view>购买鸡腿</view>
+                    <view class="anchor">购买记录</view>
+                </view>
+                <!-- 充值选项 10 50 100 等 以及自定义 -->
+                <view class="recharge_select">
+                    <!-- 每个选择 -->
+                    <view class="select_item" wx:for="{{rechargeSelectList}}" wx:key="id">
+                        <view class="select_title">{{item.selectTitle}}</view>
+                        <view class="select_money">￥{{item.money}}</view>
+                    </view>
+                    <!-- 自定义面额充值 -->
+                    <view class="select_item custom">自定义面额充值</view>
+                </view>
+            </view>
+            <!-- 使用优惠券 -->
+            <view class="use_coupons">
+                <view class="use_coupons_text">使用优惠券</view>
+                <image src="/images/home/square/home_square_more.png"></image>
+            </view>
+        </view>
+    </scroll-view>
+</view>

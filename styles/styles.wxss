@@ -73,6 +73,10 @@ image {
 .navbar_mt {
   margin-top: 100rpx;
 }
+/* 和上一个样式类似 */
+.mt {
+  margin-top: 90rpx;
+}
 
 /* 主页 标题栏 热门公演 应援榜 正在直播 */
 .home_title {

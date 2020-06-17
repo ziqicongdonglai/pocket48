@@ -58,62 +58,7 @@
             <swiper-item>
                 <scroll-view style="height: 100%" scroll-y>
                     <view class="mt">
-                        <!-- 每条动态 -->
-                        <view class="idol_post_item" wx:for="{{idolPostList}}" wx:key="id">
-                            <!-- 最顶部 发帖的小偶像信息 -->
-                            <view class="idol_post_top">
-                                <!-- 小偶像头像 -->
-                                <image class="head_img" src="{{item.headImg}}"></image>
-                                <view class="post_top_right">
-                                    <!-- 成员名字 及 队伍 -->
-                                    <view class="name_team">
-                                        <view class="member_name">{{item.memberName}}</view>
-                                        <view class="team" style="background-color: {{item.teamColor}}">
-                                            {{item.team}}
-                                        </view>
-                                    </view>
-                                    <!-- 动态发布时间 -->
-                                    <view class="date_time">{{item.dateTime}}</view>
-                                </view>
-                            </view>
-                            <!-- 动态内容 -->
-                            <view class="idol_post_content">
-                                <!-- 帖子文字内容 -->
-                                <view class="post_content_text">
-                                    {{item.contentText}}
-                                    <text class="anchor">{{item.anchor}}</text>
-                                </view>
-                                <!-- 帖子图片内容 -->
-                                <view class="post_content_img">
-                                    <view class="img_box" wx:for="{{item.contentImg}}" wx:for-item="imgitem" wx:key="id">
-                                        <image mode="widthFix center" src="{{imgitem.imgUrl}}" style="widht: {{100/item.contentImg.length}}%"></image>
-                                    </view>
-                                </view>
-                            </view>
-                            <!-- 动态底部信息 -->
-                            <view class="idol_post_bottom">
-                                <!-- 浏览次数 目前没有谁浏览过的头像 -->
-                                <view class="looks">{{item.looks}}看过</view>
-                                <!-- 礼物 喜爱数 评论数 -->
-                                <view class="bottom_right">
-                                    <!-- 礼物 -->
-                                    <view class="right_item">
-                                        <image src="/images/found/dynamic_gift.png"></image>
-                                        <view>礼物</view>
-                                    </view>
-                                    <!-- 喜爱数 -->
-                                    <view class="right_item">
-                                        <image src="/images/found/dynamic_like.png"></image>
-                                        <view>{{item.likes}}</view>
-                                    </view>
-                                    <!-- 评论数 -->
-                                    <view class="right_item">
-                                        <image src="/images/found/dynamic_comments.png"></image>
-                                        <view>{{item.comments}}</view>
-                                    </view>
-                                </view>
-                            </view>
-                        </view>
+                       <idolpost></idolpost>
                     </view>
                 </scroll-view>
             </swiper-item>

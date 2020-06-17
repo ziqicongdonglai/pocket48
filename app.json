@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/my/vouchercentre/vouchercentre",
     "pages/home/home",
     "pages/juju/juju",
     "pages/found/found",

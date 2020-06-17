@@ -82,7 +82,7 @@
                 <image class="item_icon" src="/images/my/privilege.png"></image>
                 <text>我的特权</text>
             </view>
-            <view class="features">
+            <view class="features" class="features" bindtap="toVoucherCentre">
                 <image class="item_icon" src="/images/my/mine_wallet.png"></image>
                 <text>充值中心</text>
             </view>

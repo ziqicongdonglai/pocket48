@@ -12,7 +12,7 @@
             </view>
         </view>
         <!-- 滑动的主体部分 -->
-        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2270rpx'>
+        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 5940rpx'>
             <swiper-item>
                 <scroll-view style="height: 100%" scroll-y>
                     <!-- 搜索栏 和 右侧的 扫码 领应援力 -->
@@ -187,6 +187,7 @@
                             </scroll-view>
                         </view>
                     </view>
+                    <idolpost></idolpost>
                 </scroll-view>
             </swiper-item>
             <swiper-item>

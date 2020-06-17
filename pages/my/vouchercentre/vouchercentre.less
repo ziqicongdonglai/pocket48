@@ -1,0 +1,103 @@
+.mt {
+    margin-top: 100rpx;
+}
+/* 顶部 */
+.top {
+    padding: 0 20rpx;
+    background-color: #fff;
+    position: relative;
+    .top_img {
+        width: 100%;
+        height: 326rpx;
+    }
+    .jitui_num_now {
+        position: absolute;
+        top: 80rpx;
+        left: 80rpx;
+        color: #fff;
+        height: 160rpx;
+        .num_title {
+        }
+        .jitui_num {
+            font-size: 66rpx;
+            font-weight: 700;
+        }
+    }
+    .help {
+        width: 120rpx;
+        position: absolute;
+        top: 50rpx;
+        right: 40rpx;
+    }
+}
+
+/* 购买鸡腿 */
+.recharge {
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    .recharge_titlebar {
+        color: #848484;
+        font-size: 26rpx;
+        height: 80rpx;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20rpx;
+        margin-bottom: 20rpx;
+    }
+    .recharge_select {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .select_item {
+            width: 45%;
+            height: 150rpx;
+            border: 2rpx solid #ddd;
+            border-radius: 15rpx;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            margin-right: 20rpx;
+            margin-bottom: 20rpx;
+            font-size: 36rpx;
+            .select_title {
+                margin-top: 20rpx;
+            }
+            .select_money {
+                color: #ababab;
+                margin-top: 30rpx;
+            }
+        }
+        .select_item:nth-of-type(2n) {
+            margin-right: 0;
+        }
+        /* 自定义面额充值 */
+        .custom {
+            width: 93%;
+            height: 75rpx;
+            justify-content: center;
+            margin-right: 0;
+        }
+    }
+}
+
+/* 使用优惠券 */
+.use_coupons {
+    height: 80rpx;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20rpx;
+    justify-content: space-between;
+    .use_coupons_text {
+
+    }
+    image {
+        width: 40rpx;
+        height: 40rpx;
+    }
+}

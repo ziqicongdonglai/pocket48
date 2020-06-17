@@ -8,7 +8,7 @@
     </view>
     <scroll-view style="height: 100%" scroll-y>
     <!-- 顶部背景图 -->
-    <image class="top_img" mode="widthFix" src="/images/my/vip/mine_privilege_bg.png"></image>
+    <image class="top_img" mode="widthFix" src="https://wx1.sinaimg.cn/mw690/005FbhyYly1gfv1ck9am5j30ku0j3aaq.jpg"></image>
     <view class="top">
         <!-- 顶部vip图标 及 等级 图标 手机是否绑定 -->
         <view class="vip_level_icon">
