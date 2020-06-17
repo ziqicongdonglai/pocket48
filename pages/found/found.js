@@ -22,14 +22,17 @@ Page({
     // 热门话题列表
     topiclist: [
       {
+        id: 1,
         'topicTitle': '塞纳河攻略'
       },
 
       {
+        id: 2,
         'topicTitle': '我是新粉，求指导'
       },
 
       {
+        id: 3,
         'topicTitle': '创造营2020'
       }
     ],

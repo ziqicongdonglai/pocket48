@@ -13,8 +13,8 @@
             <view class="head_swiper">
                 <!-- 用来给轮播图来个左右间距 -->
                 <swiper indicator-dots="true" class="img_swiper" autoplay="true" interval='2000' indicator-color="rgba(255, 255, 255, .4)" indicator-active-color="#809dff" circular="true" style='height: 400rpx'>
-                    <swiper-item wx:for="{{swiperImgList}}">
-                        <image class='top-img' mode="aspectFill" src='{{item.imgUrl}}'></image>
+                    <swiper-item wx:for="{{swiperImgList}}" wx:key="id">
+                        <image lazy-load class='top-img' mode="aspectFill" src='{{item.imgUrl}}'></image>
                     </swiper-item>
                 </swiper>
             </view>
@@ -35,9 +35,9 @@
             <!-- 商品列表 -->
             <view class="goods_list">
                 <!-- 每个商品 -->
-                <view class="goods_item" wx:for="{{goodsList}}">
+                <view class="goods_item" wx:for="{{goodsList}}" wx:key="id">
                     <!-- 商品图片 -->
-                    <image mode="aspectFill" src="{{item.imgUrl}}"></image>
+                    <image lazy-load mode="aspectFill" src="{{item.imgUrl}}"></image>
                     <view class="goods_name">{{item.goodsTitle}}</view>
                     <view class="goods_money">￥{{item.price}}</view>
                 </view>

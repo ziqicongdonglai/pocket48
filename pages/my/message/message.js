@@ -13,6 +13,7 @@ Page({
     // 消息列表
     messagelist: [
       {
+        id: 1,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrj4tvnkcj306y06y3yk.jpg',
         'memberName': 'SNH48-冉蔚',
         'team': 'X',
@@ -22,6 +23,7 @@ Page({
         'infNumber': 1
       },
       {
+        id: 2,
         'imgUrl': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfrj5k70ecj306y06ydfu.jpg',
         'memberName': 'BEJ48-吕蕊',
         'team': 'B',
@@ -31,6 +33,7 @@ Page({
         'infNumber': 1
       },
       {
+        id: 3,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrj66rzj7j306y06ydfu.jpg',
         'memberName': 'GNZ48-罗可嘉',
         'team': 'G',
@@ -40,6 +43,7 @@ Page({
         'infNumber': 2
       },
       {
+        id: 4,
         'imgUrl': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfrj6vlzdmj306y06yq2x.jpg',
         'memberName': 'GNZ48-吴羽霏',
         'team': 'NIII',
@@ -49,6 +53,7 @@ Page({
         'infNumber': 1
       },
       {
+        id: 5,
         'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfom6iwkkej306i06yq31.jpg',
         'memberName': 'SNH48-周诗雨',
         'team': 'NII',
@@ -58,6 +63,7 @@ Page({
         'infNumber': 1
       },
       {
+        id: 6,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrj7u5sipj306y06y0sq.jpg',
         'memberName': 'GNZ48-司珀琳',
         'team': 'Z',
@@ -67,6 +73,7 @@ Page({
         'infNumber': 1
       },
       {
+        id: 7,
         'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfrj8bwh4dj306y06y3yi.jpg',
         'memberName': 'GNZ48-王翠菲',
         'team': 'Z',
@@ -76,6 +83,7 @@ Page({
         'infNumber': 0
       },
       {
+        id: 8,
         'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfrj8u8p6xj306y06y0sp.jpg',
         'memberName': 'BEJ48-张智杰',
         'team': 'E',
@@ -85,6 +93,7 @@ Page({
         'infNumber': 0
       },
       {
+        id: 9,
         'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfrj99wn4xj306y06y0sv.jpg',
         'memberName': 'IDFT-高蔚然',
         'team': 'IDFT',
@@ -94,6 +103,7 @@ Page({
         'infNumber': 0
       },
       {
+        id: 10,
         'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfrj9tzdogj306y06y0so.jpg',
         'memberName': 'GNZ48-冼燊楠',
         'team': 'NIII',
@@ -103,6 +113,7 @@ Page({
         'infNumber': 0
       },
       {
+        id: 11,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrja6xheij306y06yglj.jpg',
         'memberName': 'IDFT-高雪逸',
         'team': 'IDFT',
@@ -112,6 +123,7 @@ Page({
         'infNumber': 0
       },
       {
+        id: 12,
         'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfrjaod81dj306y06yq2z.jpg',
         'memberName': 'BEJ48-熊鑫',
         'team': 'E',
@@ -121,6 +133,7 @@ Page({
         'infNumber': 0
       },
       {
+        id: 13,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrjb6jfcaj306y06ymx9.jpg',
         'memberName': 'SNH48-赵佳蕊',
         'team': 'NII',
@@ -130,6 +143,7 @@ Page({
         'infNumber': 0
       },
       {
+        id: 14,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrjbm485dj306y06y74b.jpg',
         'memberName': 'SNH48-由淼',
         'team': 'SII',
@@ -139,6 +153,7 @@ Page({
         'infNumber': 0
       },
       {
+        id: 15,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrjbyc5h1j305c06yq2z.jpg',
         'memberName': 'BEJ48-曲美霖',
         'team': 'B',
@@ -148,6 +163,7 @@ Page({
         'infNumber': 0
       },
       {
+        id: 16,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrjcdhoa7j306y06ymx8.jpg',
         'memberName': 'BEJ48-周湘',
         'team': 'J',
@@ -157,6 +173,7 @@ Page({
         'infNumber': 0
       },
       {
+        id: 17,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrjcs0jevj306y06y0sr.jpg',
         'memberName': 'SNH48-潘瑛琪',
         'team': 'X',

@@ -28,9 +28,9 @@
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
                 <view class="messages_list">
-                    <view class="message" wx:for="{{messagelist}}">
+                    <view class="message" wx:for="{{messagelist}}" wx:key="id">
                         <view class="member_img">
-                            <image src="{{item.imgUrl}}"></image>
+                            <image lazy-load src="{{item.imgUrl}}"></image>
                         </view>
                         <view class="message_inform">
                             <view class="message_top">

@@ -40,7 +40,7 @@
                 <!-- 所有等级徽章的列表 -->
                 <view class="badge_list">
                     <scroll-view style="height: 360rpx" scroll-y>
-                        <image wx:for="{{levelBadgeList}}" wx:key="id" class="badge_icon" src="{{item.icon}}"></image>
+                        <image lazy-load wx:for="{{levelBadgeList}}" wx:key="id" class="badge_icon" src="{{item.icon}}"></image>
                     </scroll-view>
                 </view>
             </view>
@@ -51,7 +51,7 @@
                 <!-- 所有成就徽章的列表 -->
                 <view class="badge_list">
                     <scroll-view style="height: 440rpx" scroll-y>
-                        <image wx:for="{{achiveBadgeList}}" wx:key="id" class="badge_icon" src="{{item.icon}}"></image>
+                        <image lazy-load wx:for="{{achiveBadgeList}}" wx:key="id" class="badge_icon" src="{{item.icon}}"></image>
                     </scroll-view>
                 </view>
             </view>

@@ -3,7 +3,7 @@
     <!-- 最顶部 发帖的小偶像信息 -->
     <view class="idol_post_top">
         <!-- 小偶像头像 -->
-        <image class="head_img" src="{{item.headImg}}"></image>
+        <image lazy-load class="head_img" src="{{item.headImg}}"></image>
         <view class="post_top_right">
             <!-- 成员名字 及 队伍 -->
             <view class="name_team">
@@ -24,7 +24,7 @@
         <!-- 帖子图片内容 -->
         <view class="post_content_img">
             <view class="img_box" wx:for="{{item.contentImg}}" wx:for-item="imgitem" wx:key="id">
-                <image mode="widthFix center" src="{{imgitem.imgUrl}}" style="widht: {{100/item.contentImg.length}}%"></image>
+                <image lazy-load mode="widthFix center" src="{{imgitem.imgUrl}}" style="widht: {{100/item.contentImg.length}}%"></image>
             </view>
         </view>
     </view>

@@ -83,7 +83,7 @@
                     </view>
                     <!-- 每日领礼物 -->
                     <view class="getgift">
-                        <image src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gftdugy6ilj30i204ogne.jpg"></image>
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gftdugy6ilj30i204ogne.jpg"></image>
                     </view>
                 </view>
                 <view class="experience_record">

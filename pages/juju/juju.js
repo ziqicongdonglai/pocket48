@@ -14,6 +14,7 @@ Page({
     // 成员房间数据列表
     roomlist: [
       {
+        id: 1,
         'roomTitle': '段艺璇',
         'updateTime': '18:52',
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYly1gfkl3olgp6j306y06ywed.jpg',
@@ -24,6 +25,7 @@ Page({
         'infNumber': '19'
       },
       {
+        id: 2,
         'roomTitle': '🌍',
         'updateTime': '18:26',
         'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfon4yqam9j306y06ymx0.jpg',
@@ -34,6 +36,7 @@ Page({
         'infNumber': '99+'
       },
       {
+        id: 3,
         'roomTitle': '你掉了一只兔子ᕱ⑅ᕱ',
         'updateTime': '18:21',
         'imgUrl': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfnlkvwqk9j306y06yq2u.jpg',
@@ -44,6 +47,7 @@ Page({
         'infNumber': '20'
       },
       {
+        id: 4,
         'roomTitle': '爽爽的QQ空间',
         'updateTime': '17:01',
         'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfom66a8j0j306y06tjre.jpg',
@@ -54,6 +58,7 @@ Page({
         'infNumber': '99+'
       },
       {
+        id: 5,
         'roomTitle': '😸',
         'updateTime': '17:01',
         'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfom6iwkkej306i06yq31.jpg',
@@ -64,6 +69,7 @@ Page({
         'infNumber': '10'
       },
       {
+        id: 6,
         'roomTitle': '周日创造营',
         'updateTime': '17:01',
         'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfom76z7v2j306y06ya9y.jpg',
@@ -74,6 +80,7 @@ Page({
         'infNumber': '99+'
       },
       {
+        id: 7,
         'roomTitle': '🎀🎀🎀🎀',
         'updateTime': '17:01',
         'imgUrl': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfom5npbduj305706ydft.jpg',
@@ -84,6 +91,7 @@ Page({
         'infNumber': '99+'
       },
       {
+        id: 8,
         'roomTitle': 'y3⭕⭕',
         'updateTime': '16:59',
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfom7x2410j306y06ygls.jpg',
@@ -94,6 +102,7 @@ Page({
         'infNumber': '99+'
       },
       {
+        id: 9,
         'roomTitle': '孙芮',
         'updateTime': '16:43',
         'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfnlk8eh56j306y06yglo.jpg',
@@ -104,6 +113,7 @@ Page({
         'infNumber': '16'
       },
       {
+        id: 10,
         'roomTitle': '宋昕冉',
         'updateTime': '01:17',
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfnlkq1ubmj305706ydfx.jpg',

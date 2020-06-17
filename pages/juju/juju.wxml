@@ -24,10 +24,10 @@
                     </view>
                     <!-- 房间列表 -->
                     <view class="roomlist">
-                        <view class="room" wx:for="{{roomlist}}">
+                        <view class="room" wx:for="{{roomlist}}" wx:key="id">
                             <!-- 房间头像 -->
                             <view class="room_img">
-                                <image src="{{item.imgUrl}}"></image>
+                                <image lazy-load src="{{item.imgUrl}}"></image>
                             </view>
                             <view class="room_inform">
                                 <view class="room_top">

@@ -13,27 +13,34 @@ Page({
     // 首页公演数据（6条）
     showlist: [
       {
+        id: 1,
         "showUrl": 'https://wx1.sinaimg.cn/mw690/006c5eFZgy1gf2h8bzdlxj31hc0u04qp.jpg'
       },
       {
+        id: 2,
         "showUrl": 'https://wx3.sinaimg.cn/mw690/a04b2a1dgy1ga0v1omp5xj20u00u07wh.jpg'
       },
       {
+        id: 3,
         "showUrl": 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfs2benppzj30ak06on0r.jpg'
       },
       {
+        id: 4,
         "showUrl": 'https://wx1.sinaimg.cn/mw690/006c5eFZgy1gf2h8bzdlxj31hc0u04qp.jpg'
       },
       {
+        id: 5,
         "showUrl": 'https://wx1.sinaimg.cn/mw690/006c5eFZgy1gf2h8bzdlxj31hc0u04qp.jpg'
       },
       {
+        id: 6,
         "showUrl": 'https://wx1.sinaimg.cn/mw690/006c5eFZgy1gf2h8bzdlxj31hc0u04qp.jpg'
       }
     ],
     // 应援榜
     rankinglist: [
       {
+        id: 1,
         // 头像地址
         'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfnlk8eh56j306y06yglo.jpg',
         // 头像边框颜色
@@ -44,12 +51,14 @@ Page({
         'memberName': 'SNH48-孙芮'
       },
       {
+        id: 2,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfnlkq1ubmj305706ydfx.jpg',
         'headcolor': '#bebebe',
         'rankimg': '/images/home/square/two.png',
         'memberName': 'SNH48-宋昕冉'
       },
       {
+        id: 3,
         'imgUrl': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfnlkvwqk9j306y06yq2u.jpg',
         'headcolor': '#f0a639',
         'rankimg': '/images/home/square/three.png',
@@ -59,6 +68,7 @@ Page({
     // 正在直播的成员
     livinglist: [
       {
+        id: 1,
         // 头像地址
         'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfnlk8eh56j306y06yglo.jpg',
         // 头像边框颜色（目前来看是一个颜色）
@@ -73,6 +83,7 @@ Page({
         'liveTitle': '是我是我是我'
       },
       {
+        id: 2,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfnlkq1ubmj305706ydfx.jpg',
         // 'headcolor': '#bebebe',
         'memberName': 'SNH48-宋昕冉',
@@ -81,6 +92,7 @@ Page({
         'liveTitle': '哈'
       },
       {
+        id: 3,
         'imgUrl': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfnlkvwqk9j306y06yq2u.jpg',
         // 'headcolor': '#f0a639',
         'memberName': 'SNH48-莫寒',
@@ -89,6 +101,7 @@ Page({
         'liveTitle': '(  •̆ ᵕ •̆ )◞♡ '
       },
       {
+        id: 4,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYly1gfkl3olgp6j306y06ywed.jpg',
         // 'headcolor': '#bebebe',
         'memberName': 'BEJ48-段艺璇',
@@ -97,6 +110,7 @@ Page({
         'liveTitle': '纠结发色'
       },
       {
+        id: 5,
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfo8wxiz8qj306y04mq2w.jpg',
         // 'headcolor': '#f0a639',
         'memberName': 'GNZ48-卢静',

@@ -18,7 +18,7 @@
                     <view class="found_main">
                         <!-- 顶部的图片 -->
                         <view class="top_img">
-                            <image src="https://wx3.sinaimg.cn/mw690/005FbhyYgy1gftdt6lo2pj30e604ftbh.jpg"></image>
+                            <image lazy-load src="https://wx3.sinaimg.cn/mw690/005FbhyYgy1gftdt6lo2pj30e604ftbh.jpg"></image>
                         </view>
                         <!-- 顶部文字部分 -->
                         <view class="top_text">
@@ -32,7 +32,7 @@
                             </view>
                             <!-- 热门话题 -->
                             <view class="top_topic_group">
-                                <view class="topic" wx:for="{{topiclist}}">
+                                <view class="topic" wx:for="{{topiclist}}" wx:key="id">
                                     <image src="/images/found/ic_48_topic.png"></image>
                                     <view>{{item.topicTitle}}</view>
                                 </view>
@@ -100,7 +100,7 @@
                             <view wx:for="{{col1}}" wx:key="id" class="jx_post_item_lf">
                                 <!-- 帖子的里第一个图片 没有就用默认图片 -->
                                 <view class="item_info">
-                                    <image src="{{item.imageurl}}" style="width:100%;height:{{item.height}}px"></image>
+                                    <image lazy-load src="{{item.imageurl}}" style="width:100%;height:{{item.height}}px"></image>
                                 </view>
                                 <!-- 帖子标题 -->
                                 <view class="post_title">{{item.postTitle}}</view>
@@ -109,7 +109,7 @@
                                     <!-- 粉丝信息 -->
                                     <view class="fans_inf">
                                         <!-- 粉丝头像 -->
-                                        <image class="post_headimg" src="{{item.headimg}}"></image>
+                                        <image lazy-load class="post_headimg" src="{{item.headimg}}"></image>
                                         <!-- 粉丝名字 -->
                                         <view class="post_fansname">{{item.fansName}}</view>
                                     </view>
@@ -125,7 +125,7 @@
                             <view wx:for="{{col2}}" wx:key="id" class="jx_post_item_rg">
                                 <!-- 帖子的里第一个图片 没有就用默认图片 -->
                                 <view class="item_info">
-                                    <image src="{{item.imageurl}}" style="width:100%;height:{{item.height}}px"></image>
+                                    <image lazy-load src="{{item.imageurl}}" style="width:100%;height:{{item.height}}px"></image>
                                 </view>
                                 <!-- 帖子标题 -->
                                 <view class="post_title">{{item.postTitle}}</view>
@@ -134,7 +134,7 @@
                                     <!-- 粉丝信息 -->
                                     <view class="fans_inf">
                                         <!-- 粉丝头像 -->
-                                        <image class="post_headimg" src="{{item.headimg}}"></image>
+                                        <image lazy-load class="post_headimg" src="{{item.headimg}}"></image>
                                         <!-- 粉丝名字 -->
                                         <view class="post_fansname">{{item.fansName}}</view>
                                     </view>
@@ -149,7 +149,7 @@
                     </view>
                 </scroll-view>
                 <view style="display:none">
-                    <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.imageurl}}" bindload="onImageLoad"></image>
+                    <image lazy-load wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.imageurl}}" bindload="onImageLoad"></image>
                 </view>
             </swiper-item>
         </swiper>
