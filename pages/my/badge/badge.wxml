@@ -1,0 +1,65 @@
+<view>
+    <!-- 顶部区域 鸡腿充值 返回 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel" bindtap="handleCancel">
+            <image src="/images/my/message/titlebar_return_black.png"></image>
+        </view>
+        <view class="titlebar_title">我的徽章</view>
+    </view>
+    <scroll-view style="height: 100%" scroll-y>
+        <view class="mt">
+            <!-- 顶部 要展示的两个徽章 -->
+            <view>
+                <!-- 设置等级徽章 -->
+                <view class="show_badge">
+                    <!-- 设置的徽章的图片 -->
+                    <image src="/images/my/badge/badge_level_defult.png"></image>
+                    <!-- 设置徽章 -->
+                    <view class="show_badge_set">
+                        <view class="set_badge_title">设置等级徽章</view>
+                        <!-- 对等级徽章的解释 -->
+                        <view class="badge_explain">普通用户等级或公社等级</view>
+                    </view>
+                </view>
+                <!-- 设置成就徽章 -->
+                <view class="show_badge">
+                    <!-- 设置的徽章的图片 -->
+                    <image src="/images/my/badge/badge_achive_defult.png"></image>
+                    <!-- 设置徽章 -->
+                    <view class="show_badge_set">
+                        <view class="set_badge_title">设置成就徽章</view>
+                        <!-- 对成就徽章的解释 -->
+                        <view class="badge_explain">各种各样有趣的成就</view>
+                    </view>
+                </view>
+            </view>
+            <!-- 等级徽章 -->
+            <view class="badge_all">
+                <!-- 等级徽章部分的标题 -->
+                <view class="badge_tab_title">成就徽章</view>
+                <!-- 所有等级徽章的列表 -->
+                <view class="badge_list">
+                    <scroll-view style="height: 360rpx" scroll-y>
+                        <image wx:for="{{levelBadgeList}}" wx:key="id" class="badge_icon" src="{{item.icon}}"></image>
+                    </scroll-view>
+                </view>
+            </view>
+            <!-- 成就徽章 -->
+            <view class="badge_all">
+                <!-- 成就徽章部分的标题 -->
+                <view class="badge_tab_title">成就徽章</view>
+                <!-- 所有成就徽章的列表 -->
+                <view class="badge_list">
+                    <scroll-view style="height: 440rpx" scroll-y>
+                        <image wx:for="{{achiveBadgeList}}" wx:key="id" class="badge_icon" src="{{item.icon}}"></image>
+                    </scroll-view>
+                </view>
+            </view>
+            <!-- 帮助 -->
+            <view class="help">
+                <image src="/images/my/badge/bangzhu.png"></image>
+                <view class="help_text">帮助</view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

@@ -10,7 +10,7 @@ Page({
     tabbar: {},
     // 导航条文字
     navbar: ['房间', '动态'],
-    currentTab: 1,
+    currentTab: 0,
     // 成员房间数据列表
     roomlist: [
       {

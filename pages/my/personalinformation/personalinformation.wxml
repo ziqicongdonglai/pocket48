@@ -162,7 +162,7 @@
     <view class="personal_detail">
         <view class="item_list_title">账号管理</view>
         <view class="user_inform_item">
-            <image src="/images/my/personalinformation/icon_lv.png" class="inform_item_icon"></image>
+            <image src="/images/my/personalinformation/grade.png" class="inform_item_icon"></image>
             <view class="inform_item_text">
                 <view class="inform_item_name">等级</view>
                 <view class="inform_item_right">

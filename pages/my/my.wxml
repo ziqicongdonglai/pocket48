@@ -37,7 +37,7 @@
                     <text>1050</text>
                     <text>鸡腿</text>
                 </view>
-                <view class="inform_item">
+                <view class="inform_item" bindtap="toBadge">
                     <text>5</text>
                     <text>徽章</text>
                 </view>

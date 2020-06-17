@@ -35,10 +35,10 @@ Page({
     })
   },
   // 跳转到账户记录
-  toAccountrecords: function() {
+  toAccountrecords: function () {
     wx.navigateTo({
       url: '/pages/my/accountrecords/accountrecords',
-      success: function(res){
+      success: function (res) {
         // success
       }
     })
@@ -47,7 +47,7 @@ Page({
   toMyVip: function () {
     wx.navigateTo({
       url: '/pages/my/myvip/myvip',
-      success: function(res){
+      success: function (res) {
         // success
       }
     })
@@ -56,7 +56,7 @@ Page({
   toVoucherCentre: function () {
     wx.navigateTo({
       url: '/pages/my/vouchercentre/vouchercentre',
-      success: function(res){
+      success: function (res) {
         // success
       }
     })
@@ -65,7 +65,16 @@ Page({
   toMall: function () {
     wx.navigateTo({
       url: '/pages/my/mall/mall',
-      success: function(res){
+      success: function (res) {
+        // success
+      }
+    })
+  },
+  // 跳转到徽章
+  toBadge: function () {
+    wx.navigateTo({
+      url: '/pages/my/badge/badge',
+      success: function (res) {
         // success
       }
     })

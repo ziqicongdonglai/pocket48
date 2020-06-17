@@ -1,0 +1,61 @@
+.mt {
+  margin-top: 100rpx;
+}
+/* 要设置展示的两个徽章 */
+.show_badge {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 2rpx;
+  height: 220rpx;
+}
+.show_badge image {
+  width: 140rpx;
+  height: 147rpx;
+  padding: 0 30rpx;
+}
+.show_badge .show_badge_set .badge_explain {
+  color: #bbb;
+  font-size: 26rpx;
+  margin-top: 20rpx;
+}
+.show_badge:last-child {
+  margin-bottom: 20rpx;
+}
+/* 所有等级/成就徽章 */
+.badge_all {
+  margin-bottom: 20rpx;
+}
+.badge_all .badge_tab_title {
+  height: 120rpx;
+  line-height: 120rpx;
+  padding-left: 20rpx;
+  background-color: #fff;
+  margin-bottom: 2rpx;
+}
+.badge_all .badge_list {
+  background-color: #fff;
+}
+.badge_all .badge_list image {
+  width: 105rpx;
+  height: 105rpx;
+  padding: 0 10rpx;
+}
+/* 帮助图片 及 文字 */
+.help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210rpx;
+  font-size: 26rpx;
+}
+.help image {
+  width: 30rpx;
+  height: 30rpx;
+  padding-right: 20rpx;
+}
+.help .help_text {
+  height: 30rpx;
+  line-height: 30rpx;
+  color: #aaa;
+}
