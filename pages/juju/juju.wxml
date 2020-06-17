@@ -12,7 +12,7 @@
             </view>
         </view>
         <!-- 滑动的主体部分 -->
-        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 3320rpx'>
+        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 4210rpx'>
             <swiper-item>
                 <scroll-view style="height: 100%" scroll-y>
                     <!-- 搜索栏 -->
@@ -85,7 +85,9 @@
                                 </view>
                                 <!-- 帖子图片内容 -->
                                 <view class="post_content_img">
-                                    <image mode="" wx:for="{{item.contentImg}}" wx:for-item="imgitem" wx:key="id" src="{{imgitem.imgUrl}}" style="widht: {{100/item.contentImg.length}}%"></image>
+                                    <view class="img_box" wx:for="{{item.contentImg}}" wx:for-item="imgitem" wx:key="id">
+                                        <image mode="widthFix center" src="{{imgitem.imgUrl}}" style="widht: {{100/item.contentImg.length}}%"></image>
+                                    </view>
                                 </view>
                             </view>
                             <!-- 动态底部信息 -->

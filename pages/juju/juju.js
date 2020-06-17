@@ -132,14 +132,14 @@ Page({
         comments: '349'
       },
       {
-        id: 1,
-        headImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfujv433nvj306y06y74a.jpg',
+        id: 2,
+        headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfuktnpz24j306y06ywek.jpg',
         memberName: 'SNH48-邵雪聪',
         team: 'SII',
         teamColor: '#87ceeb',
         dateTime: '2020-06-16 20:19:54',
         title: '',
-        contentText: '笑累了，盐一盐🧂 拳击聪 🧤 半年了终于出现了',
+        contentText: '笑累了，盐一盐🧂 拳击聪 🥊 半年了终于出现了',
         contentImg: [
           {
             id: 1,
@@ -156,7 +156,7 @@ Page({
         comments: '32'
       },
       {
-        id: 1,
+        id: 3,
         // 成员头像
         headImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfuectapmbj3044044745.jpg',
         // 成员名字
@@ -183,7 +183,7 @@ Page({
         comments: '3'
       },
       {
-        id: 1,
+        id: 4,
         headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfugnkdhwlj306y06ydfw.jpg',
         memberName: 'GNZ48-方琪',
         team: 'Z',
@@ -198,7 +198,39 @@ Page({
         comments: '46'
       },
       {
-        id: 1,
+        id: 5,
+        headImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfon4yqam9j306y06ymx0.jpg',
+        memberName: 'GNZ48-洪静雯',
+        team: 'NIII',
+        teamColor: '#ffd801',
+        dateTime: '2020-06-16 17:50:11',
+        title: '',
+        contentText: '✨"做颗星星，有棱有角，还会发光"',
+        contentImg: [
+          {
+            id: 1,
+            imgUrl: 'https://wx3.sinaimg.cn/mw690/006qkRSogy1gfu9uy3qytj32kg3uob2d.jpg'
+          },
+          {
+            id: 2,
+            imgUrl: 'https://wx1.sinaimg.cn/mw690/006qkRSogy1gfu9tyef0yj32kg3uo4qv.jpg'
+          },
+          {
+            id: 3,
+            imgUrl: 'https://wx3.sinaimg.cn/mw690/006qkRSogy1gfu8zq11etj31z32ftx6p.jpg'
+          },
+          {
+            id: 4,
+            imgUrl: 'https://wx4.sinaimg.cn/mw690/006qkRSogy1gfu8zlt13gj32kg3uohdw.jpg'
+          },
+        ],
+        anchor: '',
+        looks: '7',
+        likes: '29',
+        comments: '45'
+      },
+      {
+        id: 6,
         headImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfujsebqqaj306y06yq2v.jpg',
         memberName: 'GNZ48-黄楚茵',
         team: 'G',
@@ -213,7 +245,7 @@ Page({
         comments: '25'
       },
       {
-        id: 1,
+        id: 7,
         headImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfujsebqqaj306y06yq2v.jpg',
         memberName: 'SNH48-许杨玉琢',
         team: 'HII',

@@ -144,12 +144,17 @@
   align-items: center;
   width: 100%;
 }
-.mt .idol_post_item .idol_post_content .post_content_img image {
+.mt .idol_post_item .idol_post_content .post_content_img .img_box {
   width: 30%;
-  height: 300rpx;
+  height: 214rpx;
+  overflow: hidden;
+  border-radius: 20rpx;
   margin-right: 10rpx;
   margin-bottom: 10rpx;
-  border-radius: 20rpx;
+}
+.mt .idol_post_item .idol_post_content .post_content_img .img_box image {
+  width: 100%;
+  height: 300rpx;
 }
 .mt .idol_post_item .idol_post_bottom {
   display: flex;
