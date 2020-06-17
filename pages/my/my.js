@@ -60,5 +60,14 @@ Page({
         // success
       }
     })
+  },
+  // 跳转到商城
+  toMall: function () {
+    wx.navigateTo({
+      url: '/pages/my/mall/mall',
+      success: function(res){
+        // success
+      }
+    })
   }
 })

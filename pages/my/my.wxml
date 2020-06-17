@@ -33,7 +33,7 @@
                     <text>263</text>
                     <text>关注</text>
                 </view>
-                <view class="inform_item">
+                <view class="inform_item" bindtap="toVoucherCentre">
                     <text>1050</text>
                     <text>鸡腿</text>
                 </view>
@@ -86,7 +86,7 @@
                 <image class="item_icon" src="/images/my/mine_wallet.png"></image>
                 <text>充值中心</text>
             </view>
-            <view class="features">
+            <view class="features" bindtap="toMall">
                 <image class="item_icon" src="/images/my/mall.png"></image>
                 <text>官方商城</text>
             </view>

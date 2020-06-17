@@ -1,0 +1,47 @@
+<view>
+    <!-- 顶部区域 消息盒子 返回 全部已读 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel" bindtap="handleCancel">
+            <image src="/images/my/message/titlebar_return_black.png"></image>
+        </view>
+        <view class="titlebar_title">商城</view>
+        <view class="titlebar_right_features">我的商城</view>
+    </view>
+    <scroll-view style="height: 100%" scroll-y>
+        <view class="mt">
+            <!-- 轮播图 -->
+            <view class="head_swiper">
+                <!-- 用来给轮播图来个左右间距 -->
+                <swiper indicator-dots="true" class="img_swiper" autoplay="true" interval='2000' indicator-color="rgba(255, 255, 255, .4)" indicator-active-color="#809dff" circular="true" style='height: 400rpx'>
+                    <swiper-item wx:for="{{swiperImgList}}">
+                        <image class='top-img' mode="aspectFill" src='{{item.imgUrl}}'></image>
+                    </swiper-item>
+                </swiper>
+            </view>
+            <!-- 中间部分 -->
+            <!-- 演唱会 -->
+            <view class="middle_feature_show">
+                <image src="/images/my/mall/mico.png"></image>
+                <view>演唱会</view>
+            </view>
+            <!-- 唱片 -->
+            <view class="middle_feature_cd">
+                <view class="feature_head">
+                    <image src="/images/my/mall/cd.png"></image>
+                    <view>唱片</view>
+                </view>
+                <view class="feature_more">更多</view>
+            </view>
+            <!-- 商品列表 -->
+            <view class="goods_list">
+                <!-- 每个商品 -->
+                <view class="goods_item" wx:for="{{goodsList}}">
+                    <!-- 商品图片 -->
+                    <image mode="aspectFill" src="{{item.imgUrl}}"></image>
+                    <view class="goods_name">{{item.goodsTitle}}</view>
+                    <view class="goods_money">￥{{item.price}}</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

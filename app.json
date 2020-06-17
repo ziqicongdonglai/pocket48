@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/my/vouchercentre/vouchercentre",
     "pages/home/home",
     "pages/juju/juju",
     "pages/found/found",
@@ -9,6 +8,8 @@
     "pages/my/message/message",
     "pages/my/accountrecords/accountrecords",
     "pages/my/myvip/myvip",
+    "pages/my/vouchercentre/vouchercentre",
+    "pages/my/mall/mall",
     "pages/middle/middle",
     "pages/index/index",
     "pages/logs/logs"
