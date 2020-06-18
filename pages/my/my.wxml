@@ -41,7 +41,7 @@
                     <text>5</text>
                     <text>徽章</text>
                 </view>
-                <view class="inform_item">
+                <view class="inform_item" bindtap="toMyYingYuan">
                     <text>86</text>
                     <text>应援力</text>
                 </view>

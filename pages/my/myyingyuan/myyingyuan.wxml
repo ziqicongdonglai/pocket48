@@ -1,0 +1,35 @@
+<view>
+    <!-- 顶部区域 我的应援力 返回 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel" bindtap="handleCancel">
+            <image src="/images/my/message/titlebar_return_black.png"></image>
+        </view>
+        <view class="titlebar_title">我的应援力</view>
+        <image class="question" src="/images/my/myyingyuan/question.png"></image>
+    </view>
+    <scroll-view style="height: 100%" scroll-y>
+        <view class="mt">
+            <view class="top">
+                <!-- 顶部背景图 -->
+                <image class="top_img" src="/images/my/accountrecords/experience_bg.png"></image>
+                <!-- 现在的总的鸡腿数 -->
+                <view class="yingyuan_num_now">
+                    <view class="num_title">应援力</view>
+                    <view class="yingyuan_num">102</view>
+                </view>
+                <!-- 帮助 -->
+                <image class="exchange" src="/images/my/myyingyuan/icon_yingyuan_exchange_tag.png"></image>
+            </view>
+            <!-- 获得的应援力的列表 -->
+            <view class="yingyuan_list">
+                <!-- 应援列表里的每一项 -->
+                <view class="yingyuan_item" wx:for="{{yingyuanList}}" wx:key="id">
+                    <view class="yingyuan_time">{{item.dateTime}}</view>
+                    <view class="yingyuan_type">{{item.type}}</view>
+                    <view class="yingyuan_num">+{{item.yingyuan}}</view>
+                    <view class="yingyuan_text">应援力</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

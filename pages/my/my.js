@@ -78,5 +78,14 @@ Page({
         // success
       }
     })
+  },
+  // 跳转到我的应援力
+  toMyYingYuan: function () {
+    wx.navigateTo({
+      url: '/pages/my/myyingyuan/myyingyuan',
+      success: function (res) {
+        // success
+      }
+    })
   }
 })

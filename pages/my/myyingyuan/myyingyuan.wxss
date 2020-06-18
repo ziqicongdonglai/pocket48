@@ -1,0 +1,69 @@
+/* 顶部tabbar */
+.titlebar_top {
+  justify-content: space-between;
+}
+.titlebar_top .titlebar_cancel {
+  width: 125rpx;
+}
+.titlebar_top .question {
+  width: 45rpx;
+  height: 45rpx;
+  padding-left: 80rpx;
+  padding-right: 40rpx;
+}
+.mt {
+  margin-top: 100rpx;
+}
+/* 顶部 */
+.top {
+  padding: 30rpx 20rpx;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 2rpxs;
+}
+.top .top_img {
+  width: 100%;
+  height: 260rpx;
+  border-radius: 20rpx;
+}
+.top .yingyuan_num_now {
+  position: absolute;
+  top: 80rpx;
+  left: 65rpx;
+  color: #fff;
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top .yingyuan_num_now .num_title {
+  padding-right: 20rpx;
+}
+.top .yingyuan_num_now .yingyuan_num {
+  font-size: 66rpx;
+  font-weight: 700;
+}
+.top .exchange {
+  width: 250rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 130rpx;
+  right: 20rpx;
+}
+/* 获得的应援力列表 */
+.yingyuan_list .yingyuan_item {
+  width: 100%;
+  height: 200rpx;
+  color: #878787;
+  font-size: 36rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rpx;
+  background-color: #fff;
+}
+.yingyuan_list .yingyuan_item .yingyuan_type {
+  width: 160rpx;
+  display: flex;
+  justify-content: flex-start;
+}

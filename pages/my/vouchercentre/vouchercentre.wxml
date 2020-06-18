@@ -18,7 +18,7 @@
                     <view class="jitui_num">1050</view>
                 </view>
                 <!-- 帮助 -->
-                <image class="help" mode="widthFix" src="/images//my/vouchercentre/ic_help.png"></image>
+                <image class="help" mode="widthFix" src="/images/my/vouchercentre/ic_help.png"></image>
             </view>
             <!-- 购买鸡腿 -->
             <view class="recharge">
