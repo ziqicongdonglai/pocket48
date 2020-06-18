@@ -1,0 +1,82 @@
+<view>
+    <!-- 顶部区域 消息盒子 返回 全部已读 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel">
+            <image bindtap="handleCancel" src="/images/my/message/titlebar_return_black.png"></image>
+            <image bindtap="handleCancel" src="/images/home/square/home_close_icon.png"></image>
+        </view>
+        <view class="titlebar_title">MC话题你来定</view>
+    </view>
+    <view class="mt">
+        <!-- 顶部文字 规则说明 -->
+        <view class="top_title">
+            选择喜欢的队伍提交话题吧：
+            <!-- 规则说明 -->
+            <view class="explain">
+                <view class="tip_point"></view>
+                <view class="explain_text">规则说明</view>
+            </view>
+        </view>
+        <!-- 导航栏 SNH48 BEJ48 GNZ48 -->
+        <view class="top_navbar">
+            <view wx:for="{{navbar}}" data-idx="{{index}}" class="navbar_item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+                {{item}}
+            </view>
+        </view>
+        <!-- 内容 -->
+        <view wx:if="{{currentTab==0}}">
+            <!-- 每个队的MC -->
+            <view class="mc_team" wx:for="{{mcSNHList}}">
+                <!-- 队徽 -->
+                <image class="team_icon" lazy-load src="{{item.teamIcon}}"></image>
+                <!-- 队名及话题参加人数 -->
+                <view class="team_mc_number">
+                    <view class="team_name">TEAM {{item.teamName}}</view>
+                    <!-- 话题参加人数 -->
+                    <view class="hot_people_num">
+                        <image src="/images/home/mc/found_hot.png"></image>
+                        <view class="num"><view class="peple_num">{{item.peopleNum}}</view>人参加</view>
+                    </view>
+                </view>
+                <!-- 右箭头（更多） -->
+                <image class="ic_more" src="/images/home/mc/mine_more.png"></image>
+            </view>
+        </view>
+        <view wx:elif="{{currentTab==1}}">
+                        <!-- 每个队的MC -->
+            <view class="mc_team" wx:for="{{mcBEJList}}">
+                <!-- 队徽 -->
+                <image class="team_icon" lazy-load src="{{item.teamIcon}}"></image>
+                <!-- 队名及话题参加人数 -->
+                <view class="team_mc_number">
+                    <view class="team_name">TEAM {{item.teamName}}</view>
+                    <!-- 话题参加人数 -->
+                    <view class="hot_people_num">
+                        <image src="/images/home/mc/found_hot.png"></image>
+                        <view class="num"><view class="peple_num">{{item.peopleNum}}</view>人参加</view>
+                    </view>
+                </view>
+                <!-- 右箭头（更多） -->
+                <image class="ic_more" src="/images/home/mc/mine_more.png"></image>
+            </view>
+        </view>
+        <view wx:elif="{{currentTab==2}}">
+                       <!-- 每个队的MC -->
+            <view class="mc_team" wx:for="{{mcGNZList}}">
+                <!-- 队徽 -->
+                <image class="team_icon" lazy-load src="{{item.teamIcon}}"></image>
+                <!-- 队名及话题参加人数 -->
+                <view class="team_mc_number">
+                    <view class="team_name">TEAM {{item.teamName}}</view>
+                    <!-- 话题参加人数 -->
+                    <view class="hot_people_num">
+                        <image src="/images/home/mc/found_hot.png"></image>
+                        <view class="num"><view class="peple_num">{{item.peopleNum}}</view>人参加</view>
+                    </view>
+                </view>
+                <!-- 右箭头（更多） -->
+                <image class="ic_more" src="/images/home/mc/mine_more.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

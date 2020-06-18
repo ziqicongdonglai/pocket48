@@ -103,7 +103,7 @@
                                         <image src="/images/home/square/mine_radio.png" class="item_icon"></image>
                                         <text>电台</text>
                                     </view>
-                                    <view class="features">
+                                    <view class="features" bindtap="toMC">
                                         <image src="/images/home/square/mine_mc.png" class="item_icon"></image>
                                         <text>MC话题</text>
                                     </view>

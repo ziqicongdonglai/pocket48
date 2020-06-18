@@ -9,7 +9,7 @@ Page({
     tabbar: {},
     // 导航条文字
     navbar: ['广场', '创造营2020'],
-    currentTab: 1,
+    currentTab: 0,
     // 创造营导航条
     topnavbar: ['训练生', '应援榜', '往期榜单'],
     navbarcurrentTab: 0,
@@ -372,6 +372,15 @@ Page({
     })
     // 全局变量
     app.globalData.topcurrentTab1 = e.currentTarget.dataset.idx;
+  },
+  //跳转MC话题
+  toMC: function () {
+    wx.navigateTo({
+      url: '/pages/home/mc/mc',
+      success: function(res){
+        // success
+      }
+    })
   },
   // 跳转消息盒子
   toMessage: function () {

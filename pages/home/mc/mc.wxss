@@ -1,0 +1,124 @@
+/* 顶部部分 */
+.titlebar_top .titlebar_cancel {
+  width: 155rpx;
+  display: flex;
+}
+.titlebar_top .titlebar_cancel image {
+  width: 45rpx;
+  height: 45rpx;
+  padding-right: 20rpx;
+}
+.titlebar_top .titlebar_title {
+  color: #000;
+  font-weight: 500;
+  font-size: 32rpx;
+  width: 430rpx;
+  justify-content: center;
+}
+.mt {
+  margin-top: 105rpx;
+}
+.top_title {
+  height: 120rpx;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  font-size: 36rpx;
+  margin-bottom: 2rpx;
+}
+.top_title .explain {
+  width: 170rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  text-align: center;
+  color: #6b70a5;
+  font-size: 38rpx;
+  border: 2rpx solid #6b70a5;
+  border-radius: 15rpx;
+}
+.top_title .explain .tip_point {
+  width: 20rpx;
+  height: 20rpx;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -10rpx;
+  margin-left: 160rpx;
+  z-index: 1;
+}
+/* 导航栏 */
+.top_navbar {
+  text-align: center;
+  background-color: #fff;
+  height: 140rpx;
+  line-height: 140rpx;
+  margin-bottom: 3rpx;
+}
+.top_navbar .navbar_item {
+  width: 33.3%;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #000;
+  display: inline-block;
+  font-size: 33rpx;
+  box-sizing: border-box;
+}
+.top_navbar .navbar_item:nth-child(2) {
+  border-left: 2rpx solid #ececec;
+  border-right: 2rpx solid #ececec;
+}
+.top_navbar .active {
+  color: #6b70a5 !important;
+}
+/* MC话题的 队伍列表 */
+.mc_team {
+  display: flex;
+  align-items: center;
+  height: 200rpx;
+  background-color: #fff;
+  padding: 20rpx 20rpx;
+  justify-content: space-between;
+  margin-bottom: 2rpx;
+  /* 队徽 */
+  /* 队伍名及参加mc话题提交的人 */
+}
+.mc_team .team_icon {
+  width: 250rpx;
+  height: 150rpx;
+  border-radius: 20rpx;
+}
+.mc_team .team_mc_number {
+  height: 130rpx;
+  width: 300rpx;
+  color: #919191;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* 话题参加人数 */
+}
+.mc_team .team_mc_number .team_name {
+  font-size: 36rpx;
+}
+.mc_team .team_mc_number .hot_people_num {
+  display: flex;
+  font-size: 34rpx;
+}
+.mc_team .team_mc_number .hot_people_num image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.mc_team .team_mc_number .hot_people_num .num {
+  color: #6e6e6e;
+  display: flex;
+}
+.mc_team .team_mc_number .hot_people_num .num .peple_num {
+  color: #919191;
+}
+.mc_team .ic_more {
+  height: 60rpx;
+  width: 60rpx;
+}
