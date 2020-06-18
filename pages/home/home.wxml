@@ -12,7 +12,7 @@
             </view>
         </view>
         <!-- 滑动的主体部分 -->
-        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 5940rpx'>
+        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 9810rpx'>
             <swiper-item>
                 <scroll-view style="height: 100%" scroll-y>
                     <!-- 搜索栏 和 右侧的 扫码 领应援力 -->
@@ -201,35 +201,81 @@
                         </view>
                         <!-- 导航 -->
                         <view class="nav_bar">
-                            <view class="nav_bar_item active">训练生</view>
-                            <view class="nav_bar_item">应援榜</view>
-                            <view class="nav_bar_item">往期榜单</view>
+                            <view wx:for="{{topnavbar}}" data-idx="{{index}}" class="nav_bar_item {{navbarcurrentTab==index?'active':''}}" wx:key="unique" bindtap="topnavbarTap">
+                                {{item}}
+                            </view>
+                            <!-- <view class="nav_bar_item">应援榜</view>
+                            <view class="nav_bar_item">往期榜单</view> -->
                         </view>
                         <!-- 内容 -->
                         <view class="content">
-                            <!-- 训练生列表 -->
-                            <view class="list_member">
-                                <image lazy-load mode="widthFix" src="https://h5.48.cn/2020apppage/creative/img/title1.png" class="title"></image>
-                                <!-- 塞纳河成员 -->
-                                <view class="member_list">
-                                    <view class="member_item" wx:for="{{memberList}}" wx:key="id">
-                                        <!-- 学员头像 -->
-                                        <view class="avatar">
-                                            <image lazy-load src="{{item.avatar}}"></image>
+                            <view wx:if="{{navbarcurrentTab==0}}">
+                                <!-- 训练生列表 -->
+                                <view class="list_member">
+                                    <image lazy-load mode="widthFix" src="https://h5.48.cn/2020apppage/creative/img/title1.png" class="title"></image>
+                                    <!-- 塞纳河成员 -->
+                                    <view class="member_list">
+                                        <view class="member_item" wx:for="{{memberList}}" wx:key="id">
+                                            <!-- 学员头像 -->
+                                            <view class="avatar">
+                                                <image lazy-load src="{{item.avatar}}"></image>
+                                            </view>
+                                            <!-- 学员名字 -->
+                                            <view class="member_name">{{item.memberName}}</view>
+                                            <text class="member_btn">为她助力</text>
                                         </view>
-                                        <!-- 学员名字 -->
-                                        <view class="member_name">{{item.memberName}}</view>
-                                        <text class="member_btn">为她助力</text>
                                     </view>
+                                    <!-- 河外成员 隐藏 -->
+                                    <view class="member_list" style="display:none;"></view>
+                                    <image lazy-load mode="widthFix" src="https://h5.48.cn/2020apppage/creative/img/arrow-down.png" class="arrow_down"></image>
                                 </view>
-                                <!-- 河外成员 隐藏 -->
-                                <view class="member_list" style="display:none;"></view>
-                                <image lazy-load mode="widthFix" src="https://h5.48.cn/2020apppage/creative/img/arrow-down.png" class="arrow_down"></image>
                             </view>
-                            <!-- 应援榜 -->
-                            <view class="list_top"></view>
-                            <!-- 往期榜单 -->
-                            <view class="list_top"></view>
+                            <view wx:elif="{{navbarcurrentTab==1}}">
+                                <!-- 应援榜 -->
+                                <view class="list_top">
+                                    <image class="title" lazy-load mode="widthFix" src="https://h5.48.cn/2020apppage/creative/img/title2.png"></image>
+                                    <!-- 前35排名 -->
+                                    <view class="rank_list">
+                                        <!-- 每位学员的排名详情 -->
+                                        <!-- 前三名 -->
+                                        <view class="member_rank" wx:for="{{topthreeList}}" wx:key="id">
+                                            <!-- 皇冠 -->
+                                            <image class="king" lazy-load src="{{item.topicon}}"></image>
+                                            <!-- 头像 -->
+                                            <view class="member_head">
+                                                <view class="avatar">
+                                                    <image lazy-load src="{{item.avatar}}"></image>
+                                                </view>
+                                            </view>
+                                            <!-- 学员名字 -->
+                                            <view class="rank_mid">{{item.memberName}}</view>
+                                            <!-- 线 -->
+                                            <view class="line"></view>
+                                        </view>
+                                        <!-- 4-35名 -->
+                                        <view class="member_rank" wx:for="{{memberyingyuanList}}" wx:key="id">
+                                            <!-- 皇冠
+                                            <image class="king" lazy-load src="{{item.topicon}}"></image> -->
+                                            <!-- 头像 -->
+                                            <view class="member_head">
+                                                <view class="avatar">
+                                                    <image lazy-load src="{{item.avatar}}"></image>
+                                                </view>
+                                                <text class="index">{{item.id}}</text>
+                                            </view>
+                                            <!-- 学员名字 -->
+                                            <view class="rank_mid">{{item.memberName}}</view>
+                                            <!-- 线 -->
+                                            <view class="line"></view>
+                                        </view>
+                                    </view>
+                                    <view class="tips2">本次排名截止至2020-06-20</view>
+                                </view>
+                            </view>
+                            <view wx:else="{{navbarcurrentTab==2}}">
+                                <!-- 往期榜单 -->
+                                <view class="list_top">往期榜单</view>
+                            </view>
                         </view>
                     </view>
                 </scroll-view>

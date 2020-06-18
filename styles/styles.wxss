@@ -188,7 +188,7 @@ image {
   color: #fff !important;
   background: -webkit-linear-gradient(left, #ff7595, #ff98b0);
   border-radius: 2rem;
-  padding: 13rpx 33rpx;
+  /* padding: 13rpx 33rpx; */
   display: inline-block;
   -webkit-box-shadow: -10rpx 10rpx 32rpx #fca7bb80;
 }

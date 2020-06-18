@@ -273,9 +273,9 @@
   width: 33.3%;
   color: #e386b8;
   display: inline-block;
-  height: 3.7rem;
-  line-height: 3.7rem;
-  font-size: 1.08rem;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 33rpx;
 }
 .czy .nav_bar .active {
   color: #fff !important;
@@ -286,25 +286,33 @@
   margin: 0 auto;
   background-color: #fbf4f5;
   padding: 5% 0;
-  position: relative;
   z-index: 1;
   background: url(https://h5.48.cn/2020apppage/creative/img/bg.jpg);
   background-repeat: repeat-y;
   background-size: 100%;
 }
+.czy .content .list_member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .czy .content .list_member .title {
   width: 40%;
-  vertical-align: middle;
 }
 .czy .content .list_member .arrow_down {
   width: 20%;
-  vertical-align: middle;
+}
+.czy .content .list_member .member_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .czy .content .list_member .member_list .member_item {
   width: 31%;
   display: inline-block;
   text-align: center;
-  position: relative;
   border-radius: 0.5rem;
   padding: 5% 0;
 }
@@ -325,11 +333,89 @@
   font-weight: 700;
 }
 .czy .content .list_member .member_list .member_item .member_btn {
-  width: 154rpx;
-  height: 62rpx;
-  font-size: 22rpx;
+  width: 170rpx;
+  height: 70rpx;
+  font-size: 26rpx;
   box-sizing: border-box;
+  line-height: 70rpx;
 }
 .czy .content .list_top {
+  border-radius: 10rpx;
+  z-index: 1;
+  width: 90%;
+  margin-left: 5%;
+}
+.czy .content .list_top .title {
+  margin-left: 28%;
+  width: 44.5%;
+}
+.czy .content .list_top .rank_list .member_rank {
+  padding: 5% 0;
+  position: relative;
+  color: #000;
+}
+.czy .content .list_top .rank_list .member_rank .king {
+  width: 40rpx;
+  height: 34rpx;
+  position: absolute;
+  left: 8rpx;
+  top: 8rpx;
+}
+.czy .content .list_top .rank_list .member_rank .member_head {
+  margin-left: 11rpx;
+  width: 132rpx;
+  height: 132rpx;
+  z-index: 10;
+  position: relative;
+}
+.czy .content .list_top .rank_list .member_rank .member_head .avatar {
+  width: 132rpx;
+  height: 132rpx;
+  position: relative;
+}
+.czy .content .list_top .rank_list .member_rank .member_head .avatar image {
+  width: 132rpx;
+  height: 132rpx;
+}
+.czy .content .list_top .rank_list .member_rank .member_head .index {
   text-align: center;
+  background-color: #fbf81a;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 32rpx;
+  font-weight: bold;
+  line-height: 32rpx;
+  font-size: 28rpx;
+  padding: 2rpx 9rpx;
+  background: -webkit-linear-gradient(left, #ff7595, #ff98b0);
+}
+.czy .content .list_top .rank_list .member_rank .rank_mid {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 10;
+  width: 55%;
+  margin-left: 13rpx;
+  font-weight: 700;
+  top: -90rpx;
+  left: 160rpx;
+}
+.czy .content .list_top .rank_list .member_rank .line {
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 10;
+  border-bottom: 1px solid #eec3db;
+  position: absolute !important;
+  width: 75%;
+  bottom: 0;
+  right: 0;
+}
+.czy .content .tips2 {
+  color: #828283;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
