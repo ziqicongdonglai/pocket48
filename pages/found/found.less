@@ -71,6 +71,132 @@
   }
 }
 
+/* 最新部分帖子 */
+/* 每条动态 */
+.post_item {
+  padding: 40rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 3rpx;
+  /* 顶部 */
+  .post_top {
+    display: flex;
+    .head_img {
+      width: 90rpx;
+      height: 90rpx;
+      border-radius: 50%;
+      margin-right: 20rpx;
+    }
+    .post_top_right {
+      display: flex;
+      flex-direction: column;
+      .userinf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .fans_name {
+          height: 50rpx;
+        }
+        .badges {
+          height: 50rpx;
+          margin-left: 20rpx;
+          display: flex;
+          flex: 1;
+          align-items: center;
+          view {
+            margin-right: 10rpx;
+          }
+          image {
+            width: 50rpx;
+            height: 50rpx;
+          }
+          .vip {
+            image {
+              width: 40rpx;
+              height: 40rpx;
+            }
+          }
+        }
+      }
+      .date_time {
+        font-size: 24rpx;
+        color: #bbb;
+      }
+    }
+  }
+  /*帖子的主体*/
+  .post_main {
+    /* 帖子的标题（小偶像的动态貌似都不怎么有标题 因为应该都是同步微博的内容） */
+    .post_title {
+      color: #000;
+      text-align: left;
+      margin: 20rpx 0;
+      font-weight: 700;
+      font-size: 38rpx;
+    }
+    /* 帖子内容 */
+    .post_content {
+      /* 文字内容 */
+      .post_content_text {
+        line-height: 60rpx;
+      }
+      /* 图片内容 */
+      .post_content_img {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        // background-color: green;
+        .img_box {
+          width: 30%;
+          height: 214rpx;
+          overflow: hidden;
+          border-radius: 15rpx;
+          margin-right: 10rpx;
+          margin-bottom: 10rpx;
+          image {
+            // flex: 1;
+            width: 100%;
+            height: 300rpx;
+            // background-color: pink;
+          }
+        }
+      }
+    }
+  }
+  /* 帖子底部信息 */
+  .post_bottom_opt {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24rpx;
+    color: #bbb;
+    align-items: center;
+    margin-top: 20rpx;
+    /* 浏览次数 */
+    .looks {
+    }
+    .bottom_right {
+      display: flex;
+      .right_item {
+        display: flex;
+        flex-direction: row;
+        margin-right: 20rpx;
+        align-items: center;
+        image {
+          width: 40rpx;
+          height: 40rpx;
+        }
+      }
+      .right_item:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/* 精选部分 */
 .essence {
   width: 100%;
   margin-top: 90rpx;

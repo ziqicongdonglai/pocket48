@@ -12,7 +12,7 @@
             </view>
         </view>
         <!-- 滑动的主体部分 -->
-        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2300rpx'>
+        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 4090rpx'>
             <swiper-item>
                 <scroll-view style="height: 100%" scroll-y>
                     <view class="found_main">
@@ -38,55 +38,82 @@
                                 </view>
                             </view>
                         </view>
-                        <view class="postsgroup">
-                            <view class="post">
-                                <!-- 帖子顶部 -->
-                                <view class="post_top">
-                                    <!-- 头像 -->
-                                    <view>
-                                        <image></image>
-                                    </view>
-                                    <!-- 头像右边的内容 -->
-                                    <view class="post_top_r">
-                                        <!-- 右侧信息的上部 用户的名称 及 等级 各种徽章 -->
-                                        <view class="userinf">
-                                            <!-- 用户名 -->
-                                            <view class="fans_name"></view>
+                        <!-- 每条帖子 -->
+                        <view class="post_item" wx:for="{{postList}}" wx:key="id">
+                            <!-- 帖子顶部 -->
+                            <view class="post_top">
+                                <!-- 粉丝头像 -->
+                                <image lazy-load class="head_img" src="{{item.headImg}}"></image>
+                                <!-- 头像右边的内容 用户信息及发帖时间 -->
+                                <view class="post_top_right">
+                                    <!-- 右侧信息的上部 用户的名称 及 等级 各种徽章 -->
+                                    <view class="userinf">
+                                        <!-- 用户名 -->
+                                        <view class="fans_name">{{item.fansName}}</view>
+                                        <!-- 所有的用户展示的徽章 -->
+                                        <view class="badges" wx:for="{{item.badges}}" wx:for-item="badgesItem">
                                             <!-- vip标识（可无） -->
-                                            <view class="vip"></view>
+                                            <view class="vip">
+                                                <image src="{{badgesItem.vip}}" class="{{badgesItem.vip?'':'img_hide'}}"></image>
+                                            </view>
                                             <!-- 等级图标 -->
-                                            <view class="level"></view>
+                                            <view class="level">
+                                                <image src="{{badgesItem.level}}"></image>
+                                            </view>
                                             <!-- 等级徽章（可无） -->
-                                            <view class="badge_level"></view>
+                                            <view class="badge_level">
+                                                <image src="{{badgesItem.badgeLevel}}" class="{{badgesItem.badgeLevel?'':'img_hide'}}"></image>
+                                            </view>
                                             <!-- 成就徽章（可无） -->
-                                            <view class="badge_activity"></view>
+                                            <view class="badge_activity">
+                                                <image src="{{badgesItem.badgeActive}}" class="{{badgesItem.badgeActive?'':'img_hide'}}"></image>
+                                            </view>
                                         </view>
-                                        <!-- 帖子的发布时间 -->
-                                        <view class="post_create">
-                                            <!-- 日期 -->
-                                            <view class="post_date"></view>
-                                            <!-- 时间 -->
-                                            <view class="post_time"></view>
+                                    </view>
+                                    <!-- 帖子的发布时间 -->
+                                    <view class="date_time">{{item.dateTime}}</view>
+                                </view>
+                            </view>
+                            <!-- 帖子的主体部分 帖子标题 帖子内容（图片文字等） -->
+                            <view class="post_main">
+                                <!-- 帖子的标题 -->
+                                <view class="post_title">{{item.postTitle}}</view>
+                                <!-- 帖子的内容 -->
+                                <view class="post_content">
+                                    <!-- 帖子文字内容 -->
+                                    <view class="post_content_text">
+                                        {{item.contentText}}
+                                        <text class="anchor">{{item.anchor}}</text>
+                                    </view>
+                                    <!-- 帖子图片内容 -->
+                                    <view class="post_content_img">
+                                        <view class="img_box" wx:for="{{item.contentImg}}" wx:for-item="imgitem" wx:key="id">
+                                            <image lazy-load mode="widthFix center" src="{{imgitem.imgUrl}}" style="widht: {{100/item.contentImg.length}}%"></image>
                                         </view>
                                     </view>
                                 </view>
-                                <!-- 帖子的主体部分 帖子标题 帖子内容（图片文字等） -->
-                                <view class="post_main">
-                                    <!-- 帖子的标题 -->
-                                    <view class="post_title"></view>
-                                    <!-- 帖子的内容 -->
-                                    <view class="post_content"></view>
-                                </view>
-                                <!-- 用户对这个帖子的操作 谁人看过 礼物 是否喜爱 评论数及内容 -->
-                                <view class="post_opt">
-                                    <!-- 谁人看过 及 次数 头像 -->
-                                    <view class="lookTimes"></view>
-                                    <!-- 礼物图标 -->
-                                    <view class="gift"></view>
-                                    <!-- 是否喜爱 -->
-                                    <view class="like"></view>
-                                    <!-- 评论数 及 评论内容 -->
-                                    <view class="comments"></view>
+                            </view>
+                            <!-- 用户对这个帖子的操作（底部信息） 谁人看过 礼物 是否喜爱 评论数及内容 -->
+                            <view class="post_bottom_opt">
+                                <!-- 浏览次数 目前没有谁浏览过的头像 -->
+                                <view class="looks">{{item.looks}}看过</view>
+                                <!-- 礼物 喜爱数 评论数 -->
+                                <view class="bottom_right">
+                                    <!-- 礼物 -->
+                                    <view class="right_item">
+                                        <image src="/images/found/dynamic_gift.png"></image>
+                                        <view>礼物</view>
+                                    </view>
+                                    <!-- 喜爱数 -->
+                                    <view class="right_item">
+                                        <image src="/images/found/dynamic_like.png"></image>
+                                        <view>{{item.likes}}</view>
+                                    </view>
+                                    <!-- 评论数 -->
+                                    <view class="right_item">
+                                        <image src="/images/found/dynamic_comments.png"></image>
+                                        <view>{{item.comments}}</view>
+                                    </view>
                                 </view>
                             </view>
                         </view>

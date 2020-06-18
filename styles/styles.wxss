@@ -197,3 +197,9 @@ image {
 .anchor {
   color: #8876ec;
 }
+
+/* 粉丝发帖（最新）部分 等级vip徽章等没有数据的 */
+.img_hide {
+  width: 0 !important;
+  height: 0 !important;
+}

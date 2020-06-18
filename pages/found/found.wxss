@@ -60,6 +60,124 @@
   height: 30rpx;
   padding: 0 15rpx;
 }
+/* 最新部分帖子 */
+/* 每条动态 */
+.post_item {
+  padding: 40rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 3rpx;
+  /* 顶部 */
+  /*帖子的主体*/
+  /* 帖子底部信息 */
+}
+.post_item .post_top {
+  display: flex;
+}
+.post_item .post_top .head_img {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.post_item .post_top .post_top_right {
+  display: flex;
+  flex-direction: column;
+}
+.post_item .post_top .post_top_right .userinf {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.post_item .post_top .post_top_right .userinf .fans_name {
+  height: 50rpx;
+}
+.post_item .post_top .post_top_right .userinf .badges {
+  height: 50rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.post_item .post_top .post_top_right .userinf .badges view {
+  margin-right: 10rpx;
+}
+.post_item .post_top .post_top_right .userinf .badges image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.post_item .post_top .post_top_right .userinf .badges .vip image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.post_item .post_top .post_top_right .date_time {
+  font-size: 24rpx;
+  color: #bbb;
+}
+.post_item .post_main {
+  /* 帖子的标题（小偶像的动态貌似都不怎么有标题 因为应该都是同步微博的内容） */
+  /* 帖子内容 */
+}
+.post_item .post_main .post_title {
+  color: #000;
+  text-align: left;
+  margin: 20rpx 0;
+  font-weight: 700;
+  font-size: 38rpx;
+}
+.post_item .post_main .post_content {
+  /* 文字内容 */
+  /* 图片内容 */
+}
+.post_item .post_main .post_content .post_content_text {
+  line-height: 60rpx;
+}
+.post_item .post_main .post_content .post_content_img {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.post_item .post_main .post_content .post_content_img .img_box {
+  width: 30%;
+  height: 214rpx;
+  overflow: hidden;
+  border-radius: 15rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+}
+.post_item .post_main .post_content .post_content_img .img_box image {
+  width: 100%;
+  height: 300rpx;
+}
+.post_item .post_bottom_opt {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #bbb;
+  align-items: center;
+  margin-top: 20rpx;
+  /* 浏览次数 */
+}
+.post_item .post_bottom_opt .bottom_right {
+  display: flex;
+}
+.post_item .post_bottom_opt .bottom_right .right_item {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20rpx;
+  align-items: center;
+}
+.post_item .post_bottom_opt .bottom_right .right_item image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.post_item .post_bottom_opt .bottom_right .right_item:last-child {
+  margin-right: 0;
+}
+/* 精选部分 */
 .essence {
   width: 100%;
   margin-top: 90rpx;

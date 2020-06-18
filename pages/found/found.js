@@ -37,36 +37,172 @@ Page({
       }
     ],
     // 帖子列表
-    postlist: [
+    postList: [
       {
+        id: 1,
         // 粉丝头像地址
-        'imgUrl': '',
+        'headImg': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfwdho55c9j302i02ia9w.jpg',
         // 粉丝名字
-        'fansName': '',
-        // VIP标识
-        'vip': '',
-        // 等级数字图标
-        'level': '',
-        // 等级徽章
-        'badgeLevel': '',
-        // 成就徽章
-        'badgeActive': '',
-        // 帖子发布日期
-        'createDate': '',
+        'fansName': '轻纱幔下花朵朵',
+        // 徽章 VIP等
+        badges: [
+          {
+            // VIP标识
+            'vip': '',
+            // 等级数字图标
+            'level': '/images/level/contributionlist_four.png',
+            // 等级徽章
+            'badgeLevel': '',
+            // 成就徽章
+            'badgeActive': ''
+          }
+        ],
         // 帖子发布时间
-        'createTime': '',
+        'dateTime': '2020-06-18 10:25:55',
         // 帖子标题
-        'postTitle': '',
-        // 帖子内容
-        'postContent': '',
+        'postTitle': '生日快乐',
+        // 帖子文字内容
+        'contentText': '小鞠生日快乐，开心每一天',
+        // 超过两行多的字数省略出现这个查看全文的文字
+        anchor: '',
+        // 帖子图片内容
+        contentImg: [
+          {
+            id: 1,
+            imgUrl: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfwfvmioflj30gd0qowfq.jpg'
+          }
+        ],
+        // 看过（次数 及 看过的人的头像 超过4个只显示4个）
+        'looks': '3',
         // 喜爱数
-        'likeTimes': '',
+        'likes': '2',
         // 评论（条数及内容：评论人名称及评论内容 超过3条只显示最早的3条）
         // 最早的在最上面
-        'comments': '',
-        // 看过（次数 及 看过的人的头像 超过4个只显示4个）
-        'lookTimes': ''
-      }
+        'comments': '0',
+      },
+      {
+        id: 1,
+        'headImg': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfru6cl530j306y06ywef.jpg',
+        'fansName': 'Forever_LJ',
+        badges: [
+          {
+            'vip': '',
+            'level': '/images/level/contributionlist_six.png',
+            'badgeLevel': '/images/found/lastest/fans_badge_level_1.png',
+            'badgeActive': '/images/found/lastest/fans_badge_activityl_1.png'
+          }
+        ],
+        'dateTime': '2020-06-18 09:58:35',
+        'postTitle': '新粉入坑指南系列5',
+        'contentText': '停更了好一会，最新一期的新粉入坑系列终于来了，本期主题是总选，正值总选，所以就来详细讲讲总选，前几期可以前往#我是......',
+        anchor: '查看全文',
+        contentImg: [],
+        'looks': '3436',
+        'likes': '227',
+        'comments': '53',
+      },
+      {
+        id: 1,
+        'headImg': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfwa0gyrj2j302s02sa9u.jpg',
+        'fansName': '那一抹蒲公英的浅笑3',
+        badges: [
+          {
+            'vip': '',
+            'level': '/images/level/contributionlist_one.png',
+            'badgeLevel': '',
+            'badgeActive': ''
+          }
+        ],
+        'dateTime': '2020-06-18 07:39:35',
+        'postTitle': '被青钰雯⭕了，加油',
+        'contentText': '想关注青钰雯动态，还有看她以前的直播，可是并没有找到在哪😓求解答',
+        anchor: '',
+        contentImg: [],
+        'looks': '10',
+        'likes': '1',
+        'comments': '2',
+      },
+      {
+        id: 1,
+        'headImg': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfwecbjusrj306y06yglk.jpg',
+        'fansName': '石竹君的颜饭',
+        badges: [
+          {
+            'vip': '',
+            'level': '/images/level/contributionlist_one.png',
+            'badgeLevel': '',
+            'badgeActive': ''
+          }
+        ],
+        'dateTime': '2020-06-18 06:36:47',
+        'postTitle': '',
+        'contentText': '十竹的翻牌太 甜了，每天爱你三千遍见到你第一眼就falling love真正喜欢上是因为看了你的相关讨论，觉得你超好小话痨太可爱了......',
+        anchor: '查看全文',
+        contentImg: [
+          {
+            id: 1,
+            imgUrl: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfwfvpxkgbj30qo0j7jtb.jpg'
+          }
+        ],
+        'looks': '40',
+        'likes': '9',
+        'comments': '2',
+      },
+      {
+        id: 1,
+        'headImg': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfwepw0309j306y06y74g.jpg',
+        'fansName': '雪覆小楼',
+        badges: [
+          {
+            'vip': '/images/found/find_vip.png',
+            'level': '/images/level/contributionlist_five.png',
+            'badgeLevel': '/images/found/lastest/fans_badge_level_1.png',
+            'badgeActive': '/images/found/lastest/fans_badge_activityl_2.png'
+          }
+        ],
+        'dateTime': '2020-06-18 01:58:15',
+        'postTitle': '蕾蕾真的是有各种属性',
+        'contentText': '可瓜可花，可清纯可钓系可元气，关键人还憨憨的，哈哈',
+        anchor: '',
+        contentImg: [
+          {
+            id: 1,
+            imgUrl: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfwfvti3bbj30k00qoq4v.jpg'
+          },
+          {
+            id: 2,
+            imgUrl: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfwfvwiwgvj30k00qoaau.jpg'
+          },
+          {
+            id: 3,
+            imgUrl: 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfwfvzwhn0j30ht0qoac5.jpg'
+          },
+        ],
+        'looks': '7',
+        'likes': '5',
+        'comments': '1',
+      },
+      {
+        id: 1,
+        'headImg': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfweos1qi2j306y06y74a.jpg',
+        'fansName': 'PTTNJJ',
+        badges: [
+          {
+            'vip': '',
+            'level': '/images/level/contributionlist_two.png',
+            'badgeLevel': '',
+            'badgeActive': ''
+          }
+        ],
+        'dateTime': '2020-06-18 01:58:15',
+        'postTitle': '',
+        'contentText': '居然在老福特找到了w宇航员的粮，一声爹地脱口而出',
+        anchor: '',
+        contentImg: [],
+        'looks': '10',
+        'likes': '0',
+        'comments': '1',
+      },
     ]
   },
   // 切换bar
