@@ -3,14 +3,16 @@
     <view class="head">
         <view class="navbar">
             <image src="/images/home/idol/memberlist_top_return.png"></image>
-            <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+            <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}"
+                wx:key="unique" bindtap="navbarTap">
                 {{item}}
             </text>
             <image src="/images/home/idol/shuaixuan.png"></image>
         </view>
     </view>
     <!-- 滑动的主体部分 -->
-    <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 9810rpx'>
+    <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange"
+        style='height: 9810rpx'>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
                 <view class="mt">
@@ -22,24 +24,27 @@
                                 {{group.groupName}}（{{group.memberList.length}}人）
                             </view>
                             <!-- 向下的箭头 点击显示全部数据 -->
-                            <image class="arrow_more" src="/images/home/idol/member_list_open.png"></image>
+                            <image bindtap="lishHidden" data-idx="{{index}}" class="arrow_more"
+                                src="/images/home/idol/member_list_open.png"></image>
                         </view>
                         <!-- 成员列表 -->
                         <view class="member_list">
                             <!-- 每个成员 -->
                             <view class="member" wx:for="{{group.memberList}}" wx:key="id">
                                 <!-- 成员头像 -->
-                                <image mode="aspectFill" class="head_img" lazy-load src="{{item.headImg}}" style="border-color: {{group.teamColor}};"></image>
+                                <image mode="aspectFill" class="head_img" lazy-load src="{{item.headImg}}"
+                                    style="border-color: {{group.teamColor}};"></image>
                                 <view class="name_team">
                                     <!-- 成员名字 -->
                                     <view class="member_name">{{item.memberName}}</view>
                                     <!-- 队伍名字 -->
-                                    <view class="team_name team" style="background-color: {{group.teamColor}}">
+                                    <view class="team_name team" hidden="{{group.teamName?false:true}}"
+                                        style="background-color: {{group.teamColor}}">
                                         {{group.teamName}}
                                     </view>
                                 </view>
                                 <!-- 成员出道的时团 及其期数 -->
-                                <view class="periods">{{item.periods}}</view>
+                                <view class="periods" hidden="{{item.periods?false:true}}">{{item.periods}}</view>
                                 <!-- 是否关注 -->
                                 <view class="isfollow">
                                     <image src="/images/home/idol/send_bless_follow_bg.png"></image>
@@ -49,7 +54,8 @@
                         </view>
                         <!-- 是否全部关注 -->
                         <view class="group_isfollow">
-                            <image class="groupis_all_follow" src="/images/home/idol/member_list_attention_already.png"></image>
+                            <image class="groupis_all_follow" src="/images/home/idol/member_list_attention_already.png">
+                            </image>
                             <view class="group_follow_text all">取消关注</view>
                         </view>
                     </view>
@@ -57,7 +63,14 @@
             </scroll-view>
         </swiper-item>
         <swiper-item>
-            <view class="mt">饭圈</view>
+            <view class="mt">
+                <view>
+                    <view class="nodata_content">
+                        <image src="/images/my/message/emptystate_nomessage.png"></image>
+                        <view>饭圈暂无数据</view>
+                    </view>
+                </view>
+            </view>
         </swiper-item>
     </swiper>
 </view>

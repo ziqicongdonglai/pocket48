@@ -8,6 +8,7 @@ Page({
   data: {
     navbar: ['成员', '饭圈'],
     currentTab: 0,
+    elhide: false,
     // 所有成员列表
     allmemberList: [
       {
@@ -372,6 +373,29 @@ Page({
         ]
       },
       {
+        id: 12,
+        groupName: '预备生',
+        'isAllFollow': 0,
+        teamName: '预备生',
+        teamColor: '#d4d4d4',
+        memberList: [
+          {
+            id: 1,
+            headImg: '',
+            memberName: '王贝妮',
+            periods: 'BJE48 八期生',
+            isFollow: 0,
+          },
+          {
+            id: 2,
+            headImg: '',
+            memberName: '张睿怡',
+            periods: 'BJE48 八期生',
+            isFollow: 0,
+          }
+        ]
+      },
+      {
         id: 13,
         groupName: 'TEAM G',
         'isAllFollow': 1,
@@ -435,33 +459,111 @@ Page({
       },
       {
         id: 15,
-        groupName: 'TEAM Z',
-        'isAllFollow': 1,
-        teamName: 'Z',
-        teamColor: '#eb627c',
+        groupName: '预备生',
+        'isAllFollow': 0,
+        teamName: '预备生',
+        teamColor: '#d4d4d4',
         memberList: [
           {
             id: 1,
             headImg: '',
-            memberName: '陈桂君',
-            periods: 'GNZ48 一期生',
+            memberName: '石竹君',
+            periods: 'GNZ48 八期生',
+            isFollow: 0,
+          },
+          {
+            id: 2,
+            headImg: '',
+            memberName: '杨若惜',
+            periods: 'GNZ48 八期生',
+            isFollow: 0,
+          },
+          {
+            id: 3,
+            headImg: '',
+            memberName: '张书瑀',
+            periods: 'GNZ48 八期生',
+            isFollow: 0,
+          }
+          ,,,,,,,
+        ]
+      },
+      {
+        id: 16,
+        groupName: 'IDFT',
+        'isAllFollow': 0,
+        teamName: 'IDFT',
+        teamColor: '#b4006e',
+        memberList: [
+          {
+            id: 1,
+            headImg: '',
+            memberName: '卞佳宁',
+            periods: 'SHY48 四期生',
             isFollow: 1,
           },
           {
             id: 2,
             headImg: '',
-            memberName: '邓慧恩',
-            periods: 'GNZ48 三期生',
+            memberName: '曾佳',
+            periods: 'CKG48 一期生',
             isFollow: 1,
           },
           {
             id: 3,
             headImg: '',
-            memberName: '方琪',
+            memberName: '曹露丹',
             periods: 'CKG48 三期生',
             isFollow: 1,
           }
-          ,,,,,,,,,,,,,,,
+          ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+        ]
+      },
+      {
+        id: 17,
+        groupName: '海外练习生',
+        'isAllFollow': 1,
+        teamName: '',
+        teamColor: '#7766e6',
+        memberList: [
+          {
+            id: 1,
+            headImg: '',
+            memberName: '高崇',
+            periods: 'SHY48 二期生',
+            isFollow: 1,
+          }
+        ]
+      },
+      {
+        id: 18,
+        groupName: '暂休',
+        'isAllFollow': 0,
+        teamName: '',
+        teamColor: '#d4d4d4',
+        memberList: [
+          {
+            id: 1,
+            headImg: '',
+            memberName: '赵嘉敏',
+            periods: 'SNH48 一期生',
+            isFollow: 1,
+          },
+          {
+            id: 2,
+            headImg: '',
+            memberName: '徐子轩',
+            periods: 'SNH48 二期生',
+            isFollow: 1,
+          },
+          {
+            id: 3,
+            headImg: '',
+            memberName: '袁丹妮',
+            periods: 'SNH48 三期生',
+            isFollow: 1,
+          }
+          ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
         ]
       },
     ]
@@ -478,7 +580,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    const that = this;
     app.editTabbar();
+    // that.lishHidden();
   },
   /**
    * 生命周期函数--监听页面显示
@@ -502,5 +606,17 @@ Page({
     })
     // 全局变量
     app.globalData.currentTab6 = e.currentTarget.dataset.idx;
+  },
+  // 对超过三个的进行隐藏
+  lishHidden: function(e) {
+    // for (let i = 0; i < this.allmemberList.length; i++) {
+    //   for (let j = 0; j < this.allmemberList[i].memberList.length; j++) {
+    //     console.log(this.allmemberList[i].memberList);
+    //   }
+    // }
+    console.log(e);
+    // if (listlength > 3) {
+      
+    // }
   }
 })
