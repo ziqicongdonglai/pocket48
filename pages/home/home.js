@@ -117,7 +117,7 @@ Page({
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfo8wxiz8qj306y04mq2w.jpg',
         // 'headcolor': '#f0a639',
         'memberName': 'GNZ48-卢静',
-        'team': 'NII',
+        'team': 'NIII',
         'teamColor': '#ffd801',
         'liveTitle': '唠唠 '
       }
@@ -373,19 +373,28 @@ Page({
     // 全局变量
     app.globalData.topcurrentTab1 = e.currentTarget.dataset.idx;
   },
-  //跳转MC话题
-  toMC: function () {
-    wx.navigateTo({
-      url: '/pages/home/mc/mc',
-      success: function(res){
-        // success
-      }
-    })
-  },
   // 跳转消息盒子
   toMessage: function () {
     wx.navigateTo({
       url: '/pages/my/message/message',
+      success: function (res) {
+        // success
+      }
+    })
+  },
+  //跳转MC话题
+  toMC: function () {
+    wx.navigateTo({
+      url: '/pages/home/mc/mc',
+      success: function (res) {
+        // success
+      }
+    })
+  },
+  // 跳转偶像
+  toIdol: function () {
+    wx.navigateTo({
+      url: '/pages/home/idol/idol',
       success: function (res) {
         // success
       }

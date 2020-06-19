@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/home/idol/idol",
     "pages/home/home",
     "pages/home/mc/mc",
     "pages/juju/juju",

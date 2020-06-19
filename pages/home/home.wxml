@@ -71,7 +71,7 @@
                                         <image src="/images/home/square/mine_show.png" class="item_icon"></image>
                                         <text>演出</text>
                                     </view>
-                                    <view class="features">
+                                    <view class="features" bindtap="toIdol">
                                         <image src="/images/home/square/mine_idol.png" class="item_icon"></image>
                                         <text>偶像</text>
                                     </view>

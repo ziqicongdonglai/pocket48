@@ -1,0 +1,109 @@
+/* 导航栏 */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  .item {
+    font-size: 32rpx;
+    // margin-right: 60rpx;
+  }
+  image {
+    width: 45rpx;
+    height: 45rpx;
+    margin-top: 100rpx;
+  }
+}
+
+.member_group {
+  margin-bottom: 15rpx;
+  /* 每组顶部标题 */
+  .group_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20rpx;
+    background-color: #fff;
+    .group_title {
+      font-size: 36rpx;
+    }
+    .arrow_more {
+      width: 45rpx;
+      height: 45rpx;
+    }
+  }
+  /* 成员列表 */
+  .member_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rpx;
+    background-color: #fff;
+    width: 100%;
+    .member {
+      width: 33.3%;
+      height: 450rpx;
+      display: flex;
+      flex-direction: column;
+      background-color: #f0eeef;
+      justify-content: space-around;
+      align-items: center;
+      .head_img {
+        width: 120rpx;
+        height: 120rpx;
+        border-radius: 50%;
+        border: 2rpx solid;
+        // 头像边框的颜色
+        border-color: #fff;
+      }
+      .name_team {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        //    justify-content: center;
+        .member_name {
+          font-size: 30rpx;
+        }
+        .team_name {
+          margin-left: 10rpx;
+        }
+      }
+      .periods {
+        color: #a0a0a0;
+        padding: 5rpx 22rpx;
+        text-align: center;
+        font-size: 20rpx;
+        background-color: #f0eeef;
+        border-radius: 30rpx;
+      }
+      .isfollow {
+        text-align: center;
+        image {
+          width: 154rpx;
+          height: 104rpx;
+        }
+        .follow_text {
+          font-size: 24rpx;
+          color: #fff;
+          margin-top: -77rpx;
+        }
+      }
+    }
+  }
+  /* 是否全部关注 */
+  .group_isfollow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120rpx;
+    background-color: #fff;
+    image {
+      width: 45rpx;
+      height: 45rpx;
+    }
+    .group_follow_text {
+      margin-left: 10rpx;
+      color: #c2c2c2;
+      font-size: 28rpx;
+    }
+  }
+}
