@@ -2,7 +2,7 @@
     <!-- 导航条 -->
     <view class="head">
         <view class="navbar">
-            <image src="/images/home/idol/memberlist_top_return.png"></image>
+            <image bindtap="handleCancel" src="/images/home/idol/memberlist_top_return.png"></image>
             <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}"
                 wx:key="unique" bindtap="navbarTap">
                 {{item}}

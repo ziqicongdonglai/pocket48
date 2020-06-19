@@ -87,7 +87,7 @@
                                         <image src="/images/home/square/mine_rank.png" class="item_icon"></image>
                                         <text>榜单</text>
                                     </view>
-                                    <view class="features">
+                                    <view class="features" bindtap="toMusic">
                                         <image src="/images/home/square/mine_music.png" class="item_icon"></image>
                                         <text>音乐</text>
                                     </view>

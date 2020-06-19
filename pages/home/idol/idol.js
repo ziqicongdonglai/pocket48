@@ -214,7 +214,7 @@ Page({
             periods: 'SNH48 二期生',
             isFollow: 1,
           }
-          ,,,,,,,,,,,,,,,,
+          , , , , , , , , , , , , , , , ,
         ]
       },
       {
@@ -245,7 +245,7 @@ Page({
             periods: 'CKG48 三期生',
             isFollow: 1,
           }
-          ,,,,,,,,,,,,,,,,,,
+          , , , , , , , , , , , , , , , , , ,
         ]
       },
       {
@@ -276,7 +276,7 @@ Page({
             periods: 'SNH48 十期生',
             isFollow: 1,
           }
-          ,,,,,,,,,,,,,,,,,,
+          , , , , , , , , , , , , , , , , , ,
         ]
       },
       {
@@ -307,7 +307,7 @@ Page({
             periods: 'SNH48 五期生',
             isFollow: 1,
           }
-          ,,,,,,,,,,,,,,,
+          , , , , , , , , , , , , , , ,
         ]
       },
       {
@@ -338,7 +338,7 @@ Page({
             periods: 'SNH48 六期生',
             isFollow: 1,
           }
-          ,,,,,,,,,,,,,,,,
+          , , , , , , , , , , , , , , , ,
         ]
       },
       {
@@ -369,7 +369,7 @@ Page({
             periods: 'BEJ48 七期生',
             isFollow: 1,
           }
-          ,,,,,,,,,,,,,,,,
+          , , , , , , , , , , , , , , , ,
         ]
       },
       {
@@ -423,7 +423,7 @@ Page({
             periods: 'SNH48 五期生',
             isFollow: 1,
           }
-          ,,,,,,,,,,,,,,,,
+          , , , , , , , , , , , , , , , ,
         ]
       },
       {
@@ -454,7 +454,7 @@ Page({
             periods: 'SNH48 六期生',
             isFollow: 1,
           }
-          ,,,,,,,,,,,,
+          , , , , , , , , , , , ,
         ]
       },
       {
@@ -485,7 +485,7 @@ Page({
             periods: 'GNZ48 八期生',
             isFollow: 0,
           }
-          ,,,,,,,
+          , , , , , , ,
         ]
       },
       {
@@ -516,7 +516,7 @@ Page({
             periods: 'CKG48 三期生',
             isFollow: 1,
           }
-          ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+          , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ,
         ]
       },
       {
@@ -563,7 +563,7 @@ Page({
             periods: 'SNH48 三期生',
             isFollow: 1,
           }
-          ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+          , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ,
         ]
       },
     ]
@@ -574,7 +574,7 @@ Page({
       currentTab: e.currentTarget.dataset.idx
     })
     // 全局变量
-    app.globalData.currentTab1 = e.currentTarget.dataset.idx;
+    app.globalData.currentTab6 = e.currentTarget.dataset.idx;
   },
   /**
    * 生命周期函数--监听页面加载
@@ -608,7 +608,7 @@ Page({
     app.globalData.currentTab6 = e.currentTarget.dataset.idx;
   },
   // 对超过三个的进行隐藏
-  lishHidden: function(e) {
+  lishHidden: function (e) {
     // for (let i = 0; i < this.allmemberList.length; i++) {
     //   for (let j = 0; j < this.allmemberList[i].memberList.length; j++) {
     //     console.log(this.allmemberList[i].memberList);
@@ -616,7 +616,16 @@ Page({
     // }
     console.log(e);
     // if (listlength > 3) {
-      
+
     // }
+  },
+  // 取消事件 返回到上一个页面
+  handleCancel: function () {
+    wx.navigateBack({
+      delta: 1, // 回退前 delta(默认为1) 页面
+      success: function (res) {
+        // success
+      }
+    })
   }
 })

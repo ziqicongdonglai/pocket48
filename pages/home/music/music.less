@@ -1,0 +1,73 @@
+/* 导航栏 */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  .item {
+    font-size: 32rpx;
+    // margin-right: 60rpx;
+  }
+  .item.active {
+    border-bottom: 0rpx;
+  }
+  image {
+    width: 45rpx;
+    height: 45rpx;
+    margin-top: 100rpx;
+  }
+}
+.mt {
+  margin-top: 83rpx;
+}
+/* 每首歌或专辑 */
+.music {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  justify-content: space-between;
+  padding-top: 20rpx;
+  height: 160rpx;
+  .music_image {
+    width: 120rpx;
+    height: 120rpx;
+    background-color: #fff;
+    margin-left: 10rpx;
+    border-radius: 15rpx;
+    // margin-right: 40rpx;
+    border: 2rpx solid red;
+  }
+  .music_inf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 560rpx;
+    height: 160rpx;
+    border-bottom: 2rpx solid #f1f1f1;
+    .music_inf_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .music_inf_top {
+        display: flex;
+        align-items: center;
+        .music_title {
+        }
+        image {
+          width: 40rpx;
+          height: 23rpx;
+          margin-left: 20rpx;
+        }
+      }
+      .music_singer {
+        color: #8c8c8c;
+        margin-top: 20rpx;
+      }
+    }
+    .icon_more {
+      width: 80rpx;
+      height: 80rpx;
+      padding-right: 10rpx;
+    }
+  }
+}

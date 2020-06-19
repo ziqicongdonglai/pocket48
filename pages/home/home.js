@@ -399,5 +399,14 @@ Page({
         // success
       }
     })
+  },
+  // toMusic
+  toMusic: function () {
+    wx.navigateTo({
+      url: '/pages/home/music/music',
+      success: function (res) {
+        // success
+      }
+    })
   }
 })

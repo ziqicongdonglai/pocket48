@@ -1,0 +1,44 @@
+<view>
+    <!-- 导航条 -->
+    <view class="head">
+        <view class="navbar">
+            <image bindtap="handleCancel" src="/images/home/idol/memberlist_top_return.png"></image>
+            <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+                {{item}}
+            </text>
+            <image src="/images/home/idol/shuaixuan.png"></image>
+        </view>
+    </view>
+    <!-- 滑动的主体部分 -->
+    <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 9810rpx'>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="mt">
+                    <!-- 每一项专辑 -->
+                    <view class="music">
+                        <!-- 专辑封面 -->
+                        <image class="music_image" src=""></image>
+                        <!-- 专辑详情 -->
+                        <view class="music_inf">
+                            <view class="music_inf_left">
+                                <view class="music_inf_top">
+                                    <view class="music_title">《Be A Fighter》</view>
+                                    <image src="/images/home/music/ep.png"></image>
+                                </view>
+                                <!-- 专辑演唱者（团体） -->
+                                <view class="music_singer">BEJ48</view>
+                            </view>
+                            <!-- 更多的箭头 -->
+                            <image class="icon_more" src="/images/home/music/common_more.png"></image>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="mt">单曲</view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>
