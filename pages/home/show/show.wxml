@@ -1,0 +1,54 @@
+<view>
+    <!-- 导航条 -->
+    <view class="head">
+        <view class="navbar">
+            <image bindtap="handleCancel" src="/images/home/idol/memberlist_top_return.png"></image>
+            <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+                {{item}}
+            </text>
+            <image src="/images/home/idol/shuaixuan.png"></image>
+        </view>
+    </view>
+    <!-- 滑动的主体部分 -->
+    <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 9810rpx'>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="mt">直播</view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="mt">
+                    <!-- 导航条 -->
+                    <view class="head navtop">
+                        <view class="navbar">
+                            <text wx:for="{{topnavbar}}" data-topidx="{{index}}" class="item {{topcurrentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="topnavbarTap">
+                                {{item}}
+                            </text>
+                        </view>
+                    </view>
+                    <!-- 滑动的主体部分 -->
+                    <swiper class="bar_swiper" current="{{topcurrentTab}}" duration="200" bindchange="topswiperChange" style='height: 9810rpx'>
+                        <swiper-item>
+                            <scroll-view style="height: 100%" scroll-y>
+                                <view class="public_mt">最新演出</view>
+                            </scroll-view>
+                        </swiper-item>
+                        <swiper-item>
+                            <scroll-view style="height: 100%" scroll-y>
+                                <view class="public_mt">历史回放</view>
+                            </scroll-view>
+                        </swiper-item>
+                        <swiper-item>
+                            <scroll-view style="height: 100%" scroll-y>
+                                <view class="public_mt">
+                                    <mc></mc>
+                                </view>
+                            </scroll-view>
+                        </swiper-item>
+                    </swiper>
+                </view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

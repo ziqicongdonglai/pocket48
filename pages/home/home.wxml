@@ -67,7 +67,7 @@
                                         <image src="/images/home/square/mine_cloud_handshakes.png" class="item_icon"></image>
                                         <text>云握手</text>
                                     </view>
-                                    <view class="features">
+                                    <view class="features" bindtap="toShow">
                                         <image src="/images/home/square/mine_show.png" class="item_icon"></image>
                                         <text>演出</text>
                                     </view>

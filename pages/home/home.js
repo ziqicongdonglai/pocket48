@@ -400,10 +400,19 @@ Page({
       }
     })
   },
-  // toMusic
+  // 跳转音乐
   toMusic: function () {
     wx.navigateTo({
       url: '/pages/home/music/music',
+      success: function (res) {
+        // success
+      }
+    })
+  },
+  // 跳转演出
+  toShow: function () {
+    wx.navigateTo({
+      url: '/pages/home/show/show',
       success: function (res) {
         // success
       }

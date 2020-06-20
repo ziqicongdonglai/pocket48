@@ -429,14 +429,6 @@ Page({
     // 全局变量
     app.globalData.currentTab7 = e.detail.current
   },
-  // 创造营导航条 切换navbar
-  topnavbarTap: function (e) {
-    this.setData({
-      navbarcurrentTab: e.currentTarget.dataset.idx
-    })
-    // 全局变量
-    app.globalData.currentTab7 = e.currentTarget.dataset.idx;
-  },
   // 取消事件 返回到上一个页面
   handleCancel: function () {
     wx.navigateBack({

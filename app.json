@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/home/music/music",
+    "pages/home/show/show",
     "pages/home/idol/idol",
+    "pages/home/music/music",
     "pages/home/mc/mc",
     "pages/juju/juju",
     "pages/found/found",
