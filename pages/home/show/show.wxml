@@ -6,14 +6,117 @@
             <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
                 {{item}}
             </text>
-            <image src="/images/home/show/live_filter.png"></image>
+            <view class="navbar_right">
+                <image class="live_list_change" bindtap="changeCSS" hidden="{{currentTab==0?false:true}}" src="{{iconUrl}}"></image>
+                <image src="/images/home/show/live_filter.png"></image>
+            </view>
         </view>
     </view>
     <!-- 滑动的主体部分 -->
     <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 9810rpx'>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
-                <view class="mt">直播</view>
+                <view class="mt">
+                    <!-- 这个样式为大图展示（直播封面图为主） -->
+                    <!-- 分组 直播中 和 重播 -->
+                    <view class="live_list_group_icon" hidden="{{isIcon?false:true}}">
+                        <view class="group_title">直播中</view>
+                        <!-- 时间分组 按日期 -->
+                        <view class="time_group">2020-06-20</view>
+                        <!-- 成员直播列表 -->
+                        <view class="live_item_list">
+                            <!-- 每一个成员的直播 -->
+                            <view class="live_item">
+                                <!-- 直播详情 标题 状态 类型 -->
+                                <view class="live_main" style="background-image: url(https://source.48.cn/20200620/1592658240464t6vQvnq0XK.jpg)">
+                                    <!-- 直播状态 -->
+                                    <image class="live_status" src="/images/home/show/live_list_live.png"></image>
+                                    <!-- 直播类型 视频 或者 电台 -->
+                                    <image class="live_type" src="/images/home/show/live_list_video.png"></image>
+                                    <view class="live_title">嗨</view>
+                                </view>
+                                <!-- 直播的底部信息 -->
+                                <view class="live_bottom">
+                                    <!-- 直播的成员名称 队伍 -->
+                                    <view class="member_team">
+                                        <view class="member_name">IDFT-高雪逸</view>
+                                        <view class="team">IDFT</view>
+                                    </view>
+                                    <!-- 分享 -->
+                                    <image src="/images/home/show/live_list_share.png"></image>
+                                </view>
+                            </view>
+                            <view class="live_item">
+                                <!-- 直播详情 标题 状态 类型 -->
+                                <!-- 直播封面 -->
+                                <view class="live_main" style="background-image: url(https://source.48.cn/20200620/1592658240464t6vQvnq0XK.jpg)">
+                                    <!-- 直播状态 -->
+                                    <image class="live_status" src="/images/home/show/live_list_live.png"></image>
+                                    <!-- 直播类型 视频 或者 电台 -->
+                                    <image class="live_type" src="/images/home/show/live_list_video.png"></image>
+                                    <view class="live_title">嗨</view>
+                                </view>
+                                <!-- 直播的底部信息 -->
+                                <view class="live_bottom">
+                                    <!-- 直播的成员名称 队伍 -->
+                                    <view class="member_team">
+                                        <view class="member_name">IDFT-高雪逸</view>
+                                        <view class="team">IDFT</view>
+                                    </view>
+                                    <!-- 分享 -->
+                                    <image src="/images/home/show/live_list_share.png"></image>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <!-- 这个是文字为主 图片为直播的偶像的头像 -->
+                    <view class="live_list_group_list" hidden="{{isIcon?true:false}}">
+                        <view class="group_title">直播中</view>
+                        <view class="time_group">2020-06-20</view>
+                        <!-- 直播成员列表 -->
+                        <view class="live_item_list">
+                            <!-- 每位成员的直播项 -->
+                            <view class="live_item">
+                                <!-- 成员头像 -->
+                                <image class="head_img" src=""></image>
+                                <!-- 直播的信息主体 -->
+                                <view class="live_main">
+                                    <!-- 直播的信息 -->
+                                    <view class="live_inf">
+                                        <!-- 直播成员名称及队伍 -->
+                                        <view class="member_team">
+                                            <view class="member_name">IDFT-高雪逸</view>
+                                            <view class="team">IDFT</view>
+                                        </view>
+                                        <!-- 直播标题 -->
+                                        <view class="live_title">嗨</view>
+                                    </view>
+                                    <!-- 分享 -->
+                                    <image class="ic_share" src="/images/home/show/livelist_share.png"></image>
+                                </view>
+                            </view>
+                            <view class="live_item">
+                                <!-- 成员头像 -->
+                                <image class="head_img" src=""></image>
+                                <!-- 直播的信息主体 -->
+                                <view class="live_main">
+                                    <!-- 直播的信息 -->
+                                    <view class="live_inf">
+                                        <!-- 直播成员名称及队伍 -->
+                                        <view class="member_team">
+                                            <view class="member_name">IDFT-高雪逸</view>
+                                            <view class="team">IDFT</view>
+                                        </view>
+                                        <!-- 直播标题 -->
+                                        <view class="live_title">嗨</view>
+                                    </view>
+                                    <!-- 分享 -->
+                                    <image class="ic_share" src="/images/home/show/livelist_share.png"></image>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
             </scroll-view>
         </swiper-item>
         <swiper-item>

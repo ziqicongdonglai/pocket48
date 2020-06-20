@@ -11,6 +11,8 @@ Page({
     currentTab: 0,
     topnavbar: ['最新演出', '历史回放', 'MC话题'],
     topcurrentTab: 0,
+    isIcon: true,
+    iconUrl: '/images/home/show/live_list_cover.png',
     // 公演历史回放列表
     livebroadcastPlaybackList: [
       {
@@ -240,5 +242,20 @@ Page({
         // success
       }
     })
+  },
+  // 改变布局
+  changeCSS: function (e) {
+    console.log('被点击');
+    if (this.isIcon) {
+      this.setData({
+        iconUrl: '/images/home/show/live_list_cover.png',
+        isIcon: true
+      })
+    } else {
+      this.setData({
+        iconUrl: '/images/home/show/live_icon_cover.png',
+        isIcon: false
+      })
+    }
   }
 })

@@ -6,9 +6,11 @@
         <!-- 导航条 -->
         <view class="head">
             <view class="navbar">
+                <image bindtap="handleCancel" src="/images/juju/ic_read_all.png" hidden="{{currentTab==0?false:true}}"></image>
                 <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
                     {{item}}
                 </text>
+                <image src="/images/juju/chengyuan.png" bindtap="toIdol"></image>
             </view>
         </view>
         <!-- 滑动的主体部分 -->
@@ -58,7 +60,7 @@
             <swiper-item>
                 <scroll-view style="height: 100%" scroll-y>
                     <view class="mt">
-                       <idolpost></idolpost>
+                        <idolpost></idolpost>
                     </view>
                 </scroll-view>
             </swiper-item>

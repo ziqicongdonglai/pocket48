@@ -336,5 +336,14 @@ Page({
     })
     // 全局变量
     app.globalData.currentTab2 = e.detail.current
-  }
+  },
+  // 跳转偶像（成员）页面
+  toIdol: function () {
+    wx.navigateTo({
+      url: '/pages/home/idol/idol',
+      success: function (res) {
+        // success
+      }
+    })
+  },
 })
