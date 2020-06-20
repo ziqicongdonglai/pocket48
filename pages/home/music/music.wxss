@@ -20,7 +20,7 @@
   margin-top: 83rpx;
 }
 /* 每首歌或专辑 */
-.music {
+.music_album {
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -28,15 +28,14 @@
   padding-top: 20rpx;
   height: 160rpx;
 }
-.music .music_image {
+.music_album .music_image {
   width: 120rpx;
   height: 120rpx;
   background-color: #fff;
   margin-left: 10rpx;
   border-radius: 15rpx;
-  border: 2rpx solid red;
 }
-.music .music_inf {
+.music_album .music_inf {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,26 +43,101 @@
   height: 160rpx;
   border-bottom: 2rpx solid #f1f1f1;
 }
-.music .music_inf .music_inf_left {
+.music_album .music_inf .music_inf_left {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.music .music_inf .music_inf_left .music_inf_top {
+.music_album .music_inf .music_inf_left .music_inf_top {
   display: flex;
   align-items: center;
 }
-.music .music_inf .music_inf_left .music_inf_top image {
+.music_album .music_inf .music_inf_left .music_inf_top image {
   width: 40rpx;
   height: 23rpx;
   margin-left: 20rpx;
 }
-.music .music_inf .music_inf_left .music_singer {
+.music_album .music_inf .music_inf_left .music_singer {
   color: #8c8c8c;
   margin-top: 20rpx;
 }
-.music .music_inf .icon_more {
+.music_album .music_inf .icon_more {
   width: 80rpx;
   height: 80rpx;
   padding-right: 10rpx;
+}
+.music_sing {
+  display: flex;
+  flex-direction: column;
+}
+.music_sing .music_top {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  justify-content: space-between;
+  padding-top: 20rpx;
+  height: 160rpx;
+}
+.music_sing .music_top .music_image {
+  width: 120rpx;
+  height: 80rpx;
+  margin-left: 10rpx;
+  border-radius: 15rpx;
+}
+.music_sing .music_top .music_inf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 560rpx;
+  height: 160rpx;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+.music_sing .music_top .music_inf .music_inf_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.music_sing .music_top .music_inf .music_inf_left .music_inf_top {
+  display: flex;
+  align-items: center;
+}
+.music_sing .music_top .music_inf .music_inf_left .music_inf_top image {
+  width: 40rpx;
+  height: 23rpx;
+  margin-left: 20rpx;
+}
+.music_sing .music_top .music_inf .music_inf_left .music_singer {
+  color: #8c8c8c;
+  margin-top: 20rpx;
+}
+.music_sing .music_top .music_inf .icon_arrow {
+  width: 40rpx;
+  height: 40rpx;
+  padding-right: 20rpx;
+}
+.music_sing .music_bottom {
+  display: flex;
+  align-items: center;
+  height: 150rpx;
+  background-color: #fff;
+}
+.music_sing .music_bottom .bottom_item {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  color: #bbb;
+}
+.music_sing .music_bottom .bottom_item image {
+  width: 45rpx;
+  height: 45rpx;
+}
+.music_sing .line {
+  display: flex;
+  justify-content: flex-end;
+  height: 2rpx;
+}
+.music_sing .line .line_right {
+  width: 560rpx;
+  height: 2rpx;
+  background-color: f1f1f1;
 }

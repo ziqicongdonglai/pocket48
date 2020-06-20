@@ -23,9 +23,9 @@
                             <view class="group_title">
                                 {{group.groupName}}（{{group.memberList.length}}人）
                             </view>
-                            <!-- 向下的箭头 点击显示全部数据 -->
+                            <!-- 向下的箭头 点击显示全部数据 改成展开后的箭头了 因为隐藏不怎么会 -->
                             <image bindtap="lishHidden" data-idx="{{index}}" class="arrow_more"
-                                src="/images/home/idol/member_list_open.png"></image>
+                                src="/images/home/idol/member_list_close.png"></image>
                         </view>
                         <!-- 成员列表 -->
                         <view class="member_list">

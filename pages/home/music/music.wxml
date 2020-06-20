@@ -15,18 +15,18 @@
             <scroll-view style="height: 100%" scroll-y>
                 <view class="mt">
                     <!-- 每一项专辑 -->
-                    <view class="music">
+                    <view class="music_album" wx:for="{{albumList}}">
                         <!-- 专辑封面 -->
-                        <image class="music_image" src=""></image>
+                        <image mode="aspectFill" lazy-load class="music_image" src="{{item.img}}"></image>
                         <!-- 专辑详情 -->
                         <view class="music_inf">
                             <view class="music_inf_left">
                                 <view class="music_inf_top">
-                                    <view class="music_title">《Be A Fighter》</view>
+                                    <view class="music_title">{{item.albumName}}</view>
                                     <image src="/images/home/music/ep.png"></image>
                                 </view>
                                 <!-- 专辑演唱者（团体） -->
-                                <view class="music_singer">BEJ48</view>
+                                <view class="music_singer">{{item.singer}}</view>
                             </view>
                             <!-- 更多的箭头 -->
                             <image class="icon_more" src="/images/home/music/common_more.png"></image>
@@ -37,7 +37,53 @@
         </swiper-item>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
-                <view class="mt">单曲</view>
+                <view class="mt">
+                    <!-- 每一项首歌 -->
+                    <view class="music_sing" wx:for="{{singerList}}">
+                        <view class="music_top">
+                            <!-- 单曲封面 -->
+                            <image mode="aspectFill" lazy-load class="music_image" src="{{item.img}}"></image>
+                            <!-- 单曲详情 -->
+                            <view class="music_inf">
+                                <view class="music_inf_left">
+                                    <view class="music_inf_top">
+                                        <view class="music_title">{{item.singName}}</view>
+                                    </view>
+                                    <!-- 专辑演唱者（团体） -->
+                                    <view class="music_singer">{{item.singer}}</view>
+                                </view>
+                                <!-- 更多的箭头 -->
+                                <image class="icon_arrow" src="/images/home/idol/member_list_close.png"></image>
+                            </view>
+                        </view>
+                        <!-- 单曲的底部详情 评论点赞数等等 -->
+                        <view class="music_bottom">
+                            <!-- 喜爱数 -->
+                            <view class="bottom_item">
+                                <image src="/images/found/dynamic_like.png"></image>
+                                <view>371</view>
+                            </view>
+                            <!-- 评论数 -->
+                            <view class="bottom_item">
+                                <image src="/images/found/dynamic_comments.png"></image>
+                                <view>34</view>
+                            </view>
+                            <!-- 收藏 -->
+                            <view class="bottom_item">
+                                <image src="/images/home/music/collection.png"></image>
+                                <view></view>
+                            </view>
+                            <!-- 分享数 -->
+                            <view class="bottom_item">
+                                <image src="/images/home/music/share.png"></image>
+                                <view>28</view>
+                            </view>
+                        </view>
+                        <view class="line">
+                            <view class="line_right"></view>
+                        </view>
+                    </view>
+                </view>
             </scroll-view>
         </swiper-item>
     </swiper>
