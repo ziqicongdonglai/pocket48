@@ -26,3 +26,41 @@
 .navtop .item.active {
   border-bottom: 0rpx;
 }
+.livebroadcast {
+  padding: 35rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.livebroadcast .livebroadcast_main {
+  height: 300rpx;
+  position: relative;
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+  border-radius: 20rpx;
+}
+.livebroadcast .livebroadcast_main .livebroadcast_status {
+  width: 130rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 30rpx;
+  right: 20rpx;
+}
+.livebroadcast .livebroadcast_main .livebroadcast_time {
+  font-size: 24rpx;
+  color: #fff;
+  position: absolute;
+  bottom: 20rpx;
+  left: 20rpx;
+}
+.livebroadcast .livebroadcast_title_team {
+  display: flex;
+  padding-top: 30rpx;
+  align-items: center;
+}
+.livebroadcast .livebroadcast_title_team .livebroadcast_title {
+  font-size: 30rpx;
+}
+.livebroadcast .livebroadcast_title_team .team {
+  margin-left: 10rpx;
+}

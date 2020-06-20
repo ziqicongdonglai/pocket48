@@ -14,7 +14,7 @@
 }
 /* 公演里内容距离顶部的距离 */
 .public_mt {
-    margin-top: 90rpx;
+  margin-top: 90rpx;
 }
 /* 公演导航栏 */
 .navtop {
@@ -25,5 +25,46 @@
   }
   .item.active {
     border-bottom: 0rpx;
+  }
+}
+
+.livebroadcast {
+  padding: 35rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  .livebroadcast_main {
+    height: 300rpx;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    // background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 20rpx;
+    // margin: 0 30rpx;
+    .livebroadcast_status {
+      width: 130rpx;
+      height: 50rpx;
+      position: absolute;
+      top: 30rpx;
+      right: 20rpx;
+    }
+    .livebroadcast_time {
+        font-size: 24rpx;
+        color: #fff;
+        position: absolute;
+        bottom: 20rpx;
+        left: 20rpx;
+    }
+  }
+  .livebroadcast_title_team {
+      display: flex;
+      padding-top: 30rpx;
+      align-items: center;
+      .livebroadcast_title {
+          font-size: 30rpx;
+      }
+      .team {
+          margin-left: 10rpx;
+      }
   }
 }

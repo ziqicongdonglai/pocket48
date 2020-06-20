@@ -6,7 +6,7 @@
             <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
                 {{item}}
             </text>
-            <image src="/images/home/idol/shuaixuan.png"></image>
+            <image src="/images/home/show/live_filter.png"></image>
         </view>
     </view>
     <!-- 滑动的主体部分 -->
@@ -31,17 +31,67 @@
                     <swiper class="bar_swiper" current="{{topcurrentTab}}" duration="200" bindchange="topswiperChange" style='height: 9810rpx'>
                         <swiper-item>
                             <scroll-view style="height: 100%" scroll-y>
-                                <view class="public_mt">最新演出</view>
-                            </scroll-view>
-                        </swiper-item>
-                        <swiper-item>
-                            <scroll-view style="height: 100%" scroll-y>
-                                <view class="public_mt">历史回放</view>
+                                <view class="public_mt">
+                                    <!-- 每一项公演 无论最新演出和历史回放都类似 -->
+                                    <view class="livebroadcast" wx:for="{{livebroadcastLiveList}}">
+                                        <!-- 公演主要信息 状态 时间 公演图片 -->
+                                        <!-- 公演的图片用来做了背景图 -->
+                                        <view class="livebroadcast_main" style="background-image: url({{item.livebroadcastImg}})">
+                                            <!-- 公演状态 回放 直播中 还是 即将开始 -->
+                                            <!-- /images/home/show/livebroadcast_playback.png -->
+                                            <image class="livebroadcast_status" src="{{item.livebroadcastStatus?'/images/home/show/livebroadcast_liveonlive.png':'/images/home/show/livebroadcast_begininaminute.png'}}"></image>
+                                            <!-- 公演时间 -->
+                                            <view class="livebroadcast_time">
+                                                {{item.livebroadcastTime}}
+                                            </view>
+                                        </view>
+                                        <!-- 公演的名称 及 队伍（可无） -->
+                                        <view class="livebroadcast_title_team">
+                                            <!-- 公演的名称 或 公演直播名称 -->
+                                            <view class="livebroadcast_title">
+                                                {{item.livebroadcastTitle}}
+                                            </view>
+                                            <view class="team" hidden="{{item.teamName?false:true}}" style="background-color: {{item.teamColor}}">
+                                                {{item.teamName}}
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
                             </scroll-view>
                         </swiper-item>
                         <swiper-item>
                             <scroll-view style="height: 100%" scroll-y>
                                 <view class="public_mt">
+                                    <!-- 每一项公演 无论最新演出和历史回放都类似 -->
+                                    <view class="livebroadcast" wx:for="{{livebroadcastPlaybackList}}">
+                                        <!-- 公演主要信息 状态 时间 公演图片 -->
+                                        <!-- 公演的图片用来做了背景图 -->
+                                        <view class="livebroadcast_main" style="background-image: url({{item.livebroadcastImg}})">
+                                            <!-- 公演状态 回放 直播中 还是 即将开始 -->
+                                            <image class="livebroadcast_status" src="/images/home/show/livebroadcast_playback.png"></image>
+                                            <!-- 公演时间 -->
+                                            <view class="livebroadcast_time">
+                                                {{item.livebroadcastTime}}
+                                            </view>
+                                        </view>
+                                        <!-- 公演的名称 及 队伍（可无） -->
+                                        <view class="livebroadcast_title_team">
+                                            <!-- 公演的名称 或 公演直播名称 -->
+                                            <view class="livebroadcast_title">
+                                                {{item.livebroadcastTitle}}
+                                            </view>
+                                            <view class="team" hidden="{{item.teamName?false:true}}" style="background-color: {{item.teamColor}}">
+                                                {{item.teamName}}
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </scroll-view>
+                        </swiper-item>
+                        <swiper-item>
+                            <scroll-view style="height: 100%" scroll-y>
+                                <view class="public_mt">
+                                    <!-- MC话题 组件引入 -->
                                     <mc></mc>
                                 </view>
                             </scroll-view>
