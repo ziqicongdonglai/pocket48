@@ -1,0 +1,43 @@
+.top_nav_bar {
+  background: url(https://wx1.sinaimg.cn/mw690/005FbhyYgy1gg0d481mvtj30ku05uq37.jpg);
+  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+/* 顶部标题导航 */
+.titlebar_top {
+  height: 150rpx;
+  position: static;
+  background-color: rgba(0, 0, 0, 0);
+}
+.titlebar_top .titlebar_title {
+  color: #fff;
+}
+/* 导航栏 */
+.head {
+  position: static;
+  margin-top: 160rpx;
+  top: 100rpx;
+  z-index: 80;
+}
+.navbar {
+  width: 100%;
+  margin-top: -285rpx;
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar .item {
+  margin-right: 80rpx;
+  line-height: 140rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+.navbar .item.active {
+  font-weight: normal;
+  color: #fff;
+  border-bottom: 4rpx solid #fff;
+}
+.mt {
+  margin-top: 310rpx;
+}

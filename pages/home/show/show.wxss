@@ -39,7 +39,7 @@
 /* 成员直播样式 */
 /* 直播 重播 */
 .live_list_group_icon {
-  padding: 0 15rpx;
+  padding: 0 20rpx;
   background-color: #fff;
 }
 .live_list_group_icon .live_group {
@@ -62,10 +62,10 @@
 }
 .live_list_group_icon .live_group .time_group .live_item_list .live_item {
   width: 49%;
-  margin-right: 15rpx;
+  margin-right: 14rpx;
 }
 .live_list_group_icon .live_group .time_group .live_item_list .live_item .live_main {
-  height: 370rpx;
+  height: 340rpx;
   position: relative;
   background-size: 100%;
   background-position: center;

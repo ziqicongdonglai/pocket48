@@ -417,5 +417,14 @@ Page({
         // success
       }
     })
+  },
+  // 跳转榜单
+  toRankings: function () {
+    wx.navigateTo({
+      url: '/pages/home/rankings/rankings',
+      success: function (res) {
+        // success
+      }
+    })
   }
 })

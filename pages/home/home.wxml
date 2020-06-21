@@ -83,7 +83,7 @@
                                         <image src="/images/home/square/mine_trip.png" class="item_icon"></image>
                                         <text>行程</text>
                                     </view>
-                                    <view class="features">
+                                    <view class="features" bindtap="toRankings">
                                         <image src="/images/home/square/mine_rank.png" class="item_icon"></image>
                                         <text>榜单</text>
                                     </view>

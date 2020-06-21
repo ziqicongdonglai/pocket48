@@ -1,0 +1,52 @@
+<view>
+    <view class="top_nav_bar">
+        <!-- 顶部区域 排行 返回 -->
+        <view class="titlebar_top">
+            <view class="titlebar_cancel" bindtap="handleCancel">
+                <image src="/images/home/rankings/mvp_return.png"></image>
+            </view>
+            <view class="titlebar_title">排行</view>
+        </view>
+        <!-- 导航条 -->
+        <view class="head">
+            <view class="navbar">
+                <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}"
+                    wx:key="unique" bindtap="navbarTap">
+                    {{item}}
+                </text>
+            </view>
+        </view>
+    </view>
+    <!-- 滑动的主体部分 -->
+    <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange"
+        style='height: 2170rpx'>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="mt">
+                    应援榜
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="mt">
+                    生日祝福
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="mt">
+                    公演MVP
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="mt">
+                    历代记
+                </view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>
