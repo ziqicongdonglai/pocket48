@@ -1,0 +1,86 @@
+<view>
+    <!-- 导航条 -->
+    <view class="head">
+        <view class="navbar">
+            <image bindtap="handleCancel" src="/images/home/idol/memberlist_top_return.png"></image>
+            <view class="navmid">
+                <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+                    {{item}}
+                </text>
+                <!-- <image src="/images/home/idol/shuaixuan.png"></image> -->
+            </view>
+        </view>
+    </view>
+    <!-- 滑动的主体部分 -->
+    <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 6000rpx'>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="mt">
+                    <!-- 商品顶部信息 -->
+                    <view class="goods_top_detail">
+                        <!-- 商品封面 -->
+                        <image class="goods_img" src="{{goodsItem.imgUrl}}"></image>
+                        <!-- 商品详情 -->
+                        <view class="goods_inf">
+                            <!-- 商品价格 及其标签 -->
+                            <view class="goods_inf_top">
+                                <!-- 商品价格 -->
+                                <view class="goods_price">￥{{goodsItem.price}}</view>
+                                <!-- 商品标签 -->
+                                <view class="tags">
+                                    <view class="tag">SNH48</view>
+                                    <view class="tag">现货</view>
+                                    <view class="tag">实体商品</view>
+                                </view>
+                            </view>
+                            <!-- 商品名称 -->
+                            <view class="goods_name">{{goodsItem.goodsTitle}}</view>
+                        </view>
+                    </view>
+                    <!-- 商品底部信息 数量 提示 说明等 -->
+                    <view class="goods_bottom_detail">
+                        <!-- 说明项 -->
+                        <view class="bottom_detail_item">
+                            <!-- 行头 -->
+                            <view class="explain_title">数量</view>
+                            <view class="explain_inf">
+                                <view class="explain_text">无货</view>
+                                <image src="/images/home/music/common_more.png"></image>
+                            </view>
+                        </view>
+                        <view class="bottom_detail_item">
+                            <view class="explain_title">温馨提示</view>
+                            <view class="explain_inf">
+                                <view class="explain_text">不支持7天无理由退货</view>
+                                <image src="/images/home/music/common_more.png"></image>
+                            </view>
+                        </view>
+                        <view class="bottom_detail_item">
+                            <view class="explain_title">限购说明</view>
+                            <view class="explain_inf">
+                                <view class="explain_text">本商品限制购买数量，限购期间注册会员用户最多只能订购12件。</view>
+                            </view>
+                        </view>
+                    </view>
+                    <!-- 用户操作 购物车 加入购物车 立即购买 -->
+                    <view class="bottom_option">
+                        <!-- 左侧购物车 文字及 图标 -->
+                        <view class="shop_cart">
+                            <image src="/images/my/mall/icon_cart_normal.png"></image>
+                            <view>购物车</view>
+                        </view>
+                        <!-- 加入购物车 -->
+                        <view class="add_to_cart">加入购物车</view>
+                        <!-- 立即购买 -->
+                        <view class="buy_now">立即购买</view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="height: 100%" scroll-y>
+                <view class="mt">详情</view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

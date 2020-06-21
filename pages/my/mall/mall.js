@@ -64,5 +64,27 @@ Page({
         // success
       }
     })
+  },
+  // 跳转到商品详情页面
+  toDetail: function (e) {
+    // console.log(e);
+    const that = this;
+    // console.log(that.data.goodsList);
+    let index = e.currentTarget.dataset.idx;
+    let goods = JSON.stringify(that.data.goodsList[index]);
+    console.log(goods);
+    wx.navigateTo({
+      // 传参数 商品对象
+      url: '/pages/my/mall/goodsdetail/goodsdetail?goods=' + goods,
+      success: function (res) {
+        // success
+      },
+      fail: function () {
+        // fail
+      },
+      complete: function () {
+        // complete
+      }
+    })
   }
 })

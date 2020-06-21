@@ -35,11 +35,11 @@
             <!-- 商品列表 -->
             <view class="goods_list">
                 <!-- 每个商品 -->
-                <view class="goods_item" wx:for="{{goodsList}}" wx:key="id">
+                <view class="goods_item" data-idx="{{index}}" bindtap="toDetail" wx:for="{{goodsList}}" wx:key="id">
                     <!-- 商品图片 -->
                     <image lazy-load mode="aspectFill" src="{{item.imgUrl}}"></image>
                     <view class="goods_name">{{item.goodsTitle}}</view>
-                    <view class="goods_money">￥{{item.price}}</view>
+                    <view class="goods_price">￥{{item.price}}</view>
                 </view>
             </view>
         </view>

@@ -190,21 +190,31 @@ Page({
       {
         id: 1,
         groupTitle: '直播中',
-        // 1为在直播中 0为录播
+        // 区分是否在直播 1为在直播中 0为录播
         liveStatus: 1,
+        // 时间分组 按日期
         timeGroup: [
           {
             id: 1,
+            // 直播开始的时间
             time: '2020-06-21',
+            // 当天开直播的成员的列表
             liveList: [
               {
                 id: 1,
+                // 直播封面
                 liveImg: 'https://source.48.cn/20200621/159266926661269N06NCtWT.jpg',
+                // 成员头像
                 headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvfssuqbj306y06y0sr.jpg',
+                // 直播类型 视频还是 电台 1为视频 0为电台
                 liveType: 1,
+                // 直播标题
                 liveTitle: 'Hi————',
+                // 直播的成员
                 memberName: 'SNH48-卢天惠',
+                // 成员的队伍
                 teamName: 'NII',
+                // 队色
                 teamColor: '#ad87b8'
               },
               {

@@ -189,3 +189,7 @@
 .mt .idol_post_item .idol_post_bottom .bottom_right .right_item:last-child {
   margin-right: 0;
 }
+/* 变透明 相当于隐藏 */
+.hide {
+  opacity: 0;
+}

@@ -114,6 +114,17 @@ Page({
       },
       {
         id: 10,
+        'roomTitle': '麦兜兜🐷',
+        'updateTime': '15:27',
+        'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvjpeukyj304m06yq2u.jpg',
+        'memberName': 'BEJ48-彭嘉敏',
+        'team': 'E',
+        'teamColor': '#29b8b6',
+        'latestInf': '心痛是付了款',
+        'infNumber': '8'
+      },
+      {
+        id: 11,
         'roomTitle': '宋昕冉',
         'updateTime': '01:17',
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfnlkq1ubmj305706ydfx.jpg',

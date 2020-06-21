@@ -1,0 +1,127 @@
+/* 导航栏 */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  align-items: center;
+}
+.navbar .navmid {
+  width: 680rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .item {
+  color: #000;
+  width: 120rpx;
+  font-size: 32rpx;
+  margin-right: 30rpx;
+}
+.navbar image {
+  width: 45rpx;
+  height: 45rpx;
+  margin-top: 100rpx;
+}
+/* 商品顶部信息 */
+.goods_top_detail {
+  padding: 0 25rpx;
+  background-color: #fff;
+  margin-bottom: 40rpx;
+  /* 商品详情 */
+}
+.goods_top_detail .goods_img {
+  width: 100%;
+  height: 700rpx;
+}
+.goods_top_detail .goods_inf {
+  /* 商品名称 */
+}
+.goods_top_detail .goods_inf .goods_inf_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 商品价格 */
+  /* 商品标签 */
+}
+.goods_top_detail .goods_inf .goods_inf_top .goods_price {
+  font-size: 48rpx;
+  color: #ff5166;
+  font-weight: 700;
+}
+.goods_top_detail .goods_inf .goods_inf_top .tags {
+  display: flex;
+}
+.goods_top_detail .goods_inf .goods_inf_top .tags .tag {
+  border: 3rpx solid #cdcdcd;
+  color: #cdcdcd;
+  padding: 0 10rpx;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+  border-radius: 10rpx;
+}
+.goods_top_detail .goods_inf .goods_name {
+  font-size: 34rpx;
+}
+/* 商品底部信息 */
+.goods_bottom_detail {
+  padding-left: 20rpx;
+  background-color: #fff;
+}
+.goods_bottom_detail .bottom_detail_item {
+  padding: 30rpx 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 3rpx solid #f4f4f4;
+  padding-right: 30rpx;
+}
+.goods_bottom_detail .bottom_detail_item .explain_title {
+  font-size: 24rpx;
+  flex: 0.2;
+  color: #b1b1b1;
+}
+.goods_bottom_detail .bottom_detail_item .explain_inf {
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  flex: 0.8;
+  justify-content: space-between;
+}
+.goods_bottom_detail .bottom_detail_item .explain_inf image {
+  width: 60rpx;
+  height: 60rpx;
+}
+/* 用户操作 */
+.bottom_option {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.bottom_option .shop_cart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #909090;
+  flex: 0.15;
+}
+.bottom_option .shop_cart image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.bottom_option .add_to_cart {
+  flex: 0.425;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #e2e6fe;
+  text-align: center;
+  background-image: linear-gradient(#fff, #839cffdc dc);
+  color: #839cff;
+}
+.bottom_option .buy_now {
+  flex: 0.425;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #839cff;
+  color: #fff;
+}

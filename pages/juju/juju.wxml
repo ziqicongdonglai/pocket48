@@ -6,7 +6,7 @@
         <!-- 导航条 -->
         <view class="head">
             <view class="navbar">
-                <image bindtap="handleCancel" src="/images/juju/ic_read_all.png" hidden="{{currentTab==0?false:true}}"></image>
+                <image bindtap="handleCancel" src="/images/juju/ic_read_all.png" class="{{currentTab==0?'':'hide'}}"  hidden=""></image>
                 <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
                     {{item}}
                 </text>

@@ -97,7 +97,7 @@
   height: 361rpx;
   align-items: center;
 }
-.goods_list .goods_item .goods_money {
+.goods_list .goods_item .goods_price {
   margin-top: 20rpx;
   color: #e05272;
 }

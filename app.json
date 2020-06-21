@@ -16,6 +16,7 @@
     "pages/my/myvip/myvip",
     "pages/my/vouchercentre/vouchercentre",
     "pages/my/mall/mall",
+    "pages/my/mall/goodsdetail/goodsdetail",
     "pages/middle/middle",
     "pages/index/index",
     "pages/logs/logs"

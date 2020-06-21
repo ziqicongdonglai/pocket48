@@ -489,7 +489,7 @@ Page({
         ]
       },
       {
-        id: 15,
+        id: 16,
         groupName: '预备生',
         'isAllFollow': 0,
         teamName: '预备生',
@@ -520,7 +520,7 @@ Page({
         ]
       },
       {
-        id: 16,
+        id: 17,
         groupName: 'IDFT',
         'isAllFollow': 0,
         teamName: 'IDFT',
@@ -551,7 +551,7 @@ Page({
         ]
       },
       {
-        id: 17,
+        id: 18,
         groupName: '海外练习生',
         'isAllFollow': 1,
         teamName: '',
@@ -567,7 +567,7 @@ Page({
         ]
       },
       {
-        id: 18,
+        id: 19,
         groupName: '暂休',
         'isAllFollow': 0,
         teamName: '',
