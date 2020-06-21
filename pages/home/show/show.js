@@ -110,8 +110,9 @@ Page({
         // 公演封面图片
         livebroadcastImg: 'https://source.48.cn/mediasource/live/1592225830275C1FiglEW4Y.jpg',
         // 公演状态 (正在直播 或者 即将开始 或 回放)
+        // 1为正在直播
         livebroadcastStatus: 1,
-        // 公演直播开始直播
+        // 公演直播开始直播的时间
         livebroadcastTime: '2020-06-20 18:45:00',
         // 公演的名字
         livebroadcastTitle: 'CKG48《Miss Camellia 绽放》 公演首演	',
@@ -183,6 +184,248 @@ Page({
         teamName: '',
         teamColor: ''
       }
+    ],
+    // 成员直播列表 大组 直播中 重播中 再进一层 是 时间分组
+    memberLiveList: [
+      {
+        id: 1,
+        groupTitle: '直播中',
+        // 1为在直播中 0为录播
+        liveStatus: 1,
+        timeGroup: [
+          {
+            id: 1,
+            time: '2020-06-21',
+            liveList: [
+              {
+                id: 1,
+                liveImg: 'https://source.48.cn/20200621/159266926661269N06NCtWT.jpg',
+                headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvfssuqbj306y06y0sr.jpg',
+                liveType: 1,
+                liveTitle: 'Hi————',
+                memberName: 'SNH48-卢天惠',
+                teamName: 'NII',
+                teamColor: '#ad87b8'
+              },
+              {
+                id: 2,
+                liveImg: 'https://source.48.cn/20200621/15926740514413Yf3WZR7dR.jpg',
+                headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfrj8u8p6xj306y06y0sp.jpg',
+                liveType: 1,
+                liveTitle: '开心了',
+                memberName: 'BEJ48-张智杰',
+                teamName: 'E',
+                teamColor: '#29b8b6'
+              },
+              {
+                id: 3,
+                liveImg: 'https://source.48.cn/20200616/15923159204211Xit8OU693.jpeg',
+                headImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfzvgjvu1yj306y06yq2u.jpg',
+                liveType: 1,
+                liveTitle: '直播',
+                memberName: 'BEJ48-沈小爱',
+                teamName: 'B',
+                teamColor: '#e6356c'
+              },
+              {
+                id: 4,
+                liveImg: 'https://source.48.cn/20200621/1592669341360jNlEPEV913.jpg',
+                headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfzvgzyqi0j306y06ydfs.jpg',
+                liveType: 1,
+                liveTitle: '🍗',
+                memberName: 'IDFT-杨宇馨',
+                teamName: 'IDFT',
+                teamColor: '#b4006e'
+              },
+              {
+                id: 5,
+                liveImg: 'https://source.48.cn/20200620/1592667449555axyIu4b6Ls.jpg',
+                headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfzvh9cb79j308c0b4t95.jpg',
+                liveType: 1,
+                liveTitle: '孜孜孜',
+                memberName: 'SNH48-陈雨孜',
+                teamName: 'SII',
+                teamColor: '#87ceeb'
+              }
+            ],
+          },
+          {
+            id: 2,
+            time: '2020-06-20',
+            liveList: [
+              {
+                id: 1,
+                liveImg: 'https://source.48.cn/20200620/1592658240464t6vQvnq0XK.jpg',
+                headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrja6xheij306y06yglj.jpg',
+                liveType: 1,
+                liveTitle: '嗨',
+                memberName: 'IDFT-高雪逸',
+                teamName: 'IDFT',
+                teamColor: '#b4006e'
+              },
+              {
+                id: 2,
+                liveImg: 'https://source.48.cn/20200610/1591804086679Rlgx63t8L2.jpeg',
+                headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvjpeukyj304m06yq2u.jpg',
+                liveType: 1,
+                liveTitle: '开心了',
+                memberName: 'BEJ48-彭嘉敏',
+                teamName: 'E',
+                teamColor: '#29b8b6'
+              },
+              {
+                id: 3,
+                liveImg: 'https://source.48.cn/20200620/1592667145858vB5TVDVCjc.jpg',
+                headImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfzvjxhvjfj306y06y3yk.jpg',
+                liveType: 0,
+                liveTitle: '直播',
+                memberName: 'BEJ48-胡晓慧',
+                teamName: 'B',
+                teamColor: '#e6356c'
+              },
+              {
+                id: 4,
+                liveImg: 'https://source.48.cn/20200620/15926683548699zOYICk8LE.jpg',
+                headImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfzvk6uz6dj306y06ydg4.jpg',
+                liveType: 1,
+                liveTitle: '聊',
+                memberName: 'SNH48-王奕',
+                teamName: 'HII',
+                teamColor: '#f39a02'
+              },
+              {
+                id: 5,
+                liveImg: 'https://source.48.cn/20200620/1592666806921W740IdnXeK.jpg',
+                headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvke9xapj306y06y3yh.jpg',
+                liveType: 1,
+                liveTitle: '来啦',
+                memberName: 'GNZ48-陈楠茜',
+                teamName: 'NIII',
+                teamColor: '#ffd801'
+              }
+            ],
+          }
+        ]
+      },
+      {
+        id: 2,
+        groupTitle: '录播',
+        liveStatus: 0,
+        timeGroup: [
+          {
+            id: 1,
+            time: '2020-06-20',
+            liveList: [
+              {
+                id: 1,
+                liveImg: 'https://source.48.cn/20200620/15926682182657mvU47hOk9.jpg',
+                headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfrjbm485dj306y06y74b.jpg',
+                liveType: 1,
+                liveTitle: '🐱',
+                memberName: 'SNH48-由淼',
+                teamName: 'SII',
+                teamColor: '#87ceeb'
+              },
+              {
+                id: 2,
+                liveImg: 'https://source.48.cn/20200620/1592664662184111F55652G.jpg',
+                headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvo5shx0j306y06ymx5.jpg',
+                liveType: 0,
+                liveTitle: '轰轰轰轰🏍💨一起走吗',
+                memberName: 'GNZ48-农燕萍',
+                teamName: 'Z',
+                teamColor: '#eb627c'
+              },
+              {
+                id: 3,
+                liveImg: 'https://source.48.cn/20200619/1592574167850gUCs5S42VW.jpg',
+                headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfzvpbpk5kj306y06ymx4.jpg',
+                liveType: 1,
+                liveTitle: '来看小朋友',
+                memberName: 'GNZ48-马昕玥',
+                teamName: '预备生',
+                teamColor: '#d4d4d4'
+              },
+              {
+                id: 4,
+                liveImg: 'https://source.48.cn/20200620/1592660265917gDflfw5391.jpg',
+                headImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfzvpobkzbj306y0570sq.jpg',
+                liveType: 1,
+                liveTitle: '画画捏🤏',
+                memberName: 'BEJ48-刘闲',
+                teamName: 'J',
+                teamColor: '#006ab6'
+              },
+              {
+                id: 5,
+                liveImg: 'https://source.48.cn/20200619/159257971797744NJWC5Gby.jpeg',
+                headImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfzvpytzs2j306y06xaa3.jpgS',
+                liveType: 0,
+                liveTitle: '随缘',
+                memberName: 'SNH48-吕一',
+                teamName: 'X',
+                teamColor: '#a8cd25'
+              }
+            ],
+          },
+          {
+            id: 2,
+            time: '2020-06-19',
+            liveList: [
+              {
+                id: 1,
+                liveImg: 'https://source.48.cn/20200524/1590329533492oVB4c9E41G.jpeg',
+                headImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfzvu0w1odj306y06y3yk.jpg',
+                liveType: 1,
+                liveTitle: '只狼一周目',
+                memberName: 'SNH48-孙歆文',
+                teamName: 'X',
+                teamColor: '#a8cd25'
+              },
+              {
+                id: 2,
+                liveImg: 'https://source.48.cn/20200619/15925771004436XeyhC8q85.jpg',
+                headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg',
+                liveType: 0,
+                liveTitle: '111',
+                memberName: 'BEJ48-张笑盈',
+                teamName: 'E',
+                teamColor: '#29b8b6'
+              },
+              {
+                id: 3,
+                liveImg: 'https://source.48.cn/20200619/1592579333365giZ8389Cfm.jpg',
+                headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvulhgtwj306y06yjro.jpg',
+                liveType: 0,
+                liveTitle: '上线🙋🏻‍♀️',
+                memberName: 'SNH48-李玉倩',
+                teamName: 'HII',
+                teamColor: '#f39a02'
+              },
+              {
+                id: 4,
+                liveImg: 'https://source.48.cn/20200619/15925780613739qbqwS20BK.jpg',
+                headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfzvuv91vej306y06yaa5.jpg',
+                liveType: 1,
+                liveTitle: '生日快乐🎂',
+                memberName: 'SNH48-徐晨辰',
+                teamName: 'SII',
+                teamColor: '#87ceeb'
+              },
+              {
+                id: 5,
+                liveImg: 'https://source.48.cn/20200619/1592579990622302WPVhdVN.jpg',
+                headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfzvvc2vl2j306y06ymx7.jpg',
+                liveType: 0,
+                liveTitle: '来啦听取蛙声一片',
+                memberName: 'GNZ48-刘力菲',
+                teamName: 'NIII',
+                teamColor: '#ffd801'
+              }
+            ],
+          }
+        ]
+      },
     ]
   },
 

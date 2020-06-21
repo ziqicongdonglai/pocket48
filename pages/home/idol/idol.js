@@ -459,6 +459,37 @@ Page({
       },
       {
         id: 15,
+        groupName: 'TEAM Z',
+        'isAllFollow': 1,
+        teamName: 'Z',
+        teamColor: '#eb627c',
+        memberList: [
+          {
+            id: 1,
+            headImg: '',
+            memberName: '陈桂君',
+            periods: 'GNZ48 一期生',
+            isFollow: 1,
+          },
+          {
+            id: 2,
+            headImg: '',
+            memberName: '邓慧恩',
+            periods: 'GNZ48 三期生',
+            isFollow: 1,
+          },
+          {
+            id: 3,
+            headImg: '',
+            memberName: '方琪',
+            periods: 'CKG48 三期生',
+            isFollow: 1,
+          }
+          , , , , , , , , , , , ,,,,
+        ]
+      },
+      {
+        id: 15,
         groupName: '预备生',
         'isAllFollow': 0,
         teamName: '预备生',

@@ -43,138 +43,152 @@
 .live_list_group_icon {
   padding: 0 15rpx;
   background-color: #fff;
-  margin-bottom: 20rpx;
-  .group_title {
-    height: 80rpx;
-    line-height: 80rpx;
-    border-bottom: 2rpx solid #d4d4d4;
-  }
-  .time_group {
-    height: 60rpx;
-    line-height: 60rpx;
-    color: #d4d4d4;
-    font-size: 22rpx;
-  }
-  .live_item_list {
-    display: flex;
-    flex-wrap: wrap;
-    // background-color: skyblue;
-    .live_item {
-      width: 49%;
-      //   background-color: tan;
-      margin-right: 15rpx;
-      .live_main {
-        height: 370rpx;
-        position: relative;
-        background-size: 100%;
-        background-position: center;
-        border-radius: 20rpx;
-        .live_status {
-          width: 130rpx;
-          height: 61rpx;
-          position: absolute;
-          top: 10rpx;
-          right: 0;
-        }
-        .live_type {
-          width: 70rpx;
-          height: 36rpx;
-          position: absolute;
-          bottom: 20rpx;
-          right: 20rpx;
-        }
-        .live_title {
-          font-size: 26rpx;
-          color: #fff;
-          position: absolute;
-          bottom: 20rpx;
-          left: 20rpx;
-        }
-      }
-      .live_bottom {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 10rpx;
-        .member_team {
-          display: flex;
-          align-items: center;
-          .member_name {
-          }
-          .team {
-            margin-left: 10rpx;
-          }
-        }
-        image {
-          width: 45rpx;
-          height: 45rpx;
-        }
-      }
+  // margin-bottom: 20rpx;
+  .live_group {
+    border-bottom: 10rpx solid #eeeeee;
+    .group_title {
+      height: 80rpx;
+      line-height: 80rpx;
+      border-bottom: 2rpx solid #d4d4d4;
     }
-    .live_item:nth-child(2n) {
-      margin-right: 0;
+    .time_group {
+      .time_title {
+        height: 60rpx;
+        line-height: 60rpx;
+        color: #c9c9c9;
+        font-size: 26rpx;
+      }
+      .live_item_list {
+        display: flex;
+        flex-wrap: wrap;
+        // background-color: skyblue;
+        .live_item {
+          width: 49%;
+          //   background-color: tan;
+          margin-right: 15rpx;
+          .live_main {
+            height: 370rpx;
+            position: relative;
+            background-size: 100%;
+            background-position: center;
+            border-radius: 20rpx;
+            .live_status {
+              width: 130rpx;
+              height: 61rpx;
+              position: absolute;
+              top: 10rpx;
+              right: 0;
+            }
+            .live_type {
+              width: 70rpx;
+              height: 36rpx;
+              position: absolute;
+              bottom: 20rpx;
+              right: 20rpx;
+            }
+            .live_title {
+              font-size: 22rpx;
+              color: #fff;
+              position: absolute;
+              bottom: 20rpx;
+              left: 20rpx;
+            }
+          }
+          .live_bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10rpx 10rpx;
+            .member_team {
+              display: flex;
+              align-items: center;
+              .member_name {
+                font-size: 29rpx;
+              }
+              .team {
+                margin-left: 10rpx;
+              }
+            }
+            image {
+              width: 45rpx;
+              height: 45rpx;
+            }
+          }
+        }
+        .live_item:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
     }
   }
 }
 /* 列表形式 */
 .live_list_group_list {
   background-color: #fff;
-  margin-bottom: 20rpx;
-  .group_title {
-    height: 60rpx;
-    line-height: 60rpx;
-    border: 2rpx solid #f1f1f1;
-  }
-  .time_group {
-    height: 40rpx;
-    line-height: 40rpx;
-    color: #d4d4d4;
-    font-size: 22rpx;
-  }
-  .live_item_list {
-    // padding: 0 15rpx;
-    .live_item {
-      display: flex;
-      // justify-content: space-between;
-      align-items: center;
-      padding: 30rpx 20rpx;
-      //   background-color: pink;
+  // margin-bottom: 20rpx;
+  .live_group {
+    border-bottom: 10rpx solid #f1f1f1;
+    .group_title {
+      height: 60rpx;
+      line-height: 60rpx;
       border-bottom: 2rpx solid #f1f1f1;
-      .head_img {
-        width: 100rpx;
-        height: 100rpx;
-        border: 2rpx solid red;
-        border-radius: 50%;
-        margin-right: 20rpx;
+      padding-left: 20rpx;
+    }
+    .time_group {
+      .time_title {
+        height: 40rpx;
+        line-height: 40rpx;
+        color: #c9c9c9;
+        font-size: 26rpx;
+        padding-left: 20rpx;
       }
-      .live_main {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 590rpx;
-        .live_inf {
+      .live_item_list {
+        // padding: 0 15rpx;
+        .live_item {
           display: flex;
-          flex-direction: column;
+          // justify-content: space-between;
           align-items: center;
-          justify-content: flex-start;
-          .member_team {
+          padding: 30rpx 20rpx;
+          //   background-color: pink;
+          border-bottom: 2rpx solid #f1f1f1;
+          .head_img {
+            width: 100rpx;
+            height: 100rpx;
+            // border: 2rpx solid red;
+            border-radius: 50%;
+            margin-right: 20rpx;
+          }
+          .live_main {
             display: flex;
             align-items: center;
-            .member_name {
+            justify-content: space-between;
+            width: 590rpx;
+            .live_inf {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+              .member_team {
+                display: flex;
+                align-items: center;
+                width: 400rpx;
+                .member_name {
+                }
+                .team {
+                  margin-left: 10rpx;
+                }
+              }
+              .live_title {
+                font-size: 38rpx;
+                color: #787878;
+                width: 400rpx;
+              }
             }
-            .team {
-              margin-left: 10rpx;
+            .ic_share {
+              width: 50rpx;
+              height: 50rpx;
             }
           }
-          .live_title {
-            font-size: 44rpx;
-            color: #787878;
-            width: 258rpx;
-          }
-        }
-        .ic_share {
-          width: 50rpx;
-          height: 50rpx;
         }
       }
     }
