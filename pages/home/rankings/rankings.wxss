@@ -8,7 +8,7 @@
 }
 /* 顶部标题导航 */
 .titlebar_top {
-  height: 150rpx;
+  height: 110rpx;
   position: static;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -18,7 +18,7 @@
 /* 导航栏 */
 .head {
   position: static;
-  margin-top: 160rpx;
+  margin-top: 120rpx;
   top: 100rpx;
   z-index: 80;
 }
@@ -39,5 +39,136 @@
   border-bottom: 4rpx solid #fff;
 }
 .mt {
-  margin-top: 310rpx;
+  margin-top: -80rpx;
+}
+.top_time_fixed {
+  height: 150rpx;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 230rpx;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+.top_time_fixed .top_opt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  height: 150rpx;
+}
+.top_time_fixed .top_opt .select_time {
+  display: flex;
+  align-items: center;
+}
+.top_time_fixed .top_opt .select_time .time_picker {
+  font-size: 26rpx;
+  color: #b1b1b1;
+}
+.top_time_fixed .top_opt .select_time image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.top_time_fixed .top_opt .select_time .arrow_open {
+  padding: 0 20rpx;
+}
+.top_time_fixed .top_opt .last_year_rankings {
+  display: flex;
+  align-items: center;
+  background-color: #9687e328;
+  border-radius: 20rpx;
+  padding: 10rpx 20rpx;
+  color: #9687e3;
+  font-size: 28rpx;
+}
+.top_time_fixed .top_opt .last_year_rankings .last_year {
+  padding-right: 10rpx;
+}
+.top_time_fixed .top_opt .last_year_rankings image {
+  width: 50rpx;
+  height: 50rpx;
+}
+/* 选中的当周的 周排行榜 */
+.yingyuan_rankings {
+  width: 100%;
+  height: 800rpx;
+  margin-top: 460rpx;
+}
+/* 每位成员的应援值信息 */
+.member_ranking {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 30rpx 20rpx;
+}
+.member_ranking .rank {
+  flex: 0.25;
+}
+.member_ranking .member_info {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.member_ranking .member_info .head_img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.member_ranking .member_info .head_img .gold {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  z-index: 5;
+  top: -7rpx;
+  left: -8rpx;
+}
+.member_ranking .member_info .head_img .avatar {
+  border: 2rpx solid;
+  box-shadow: none;
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: -1rpx;
+  margin-top: 15rpx;
+}
+.member_ranking .member_info .member_fans {
+  padding: 0 20rpx;
+}
+.member_ranking .member_info .member_fans .member_info .member_team {
+  display: flex;
+  align-items: center;
+  width: 335rpx;
+  justify-content: flex-start;
+}
+.member_ranking .member_info .member_fans .member_info .member_team .member_name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.member_ranking .member_info .member_fans .member_info .member_team .team {
+  margin-left: 20rpx;
+}
+.member_ranking .member_info .member_fans .fans_name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 24rpx;
+  color: #b1b1b1;
+  padding: 10rpx 0;
+  width: 335rpx;
+}
+.member_ranking .yingyuan_info {
+  flex: 1.02;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.member_ranking .yingyuan_info .yingyuan_value {
+  font-weight: 700;
+  font-size: 25rpx;
+  padding: 10rpx 0;
+}
+.member_ranking .yingyuan_info image {
+  width: 140rpx;
+  height: 50rpx;
 }

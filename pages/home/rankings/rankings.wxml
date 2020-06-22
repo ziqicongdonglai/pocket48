@@ -10,42 +10,100 @@
         <!-- 导航条 -->
         <view class="head">
             <view class="navbar">
-                <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}"
-                    wx:key="unique" bindtap="navbarTap">
+                <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
                     {{item}}
                 </text>
             </view>
         </view>
     </view>
     <!-- 滑动的主体部分 -->
-    <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange"
-        style='height: 2170rpx'>
+    <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2300rpx'>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
                 <view class="mt">
-                    应援榜
+                    <!-- 顶部选择时间的部分及19年的排行 -->
+                    <view class="top_time_fixed">
+                        <view class="top_opt">
+                            <!-- 选择时间 -->
+                            <view class="select_time">
+                                <picker bindchange="bindPickerChange" value="{{index}}" range="{{timeArray}}">
+                                    <view class="time_picker">{{timeArray[index]}}</view>
+                                </picker>
+                                <image class="arrow_open" src="/images/home/rankings/rankings_charm_open.png"></image>
+                                <image src="/images/my/myyingyuan/question.png"></image>
+                            </view>
+                            <!-- 去年的年排行 -->
+                            <view class="last_year_rankings">
+                                <view class="last_year">2019年排行</view>
+                                <image src="/images/home/rankings/rankings_charm_calendar.png"></image>
+                            </view>
+                        </view>
+                    </view>
+                    <!-- 当前选中的一周的应援值排行榜 -->
+                    <view class="yingyuan_rankings">
+                        <!-- 每位成员的应援值排行 -->
+                        <view class="member_ranking" wx:for="{{weekMemberRankingsList}}">
+                            <!-- 成员排行 -->
+                            <view class="rank">{{item.rank}}</view>
+                            <!-- 成员信息 -->
+                            <view class="member_info">
+                                <!-- 头像 -->
+                                <view class="head_img">
+                                    <!-- 皇冠 -->
+                                    <block wx:if="{{item.isgold==1}}">
+                                        <image class="gold" src="/images/home/rankings/charismalist_one.png"></image>
+                                        <image style="border-color: #f77c7e" class="gold" class="avatar" lazy-load src="{{item.headImg}}"></image>
+                                    </block>
+                                    <block wx:elif="{{item.isgold==2}}">
+                                        <image class="gold" src="/images/home/rankings/charismalist_two.png"></image>
+                                        <image style="border-color: #ffc005"  class="avatar" lazy-load src="{{item.headImg}}"></image>
+                                    </block>
+                                    <block wx:elif="{{item.isgold==3}}">
+                                        <image class="gold" src="/images/home/rankings/charismalist_three.png"></image>
+                                        <image style="border-color: #3edfdc"  class="avatar" lazy-load src="{{item.headImg}}"></image>
+                                    </block>
+                                    <block wx:else="{{item.isgold}}">
+                                        <!-- <image class="gold" src="/images/home/rankings/charismalist_three.png"></image> -->
+                                        <image style="border: none" class="avatar" lazy-load src="{{item.headImg}}"></image>
+                                    </block>
+                                </view>
+                                <!-- 成员信息 头号粉丝 -->
+                                <view class="member_fans">
+                                    <view class="member_info">
+                                        <view class="member_team">
+                                            <view class="member_name">{{item.memberName}}</view>
+                                            <view class="team" style="background-color: {{item.teamColor}}; font-size: {{item.teamName=='预备生'?'18':''}}rpx;">{{item.teamName}}</view>
+                                        </view>
+                                    </view>
+                                    <!-- 当前成员应援值最高粉丝 头号粉丝 -->
+                                    <view class="fans_name">
+                                        头号粉丝:{{item.topFansName}}
+                                    </view>
+                                </view>
+                            </view>
+                            <!-- 应援值信息 -->
+                            <view class="yingyuan_info">
+                                <view class="yingyuan_value">应援值 {{item.yingyuanValue}}</view>
+                                <image src="/images/home/rankings/rankings_charm_gotohelp.png"></image>
+                            </view>
+                        </view>
+                    </view>
                 </view>
             </scroll-view>
         </swiper-item>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
-                <view class="mt">
-                    生日祝福
-                </view>
+                <view class="mt">生日祝福</view>
             </scroll-view>
         </swiper-item>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
-                <view class="mt">
-                    公演MVP
-                </view>
+                <view class="mt">公演MVP</view>
             </scroll-view>
         </swiper-item>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
-                <view class="mt">
-                    历代记
-                </view>
+                <view class="mt">历代记</view>
             </scroll-view>
         </swiper-item>
     </swiper>
