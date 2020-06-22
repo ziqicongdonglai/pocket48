@@ -8,7 +8,7 @@ Page({
    */
   data: {
     // 导航条文字
-    navbar: ['应援值', '生日祝福', '公演MVP', '历代记'],
+    navbar: ['应援榜', '生日祝福', '公演MVP', '历代记'],
     currentTab: 0,
     // 弹出选择器选择的日期数组
     timeArray: [
@@ -29,13 +29,21 @@ Page({
     weekMemberRankingsList: [
       {
         id: 1,
+        // 排名
         rank: 1,
+        // 第一名
         isgold: 1,
+        // 头像
         headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfugnkdhwlj306y06ydfw.jpg',
+        // 名字
         memberName: 'GNZ48-方琪',
+        // 队伍
         teamName: 'Z',
+        // 队色
         teamColor: '#eb627c',
+        // 头号粉丝名字
         topFansName: 'akult',
+        // 当周截止的应援值
         yingyuanValue: '49.93万'
       },
       {
@@ -247,6 +255,224 @@ Page({
         topFansName: '字母',
         yingyuanValue: '9.02万'
       }
+    ],
+    // 生日祝福列表（近期过生日的小偶像）
+    memberBirthList: [
+      {
+        id: 1,
+        headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvfssuqbj306y06y0sr.jpg',
+        memberName: 'SNH48-卢天惠',
+        teamName: 'NII',
+        teamColor: '#ad87b8',
+        birthNum: '47'
+      },
+      {
+        id: 2,
+        headImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYly1gg11cbekr8j306y06yq30.jpg',
+        memberName: 'GNZ48-刘倩倩',
+        teamName: 'NIII',
+        teamColor: '#ffd801',
+        birthNum: '101'
+      },
+      {
+        id: 3,
+        headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYly1gg11cjmu2ej306y06yq31.jpg',
+        memberName: 'SNH48-陈俊羽',
+        teamName: 'SII',
+        teamColor: '#87ceeb',
+        birthNum: '150'
+      },
+      {
+        id: 4,
+        headImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfzvgjvu1yj306y06yq2u.jpg',
+        memberName: 'BEJ48-沈小爱',
+        teamName: 'B',
+        teamColor: '#e6356c',
+        birthNum: '61'
+      },
+      {
+        id: 5,
+        headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfom7x2410j306y06ygls.jpg',
+        memberName: 'GNZ48-杨媛媛',
+        teamName: 'Z',
+        teamColor: '#eb627c',
+        birthNum: '56'
+      },
+      {
+        id: 6,
+        headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYly1gg11coev69j306y05c0sp.jpg',
+        memberName: 'GNZ48-张秋怡',
+        teamName: 'Z',
+        teamColor: '#eb627c',
+        birthNum: '19'
+      },
+      {
+        id: 7,
+        headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfo8wxiz8qj306y04mq2w.jpg',
+        memberName: 'GNZ48-卢静',
+        teamName: 'NIII',
+        teamColor: '#ffd801',
+        birthNum: '53'
+      },
+      {
+        id: 8,
+        headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfrj9tzdogj306y06y0so.jpg',
+        memberName: 'GNZ48-冼燊楠',
+        teamName: 'NIII',
+        teamColor: '#ffd801',
+        birthNum: '14'
+      },
+      {
+        id: 9,
+        headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYly1gg11cud0flj306y06yq2y.jpg',
+        memberName: 'SNH48-王睿琦',
+        teamName: 'X',
+        teamColor: '#a8cd25',
+        birthNum: '67'
+      },
+      {
+        id: 10,
+        headImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYly1gg11d16x6gj306y06yq2y.jpg',
+        memberName: 'SNH48-颜沁',
+        teamName: 'NII',
+        teamColor: '#ad87b8',
+        birthNum: '168'
+      }
+    ],
+    // 每场公演MVP排行
+    livebroadcastMvpList: [
+      {
+        id: 1,
+        livebroadcastTitle: '2020年06月14日 18:45 TEAM NII《时之卷》公演',
+        /* 每场公演的每位小偶像的mvp排行 */
+        memberMvpList: [
+          {
+            id: 1,
+            mvpRank: 1,
+            headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvfssuqbj306y06y0sr.jpg',
+            memberName: 'SNH48-卢天惠',
+            teamName: 'NII',
+            teamColor: '#ad87b8',
+            mvpVoteNum: '32.0'
+          },
+          {
+            id: 2,
+            mvpRank: 2,
+            headImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gg17binssnj306y06ywei.jpg',
+            memberName: 'SNH48-金莹玥',
+            teamName: 'NII',
+            teamColor: '#ad87b8',
+            mvpVoteNum: '19.1'
+          },
+          {
+            id: 3,
+            mvpRank: 3,
+            headImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gg17bqtzolj304w06ymxa.jpg',
+            memberName: 'SNH48-祁静',
+            teamName: 'X',
+            teamColor: '#a8cd25',
+            mvpVoteNum: '12.0'
+          }
+        ]
+      },
+      {
+        id: 2,
+        livebroadcastTitle: '2020年02月02日 13:45 TEAM B《B A Fighter》剧场公演',
+        /* 每场公演的每位小偶像的mvp排行 */
+        memberMvpList: [
+        ]
+      },
+      {
+        id: 3,
+        livebroadcastTitle: '2020年02月02日 18:45 TEAM J《梦想的旗帜》剧场公演',
+        /* 每场公演的每位小偶像的mvp排行 */
+        memberMvpList: [
+        ]
+      },
+      {
+        id: 4,
+        livebroadcastTitle: '2020年05月24日 14:15 GNZ48 "GNZ48星愿树下"',
+        /* 每场公演的每位小偶像的mvp排行 */
+        memberMvpList: [
+          {
+            id: 1,
+            mvpRank: 1,
+            headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYly1gg0v2ranmoj306y06y748.jpg',
+            memberName: 'GNZ48-唐莉佳',
+            teamName: '预备生',
+            teamColor: '#d4d4d4',
+            mvpVoteNum: '0.1'
+          },
+          {
+            id: 2,
+            mvpRank: 2,
+            headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvo5shx0j306y06ymx5.jpg',
+            memberName: 'GNZ48-农燕萍',
+            teamName: 'Z',
+            teamColor: '#eb627c',
+            mvpVoteNum: '0.0'
+          }
+        ]
+      },
+      {
+        id: 5,
+        livebroadcastTitle: '2020年05月24日 15:45 GNZ48 "GNZ48星愿树下"',
+        /* 每场公演的每位小偶像的mvp排行 */
+        memberMvpList: [
+          {
+            id: 1,
+            mvpRank: 1,
+            headImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYly1gg0vvmfo5uj306y06yq2v.jpg',
+            memberName: 'GNZ48-黄楚茵',
+            teamName: 'G',
+            teamColor: '#a8cd25',
+            mvpVoteNum: '1.2'
+          },
+          {
+            id: 2,
+            mvpRank: 2,
+            headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gg17sqk5yuj306y057jre.jpg',
+            memberName: 'GNZ48-符冰冰',
+            teamName: 'G',
+            teamColor: '#a8cd25',
+            mvpVoteNum: '0.0'
+          }
+        ]
+      },
+      {
+        id: 6,
+        livebroadcastTitle: '2020年05月24日 19:15 GNZ48 《夏至》直播公演 第八场',
+        /* 每场公演的每位小偶像的mvp排行 */
+        memberMvpList: [
+          {
+            id: 1,
+            mvpRank: 1,
+            headImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYly1gg0vvmfo5uj306y06yq2v.jpg',
+            memberName: 'GNZ48-黄楚茵',
+            teamName: 'G',
+            teamColor: '#a8cd25',
+            mvpVoteNum: '1.1'
+          },
+          {
+            id: 2,
+            mvpRank: 2,
+            headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYly1gg0vp4weqjj306y06ymx4.jpg',
+            memberName: 'GNZ48-谢艾琳',
+            teamName: 'NIII',
+            teamColor: '#ffd801',
+            mvpVoteNum: '1.0'
+          },
+          {
+            id: 3,
+            mvpRank: 3,
+            headImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gg17xf1fz8j306y061t8q.jpg',
+            memberName: 'GNZ48-林芝',
+            teamName: 'G',
+            teamColor: '#a8cd25',
+            mvpVoteNum: '1.0'
+          }
+        ]
+      },
     ]
   },
   // 切换bar

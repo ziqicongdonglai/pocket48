@@ -20,7 +20,7 @@
     <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 2300rpx'>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
-                <view class="mt">
+                <view class="mt" style="margin-top: -80rpx">
                     <!-- 顶部选择时间的部分及19年的排行 -->
                     <view class="top_time_fixed">
                         <view class="top_opt">
@@ -42,9 +42,11 @@
                     <!-- 当前选中的一周的应援值排行榜 -->
                     <view class="yingyuan_rankings">
                         <!-- 每位成员的应援值排行 -->
-                        <view class="member_ranking" wx:for="{{weekMemberRankingsList}}">
+                        <view class="member_ranking" wx:for="{{weekMemberRankingsList}}" wx:key="id">
                             <!-- 成员排行 -->
-                            <view class="rank">{{item.rank}}</view>
+                            <view class="rank" style="color: {{(item.rank!=1&&item.rank!=2&&item.rank!=3)?'':'#000'}}">
+                                {{item.rank}}
+                            </view>
                             <!-- 成员信息 -->
                             <view class="member_info">
                                 <!-- 头像 -->
@@ -56,11 +58,11 @@
                                     </block>
                                     <block wx:elif="{{item.isgold==2}}">
                                         <image class="gold" src="/images/home/rankings/charismalist_two.png"></image>
-                                        <image style="border-color: #ffc005"  class="avatar" lazy-load src="{{item.headImg}}"></image>
+                                        <image style="border-color: #ffc005" class="avatar" lazy-load src="{{item.headImg}}"></image>
                                     </block>
                                     <block wx:elif="{{item.isgold==3}}">
                                         <image class="gold" src="/images/home/rankings/charismalist_three.png"></image>
-                                        <image style="border-color: #3edfdc"  class="avatar" lazy-load src="{{item.headImg}}"></image>
+                                        <image style="border-color: #3edfdc" class="avatar" lazy-load src="{{item.headImg}}"></image>
                                     </block>
                                     <block wx:else="{{item.isgold}}">
                                         <!-- <image class="gold" src="/images/home/rankings/charismalist_three.png"></image> -->
@@ -72,13 +74,13 @@
                                     <view class="member_info">
                                         <view class="member_team">
                                             <view class="member_name">{{item.memberName}}</view>
-                                            <view class="team" style="background-color: {{item.teamColor}}; font-size: {{item.teamName=='预备生'?'18':''}}rpx;">{{item.teamName}}</view>
+                                            <view class="team" style="background-color: {{item.teamColor}}; font-size: {{item.teamName=='预备生'?'18':''}}rpx;">
+                                                {{item.teamName}}
+                                            </view>
                                         </view>
                                     </view>
                                     <!-- 当前成员应援值最高粉丝 头号粉丝 -->
-                                    <view class="fans_name">
-                                        头号粉丝:{{item.topFansName}}
-                                    </view>
+                                    <view class="fans_name">头号粉丝:{{item.topFansName}}</view>
                                 </view>
                             </view>
                             <!-- 应援值信息 -->
@@ -93,12 +95,86 @@
         </swiper-item>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
-                <view class="mt">生日祝福</view>
+                <!-- swiper height 800px 合适 -->
+                <view class="mt">
+                    <!-- 生日列表 -->
+                    <view class="member_birth_list">
+                        <!-- 每位近期过生日的小偶像的生日祝福（弹幕） -->
+                        <view class="member_birth" wx:for="{{memberBirthList}}" wx:key="id">
+                            <view class="member_info">
+                                <!-- 头像 -->
+                                <image lazy-load class="head_img" src="{{item.headImg}}"></image>
+                                <!-- 小偶像的名字和队伍 -->
+                                <view class="member_team">
+                                    <view class="member_name">{{item.memberName}}</view>
+                                    <view class="team" style="background-color: {{item.teamColor}}">
+                                        {{item.teamName}}
+                                    </view>
+                                </view>
+                            </view>
+                            <!-- 生日弹幕数量（应该？） -->
+                            <view class="birth_info">
+                                <image src="/images/home/rankings/rankings_birthday_icon.png"></image>
+                                <view class="birth_num">{{item.birthNum}}</view>
+                            </view>
+                        </view>
+                        <!-- 为还没过生日公演的小偶像但开始可以送祝福的小偶像送祝福 -->
+                        <view class="give_birth_bless">
+                            <image src="/images/home/rankings/rankings_birthday_give.png"></image>
+                        </view>
+                    </view>
+                </view>
             </scroll-view>
         </swiper-item>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
-                <view class="mt">公演MVP</view>
+                <view class="mt" style="margin-top: 490rpx">
+                    <!-- 顶部四个功能 -->
+                    <view class="top_features">
+                        <view class="features_item">
+                            <image src="/images/home/rankings/rankings_mvp_monthlyrankings.png"></image>
+                            <view>月排名</view>
+                        </view>
+                        <view class="features_item">
+                            <image src="/images/home/rankings/rankings_mvp_pastfield.png"></image>
+                            <view>以往场次</view>
+                        </view>
+                        <view class="features_item">
+                            <image src="/images/home/rankings/rankings_mvp_votingrecord.png"></image>
+                            <view>投票记录</view>
+                        </view>
+                        <view class="features_item">
+                            <image src="/images/home/rankings/rankings_mvp_rule.png"></image>
+                            <view>规则</view>
+                        </view>
+                    </view>
+                    <!-- 每场公演的mvp得票排名 -->
+                    <view class="mvp_livebroadcast" wx:for="{{livebroadcastMvpList}}" wx:key="id" wx:for-item="group">
+                        <!-- 公演的日期 时间 名称 -->
+                        <view class="livebroadcast_title">{{group.livebroadcastTitle}}</view>
+                        <!-- 小偶像得票列表 -->
+                        <view class="member_vote_list">
+                            <!-- 这场公演每位小偶像的得票 -->
+                            <view class="member_vote" wx:for="{{group.memberMvpList}}" wx:key="id">
+                                <view class="mvp_rank">{{item.mvpRank}}</view>
+                                <!-- 成员信息 -->
+                                <view class="member_info">
+                                    <image lazy-load src="{{item.headImg}}" class="head_img"></image>
+                                    <view class="member_team">
+                                        <view class="memberName">{{item.memberName}}</view>
+                                        <view class="team" style="background-color: {{item.teamColor}}; font-size: {{item.teamName=='预备生'?'18':''}}rpx;">{{item.teamName}}</view>
+                                    </view>
+                                </view>
+                                <!-- 得票数 -->
+                                <view class="vote_num">{{item.mvpVoteNum}}票</view>
+                            </view>
+                        </view>
+                        <!-- 查看完整排名 -->
+                        <view class="look_allvote_rank">
+                            <text>查看完整排名</text>
+                        </view>
+                    </view>
+                </view>
             </scroll-view>
         </swiper-item>
         <swiper-item>
