@@ -9,7 +9,7 @@ Page({
   data: {
     // 导航条文字
     navbar: ['应援榜', '生日祝福', '公演MVP', '历代记'],
-    currentTab: 3,
+    currentTab: 0,
     // 弹出选择器选择的日期数组
     timeArray: [
       '06月08日-06月14日',

@@ -56,8 +56,8 @@
                     </view>
                     <!-- 首页中间功能区 -->
                     <view class="middle_features">
-                        <swiper indicator-dots="true" class="swiper-features" style='height: 200rpx'>
-                            <swiper-item>
+                        <swiper class="swiper-block" indicator-dots="{{true}}" style='height: 200rpx'>
+                            <swiper-item class='swiper-item'>
                                 <view class="features_group">
                                     <view class="features">
                                         <image src="/images/home/square/mine_yinyuan_exchange.png" class="item_icon"></image>
@@ -77,7 +77,7 @@
                                     </view>
                                 </view>
                             </swiper-item>
-                            <swiper-item>
+                            <swiper-item class='swiper-item'>
                                 <view class="features_group">
                                     <view class="features">
                                         <image src="/images/home/square/mine_trip.png" class="item_icon"></image>
@@ -97,7 +97,7 @@
                                     </view>
                                 </view>
                             </swiper-item>
-                            <swiper-item>
+                            <swiper-item class='swiper-item'>
                                 <view class="features_group">
                                     <view class="features">
                                         <image src="/images/home/square/mine_radio.png" class="item_icon"></image>
@@ -118,6 +118,12 @@
                                 </view>
                             </swiper-item>
                         </swiper>
+                        <!-- 自定义指示点dot -->
+                        <!-- <view class="dots">
+                            <block wx:for="{{features}}" wx:key="unique">
+                                <view class='dot {{swiperCurrent == index ? "active" : ""}}'></view>
+                            </block>
+                        </view> -->
                     </view>
                     <!-- 热门公演 -->
                     <view class="hot_show">

@@ -95,6 +95,8 @@
   background-color: #fff;
   box-sizing: border-box;
   font-size: 26rpx;
+  position: relative;
+  /* dot定位位置 */
 }
 .middle_features .features_group {
   display: flex;
@@ -114,6 +116,27 @@
   height: 70rpx;
   border-radius: 50%;
   margin-bottom: 30rpx;
+}
+.middle_features .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: -4rpx;
+}
+.middle_features .wx-swiper-dots {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.middle_features .wx-swiper-dot {
+  margin: 0 8rpx;
+  width: 10rpx;
+  height: 7rpx;
+  background-color: transparent;
+  border-radius: 8rpx;
+  background: #efefef;
+  transition: all 0.6s ease-in-out;
+}
+.middle_features .wx-swiper-dot-active {
+  width: 17rpx;
+  background: #dddddd;
 }
 /* 热门公演 */
 .hot_show {

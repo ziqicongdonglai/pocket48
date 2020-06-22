@@ -13,6 +13,8 @@ Page({
     // 创造营导航条
     topnavbar: ['训练生', '应援榜', '往期榜单'],
     navbarcurrentTab: 0,
+    features: [,,,],
+    swiperCurrent: 0,
     // 首页公演数据（6条）
     showlist: [
       {

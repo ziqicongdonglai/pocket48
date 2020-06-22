@@ -111,6 +111,7 @@
   background-color: #fff;
   box-sizing: border-box;
   font-size: 26rpx;
+  position: relative;
   // display: flex;
   // flex-direction: row;
   .features_group {
@@ -132,6 +133,57 @@
       }
     }
   }
+  .wx-swiper-dots.wx-swiper-dots-horizontal{
+    margin-bottom: -4rpx;
+    }
+    .wx-swiper-dots {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+    }
+  .wx-swiper-dot {
+    margin: 0 8rpx;
+    width: 10rpx;
+    height: 7rpx;
+    background-color: transparent;
+    border-radius: 8rpx;
+    // border: 0.1rpx solid #efefef;
+    background: #efefef;
+    transition: all 0.6s ease-in-out;
+  }
+  .wx-swiper-dot-active {
+    width: 17rpx;
+    background: #dddddd;
+  }
+  // .active {
+  //   transform: scale(1.14);
+  //   transition: all 0.2s ease-in 0s;
+  //   z-index: 20;
+  // }
+  /* dot定位位置 */
+  // .dots {
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 20rpx;
+  //   display: flex;
+  //   justify-content: center;
+  //   /* 未经过前的dot */
+  //   .dot {
+  //     margin: 0 8rpx;
+  //     width: 10rpx;
+  //     height: 7rpx;
+  //     background-color: transparent;
+  //     border-radius: 8rpx;
+  //     // border: 0.1rpx solid #efefef;
+  //     background: #efefef;
+  //     transition: all 0.6s ease-in-out;
+  //     &.active {
+  //       width: 17rpx;
+  //       background: #dddddd;
+  //     }
+  //   }
+  // }
 }
 
 /* 热门公演 */

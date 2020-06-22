@@ -183,7 +183,7 @@
             <scroll-view style="height: 100%" scroll-y>
                 <view class="mt">
                     <!-- 每一项的重大活动 -->
-                    <view class="important_activity" wx:for="{{importantActivitysList}}">
+                    <view class="important_activity" wx:for="{{importantActivitysList}}" wx:key="id">
                         <!-- 活动时间 -->
                         <view class="activity_time">{{item.activityTime}}</view>
                         <view class="activity_main" style="background-image: url({{item.activityImg}})">
