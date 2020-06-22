@@ -319,3 +319,29 @@
 .mvp_livebroadcast .look_allvote_rank text {
   border-bottom: 2rpx solid #7d66fb;
 }
+/* 历代记 */
+.important_activity {
+  background-color: #fff;
+  margin-bottom: 40rpx;
+  font-size: 26rpx;
+  /* 活动时间 */
+  /* 显示的活动的主体 图片加 活动名字简述 */
+}
+.important_activity .activity_time {
+  padding: 20rpx 0 20rpx 20rpx;
+}
+.important_activity .activity_main {
+  height: 300rpx;
+  position: relative;
+  background-size: 100%;
+  background-position: center;
+}
+.important_activity .activity_main .activity_title {
+  color: #fff;
+  position: absolute;
+  top: 30rpx;
+  left: 20rpx;
+}
+.important_activity .look_rankings {
+  padding: 20rpx 0 20rpx 20rpx;
+}

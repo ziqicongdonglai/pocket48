@@ -162,7 +162,9 @@
                                     <image lazy-load src="{{item.headImg}}" class="head_img"></image>
                                     <view class="member_team">
                                         <view class="memberName">{{item.memberName}}</view>
-                                        <view class="team" style="background-color: {{item.teamColor}}; font-size: {{item.teamName=='预备生'?'18':''}}rpx;">{{item.teamName}}</view>
+                                        <view class="team" style="background-color: {{item.teamColor}}; font-size: {{item.teamName=='预备生'?'18':''}}rpx;">
+                                            {{item.teamName}}
+                                        </view>
                                     </view>
                                 </view>
                                 <!-- 得票数 -->
@@ -179,7 +181,19 @@
         </swiper-item>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
-                <view class="mt">历代记</view>
+                <view class="mt">
+                    <!-- 每一项的重大活动 -->
+                    <view class="important_activity" wx:for="{{importantActivitysList}}">
+                        <!-- 活动时间 -->
+                        <view class="activity_time">{{item.activityTime}}</view>
+                        <view class="activity_main" style="background-image: url({{item.activityImg}})">
+                            <!-- 活动名称 -->
+                            <view class="activity_title">{{item.activityTitle}}</view>
+                        </view>
+                        <!-- 查看榜单 -->
+                        <view class="look_rankings">查看榜单</view>
+                    </view>
+                </view>
             </scroll-view>
         </swiper-item>
     </swiper>

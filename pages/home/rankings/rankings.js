@@ -9,7 +9,7 @@ Page({
   data: {
     // 导航条文字
     navbar: ['应援榜', '生日祝福', '公演MVP', '历代记'],
-    currentTab: 0,
+    currentTab: 3,
     // 弹出选择器选择的日期数组
     timeArray: [
       '06月08日-06月14日',
@@ -260,10 +260,15 @@ Page({
     memberBirthList: [
       {
         id: 1,
+        // 头像
         headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvfssuqbj306y06y0sr.jpg',
+        // 成员名字
         memberName: 'SNH48-卢天惠',
+        // 队伍名字
         teamName: 'NII',
+        // 队色
         teamColor: '#ad87b8',
+        // 生日弹幕祝福条数
         birthNum: '47'
       },
       {
@@ -348,11 +353,17 @@ Page({
         memberMvpList: [
           {
             id: 1,
+            // mvp排名
             mvpRank: 1,
+            // 头像
             headImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvfssuqbj306y06y0sr.jpg',
+            // 成员名字
             memberName: 'SNH48-卢天惠',
+            // 队伍名字
             teamName: 'NII',
+            // 队色
             teamColor: '#ad87b8',
+            // 得票数
             mvpVoteNum: '32.0'
           },
           {
@@ -472,6 +483,99 @@ Page({
             mvpVoteNum: '1.0'
           }
         ]
+      },
+    ],
+    // 历代记列表
+    importantActivitysList: [
+      {
+        id: 1,
+        activityTime: '2019年7月27日',
+        activityImg: 'https://wx3.sinaimg.cn/mw690/a04b2a1dgy1g51pi8bggcj21c30is7wi.jpg',
+        activityTitle: '第六届总选'
+      },
+      {
+        id: 2,
+        activityTime: '2019年1月19日',
+        activityImg: 'https://wx4.sinaimg.cn/mw690/6f4898e1gy1fz65guc6tqj20u016f7wh.jpg',
+        activityTitle: '第五届金曲大赏'
+      },
+      {
+        id: 3,
+        activityTime: '2018年7月28日',
+        activityImg: 'https://wx2.sinaimg.cn/mw690/006c99bxly1fwn77cwyv6j31kw0w0qv6.jpg',
+        activityTitle: '第四届风尚大赏'
+      },
+      {
+        id: 4,
+        activityTime: '2018年7月28日',
+        activityImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gg1earooooj31hc0qptgk.jpg',
+        activityTitle: '第五届总选'
+      },
+      {
+        id: 5,
+        activityTime: '2018年2月3日',
+        activityImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gg1eedyunyj30p00dwgnj.jpg',
+        activityTitle: '第四届金曲大赏'
+      },
+      {
+        id: 6,
+        activityTime: '2017年11月18日',
+        activityImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gg1eeheoh6j30q80dw7jv.jpg',
+        activityTitle: '第三届风尚大赏'
+      },
+      {
+        id: 7,
+        activityTime: '2017年7月29日',
+        activityImg: 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gg1ean17v4j31c00u0q75.jpg',
+        activityTitle: '第四届总选'
+      },
+      {
+        id: 8,
+        activityTime: '2017年1月7日',
+        activityImg: 'https://ww3.sinaimg.cn/mw690/a04b2a1dgw1fbi5kq2k8lj21120rtgre.jpg',
+        activityTitle: '第三届金曲大赏'
+      },
+      {
+        id: 9,
+        activityTime: '2016年11月5日',
+        activityImg: 'https://ww1.sinaimg.cn/mw690/a04b2a1dgw1f9hsgm8yavj21e00xc18y.jpg',
+        activityTitle: '第二届风尚大赏'
+      },
+      {
+        id: 10,
+        activityTime: '2016年7月30日',
+        activityImg: 'https://ww2.sinaimg.cn/mw690/dab20f8dgw1f6ct2gdny7j21dn1e0e82.jpg',
+        activityTitle: '第三届总选'
+      },
+      {
+        id: 11,
+        activityTime: '2015年12月26日',
+        activityImg: 'https://ww2.sinaimg.cn/mw690/a04b2a1djw1eot095susqj218f0p0n0e.jpg',
+        activityTitle: '第二届金曲大赏'
+      },
+      {
+        id: 12,
+        activityTime: '2015年7月25日',
+        activityImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gg1eaiaezcj30uu0hcmyx.jpg',
+        activityTitle: '第二届总选'
+      },
+      {
+        id: 13,
+        activityTime: '2015年10月31日',
+        activityImg: 'https://wx3.sinaimg.cn/mw690/a04b2a1dgy1fl1iqbl2x0j21e00uck5r.jpg',
+        activityTitle: '第一届风尚大赏'
+      },
+      {
+        id: 14,
+        activityTime: '2015年1月31日',
+        activityImg: 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gg1ee8s4uqj30m80etdjj.jpg',
+        activityTitle: '第一届金曲大赏'
+      },
+      {
+        id: 15,
+        activityTime: '2014年7月26日',
+        activityImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gg1eadlpcuj30dw0993z8.jpg',
+        activityTitle: '第一届总选'
       },
     ]
   },
