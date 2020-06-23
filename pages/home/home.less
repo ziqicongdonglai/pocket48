@@ -91,18 +91,22 @@
       height: 400rpx;
     }
   }
-}
-// 轮播图 指示点位置改变
-.wx-swiper-dots {
-  position: relative;
-  left: unset !important;
-  right: 0;
-  width: 120rpx;
-  height: 10rpx;
-  padding-right: 10rpx;
-}
-.wx-swiper-dots.wx-swiper-dots-horizontal {
-  margin-bottom: -5rpx;
+  // 轮播图 指示点位置改变
+  .wx-swiper-dots {
+    // position: relative;
+    left: unset !important;
+    right: 0;
+    width: 120rpx;
+    height: 10rpx;
+    padding-right: 10rpx;
+  }
+  .wx-swiper-dot {
+    width: 10rpx;
+    height: 10rpx;
+  }
+  .wx-swiper-dots.wx-swiper-dots-horizontal {
+    margin-bottom: -5rpx;
+  }
 }
 
 /* 中间功能区 */
@@ -133,14 +137,14 @@
       }
     }
   }
-  .wx-swiper-dots.wx-swiper-dots-horizontal{
+  .wx-swiper-dots.wx-swiper-dots-horizontal {
     margin-bottom: -4rpx;
-    }
-    .wx-swiper-dots {
-      display: flex;
-      justify-content: center;
-      width: 50%;
-    }
+  }
+  .wx-swiper-dots {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
   .wx-swiper-dot {
     margin: 0 8rpx;
     width: 10rpx;

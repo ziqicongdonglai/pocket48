@@ -15,6 +15,17 @@ Page({
     roomlist: [
       {
         id: 1,
+        'roomTitle': '一期一会',
+        'updateTime': '13:17',
+        'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg',
+        'memberName': 'BEJ48-张笑盈',
+        'team': 'E',
+        'teamColor': '#29b8b6',
+        'latestInf': '你们过哪门子的节？我有孙孙了？',
+        'infNumber': '22'
+      },
+      {
+        id: 2,
         'roomTitle': '段艺璇',
         'updateTime': '18:52',
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYly1gfkl3olgp6j306y06ywed.jpg',
@@ -25,7 +36,7 @@ Page({
         'infNumber': '19'
       },
       {
-        id: 2,
+        id: 3,
         'roomTitle': '🌍',
         'updateTime': '18:26',
         'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfon4yqam9j306y06ymx0.jpg',
@@ -36,7 +47,7 @@ Page({
         'infNumber': '99+'
       },
       {
-        id: 3,
+        id: 4,
         'roomTitle': '你掉了一只兔子ᕱ⑅ᕱ',
         'updateTime': '18:21',
         'imgUrl': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfnlkvwqk9j306y06yq2u.jpg',
@@ -47,7 +58,7 @@ Page({
         'infNumber': '20'
       },
       {
-        id: 4,
+        id: 5,
         'roomTitle': '爽爽的QQ空间',
         'updateTime': '17:01',
         'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfom66a8j0j306y06tjre.jpg',
@@ -58,7 +69,7 @@ Page({
         'infNumber': '99+'
       },
       {
-        id: 5,
+        id: 6,
         'roomTitle': '😸',
         'updateTime': '17:01',
         'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfom6iwkkej306i06yq31.jpg',
@@ -69,7 +80,7 @@ Page({
         'infNumber': '10'
       },
       {
-        id: 6,
+        id: 7,
         'roomTitle': '周日创造营',
         'updateTime': '17:01',
         'imgUrl': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfom76z7v2j306y06ya9y.jpg',
@@ -80,7 +91,7 @@ Page({
         'infNumber': '99+'
       },
       {
-        id: 7,
+        id: 8,
         'roomTitle': '🎀🎀🎀🎀',
         'updateTime': '17:01',
         'imgUrl': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfom5npbduj305706ydft.jpg',
@@ -91,7 +102,7 @@ Page({
         'infNumber': '99+'
       },
       {
-        id: 8,
+        id: 9,
         'roomTitle': 'y3⭕⭕',
         'updateTime': '16:59',
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfom7x2410j306y06ygls.jpg',
@@ -102,7 +113,7 @@ Page({
         'infNumber': '99+'
       },
       {
-        id: 9,
+        id: 10,
         'roomTitle': '孙芮',
         'updateTime': '16:43',
         'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfnlk8eh56j306y06yglo.jpg',
@@ -113,7 +124,7 @@ Page({
         'infNumber': '16'
       },
       {
-        id: 10,
+        id: 11,
         'roomTitle': '麦兜兜🐷',
         'updateTime': '15:27',
         'imgUrl': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvjpeukyj304m06yq2u.jpg',
@@ -124,7 +135,7 @@ Page({
         'infNumber': '8'
       },
       {
-        id: 11,
+        id: 12,
         'roomTitle': '宋昕冉',
         'updateTime': '01:17',
         'imgUrl': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfnlkq1ubmj305706ydfx.jpg',
@@ -357,4 +368,13 @@ Page({
       }
     })
   },
+  // 跳转到对应的小偶像的房间页面
+  toRoom: function() {
+    wx.navigateTo({
+      url: '/pages/juju/room/room',
+      success: function(res){
+        // success
+      }
+    })
+  }
 })

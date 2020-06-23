@@ -1,0 +1,174 @@
+/* 顶部部分 */
+.titlebar_top {
+  justify-content: space-between;
+  color: #4b4b4b;
+  .titlebar_cancel {
+    width: 155rpx;
+    display: flex;
+    image {
+      width: 45rpx;
+      height: 45rpx;
+    }
+  }
+  .titlebar_title {
+    color: #000;
+    font-weight: 500;
+    font-size: 32rpx;
+  }
+  .titlebar_right_features {
+    display: flex;
+    width: 175rpx;
+    justify-content: center;
+    align-items: center;
+    image {
+      width: 45rpx;
+      height: 45rpx;
+      margin: 0 10rpx;
+    }
+  }
+}
+
+.mt {
+  margin-top: 100rpx;
+}
+/* 房间个签 */
+.room_welocm_text {
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #7766e646;
+  padding-left: 10rpx;
+  color: #fff;
+  margin-top: 100rpx;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+/* 底部评论 */
+.comment_gift {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx 0;
+  align-items: center;
+  .input_text {
+    border-radius: 20rpx;
+    border: 2rpx solid #d4d4d4;
+    width: 550rpx;
+    height: 60rpx;
+    // background-color: yellow;
+    .input_text {
+      width: 550rpx;
+      height: 60rpx;
+    }
+  }
+  .bottom_right {
+    //   background-color: red;
+    image {
+      width: 60rpx;
+      height: 60rpx;
+      margin-right: 10rpx;
+    }
+  }
+}
+/* 右侧更多 到留言板 */
+.arrow_more {
+  width: 80rpx;
+  height: 70rpx;
+  //   border: 2prx solid red;
+  border-width: 2rpx;
+  border-style: solid;
+  border-color: #bbb;
+  border-radius: 80rpx 0 0 80rpx;
+  background-color: #fff;
+  position: fixed;
+  top: 500rpx;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  image {
+    width: 45rpx;
+    height: 45rpx;
+  }
+}
+
+.chat_list {
+  background-color: #fff;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.chat {
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  /* 头像 */
+  .head_img {
+    height: 150rpx;
+    display: flex;
+    align-items: flex-end;
+    image {
+      width: 80rpx;
+      height: 80rpx;
+      border-radius: 50%;
+    }
+  }
+  .chat_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .member_info {
+      display: flex;
+      align-items: center;
+      .member_home {
+        display: flex;
+        align-items: center;
+        .member_name {
+          color: #b4b4b4;
+        }
+        .home_user {
+          width: 30rpx;
+          height: 30rpx;
+          position: static;
+          left: none;
+          bottom: none;
+          z-index: 1;
+        }
+      }
+      .team {
+        margin-left: 20rpx;
+        background-color: #29b8b6;
+      }
+    }
+  }
+  .chat_content {
+    padding: 5rpx 0;
+  }
+}
+
+/* 聊天框 */
+.bubble {
+  background-color: #fff;
+  color: #000;
+  //   width: 200rpx;
+  border-radius: 30rpx;
+  position: relative;
+  margin-left: 30rpx;
+  padding: 30rpx 20rpx;
+  margin-top: 30rpx;
+  text-align: center;
+}
+.bubble image {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: -18rpx;
+  bottom: -15rpx;
+  z-index: 0;
+}

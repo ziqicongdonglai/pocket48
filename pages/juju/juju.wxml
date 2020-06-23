@@ -26,7 +26,7 @@
                     </view>
                     <!-- 房间列表 -->
                     <view class="roomlist">
-                        <view class="room" wx:for="{{roomlist}}" wx:key="id">
+                        <view class="room" wx:for="{{roomlist}}" wx:key="id" bindtap="{{item.id==1?'toRoom':''}}">
                             <!-- 房间头像 -->
                             <view class="room_img">
                                 <image lazy-load src="{{item.imgUrl}}"></image>

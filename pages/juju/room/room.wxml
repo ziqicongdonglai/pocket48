@@ -1,0 +1,316 @@
+<view>
+    <!-- 顶部区域 返回 偶像名字 右侧功能 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel" bindtap="handleCancel">
+            <image src="/images/my/message/titlebar_return_black.png"></image>
+        </view>
+        <view class="titlebar_title">BEJ48-张笑盈</view>
+        <view class="titlebar_right_features">
+            <image src="/images/juju/room/ic_func_fanpai.png"></image>
+            <image src="/images/juju/room/ic_dynamic.png"></image>
+        </view>
+    </view>
+    <!-- 小偶像房间签名？ -->
+    <view class="room_welocm_text">噫......看看548797223</view>
+    <!-- 底部评论 -->
+    <view class="comment_gift">
+        <view class="input_text">
+            <input type="text" />
+        </view>
+        <view class="bottom_right">
+            <image src="/images//juju/room/editor_emoji_ic.png"></image>
+            <image src="/images/juju/room/ic_juju_rome_gift.png"></image>
+        </view>
+    </view>
+    <!-- 右侧箭头 -->
+    <view class="arrow_more">
+        <image src="/images/juju/room/icon_juju_message_close.png"></image>
+    </view>
+    <scroll-view style="height: 2100rpx" scroll-y>
+        <view class="mt">
+            <view class="chat_list" style="background-image: url(https://wx2.sinaimg.cn/mw690/005FbhyYgy1gg28qrdblhj30hs0a03zh.jpg)">
+                <view class="chat">
+                    <!-- 头像 -->
+                    <view class="head_img">
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg"></image>
+                    </view>
+                    <!-- 聊天气泡框 -->
+                    <view class="bubble">
+                        <view class="chat_info">
+                            <view class="member_info">
+                                <view class="member_home">
+                                    <view class="member_name">BEJ48-张笑盈</view>
+                                    <image class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                </view>
+                                <view class="team">E</view>
+                            </view>
+                            <view class="chat_content">瘦了瘦了</view>
+                        </view>
+                        <image src="/images/juju/room/bubble_tail.png"></image>
+                    </view>
+                </view>
+                <view class="chat">
+                    <!-- 头像 -->
+                    <view class="head_img">
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg"></image>
+                    </view>
+                    <!-- 聊天气泡框 -->
+                    <view class="bubble">
+                        <view class="chat_info">
+                            <view class="member_info">
+                                <view class="member_home">
+                                    <view class="member_name">BEJ48-张笑盈</view>
+                                    <image class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                </view>
+                                <view class="team">E</view>
+                            </view>
+                            <view class="chat_content">嘿嘿</view>
+                        </view>
+                        <image src="/images/juju/room/bubble_tail.png"></image>
+                    </view>
+                </view>
+                <view class="chat">
+                    <!-- 头像 -->
+                    <view class="head_img">
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg"></image>
+                    </view>
+                    <!-- 聊天气泡框 -->
+                    <view class="bubble">
+                        <view class="chat_info">
+                            <view class="member_info">
+                                <view class="member_home">
+                                    <view class="member_name">BEJ48-张笑盈</view>
+                                    <image class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                </view>
+                                <view class="team">E</view>
+                            </view>
+                            <view class="chat_content">心疼不心疼</view>
+                        </view>
+                        <image src="/images/juju/room/bubble_tail.png"></image>
+                    </view>
+                </view>
+                <view class="chat">
+                    <!-- 头像 -->
+                    <view class="head_img">
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg"></image>
+                    </view>
+                    <!-- 聊天气泡框 -->
+                    <view class="bubble">
+                        <view class="chat_info">
+                            <view class="member_info">
+                                <view class="member_home">
+                                    <view class="member_name">BEJ48-张笑盈</view>
+                                    <image class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                </view>
+                                <view class="team">E</view>
+                            </view>
+                            <view class="chat_content">睡觉啦！！！晚安</view>
+                        </view>
+                        <image src="/images/juju/room/bubble_tail.png"></image>
+                    </view>
+                </view>
+                <view class="chat">
+                    <!-- 头像 -->
+                    <view class="head_img">
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg"></image>
+                    </view>
+                    <!-- 聊天气泡框 -->
+                    <view class="bubble">
+                        <view class="chat_info">
+                            <view class="member_info">
+                                <view class="member_home">
+                                    <view class="member_name">BEJ48-张笑盈</view>
+                                    <image class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                </view>
+                                <view class="team">E</view>
+                            </view>
+                            <view class="chat_content">过节啦</view>
+                        </view>
+                        <image src="/images/juju/room/bubble_tail.png"></image>
+                    </view>
+                </view>
+                <view class="chat">
+                    <!-- 头像 -->
+                    <view class="head_img">
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg"></image>
+                    </view>
+                    <!-- 聊天气泡框 -->
+                    <view class="bubble">
+                        <view class="chat_info">
+                            <view class="member_info">
+                                <view class="member_home">
+                                    <view class="member_name">BEJ48-张笑盈</view>
+                                    <image class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                </view>
+                                <view class="team">E</view>
+                            </view>
+                            <view class="chat_content">晚安</view>
+                        </view>
+                        <image src="/images/juju/room/bubble_tail.png"></image>
+                    </view>
+                </view>
+                <view class="chat">
+                    <!-- 头像 -->
+                    <view class="head_img">
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg"></image>
+                    </view>
+                    <!-- 聊天气泡框 -->
+                    <view class="bubble">
+                        <view class="chat_info">
+                            <view class="member_info">
+                                <view class="member_home">
+                                    <view class="member_name">BEJ48-张笑盈</view>
+                                    <image class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                </view>
+                                <view class="team">E</view>
+                            </view>
+                            <view class="chat_content">我太喜欢看公演了</view>
+                        </view>
+                        <image src="/images/juju/room/bubble_tail.png"></image>
+                    </view>
+                </view>
+                <view class="chat">
+                    <!-- 头像 -->
+                    <view class="head_img">
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg"></image>
+                    </view>
+                    <!-- 聊天气泡框 -->
+                    <view class="bubble">
+                        <view class="chat_info">
+                            <view class="member_info">
+                                <view class="member_home">
+                                    <view class="member_name">BEJ48-张笑盈</view>
+                                    <image class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                </view>
+                                <view class="team">E</view>
+                            </view>
+                            <view class="chat_content">睡觉</view>
+                        </view>
+                        <image src="/images/juju/room/bubble_tail.png"></image>
+                    </view>
+                </view>
+                <view class="chat">
+                    <!-- 头像 -->
+                    <view class="head_img">
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg"></image>
+                    </view>
+                    <!-- 聊天气泡框 -->
+                    <view class="bubble">
+                        <view class="chat_info">
+                            <view class="member_info">
+                                <view class="member_home">
+                                    <view class="member_name">BEJ48-张笑盈</view>
+                                    <image class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                </view>
+                                <view class="team">E</view>
+                            </view>
+                            <view class="chat_content">我去上学校</view>
+                        </view>
+                        <image src="/images/juju/room/bubble_tail.png"></image>
+                    </view>
+                </view>
+                <view class="chat">
+                    <!-- 头像 -->
+                    <view class="head_img">
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg"></image>
+                    </view>
+                    <!-- 聊天气泡框 -->
+                    <view class="bubble">
+                        <view class="chat_info">
+                            <view class="member_info">
+                                <view class="member_home">
+                                    <view class="member_name">BEJ48-张笑盈</view>
+                                    <image class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                </view>
+                                <view class="team">E</view>
+                            </view>
+                            <view class="chat_content">谁也不知道</view>
+                        </view>
+                        <image src="/images/juju/room/bubble_tail.png"></image>
+                    </view>
+                </view>
+                <view class="chat">
+                    <!-- 头像 -->
+                    <view class="head_img">
+                        <image lazy-load src="https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfzvu8nx7bj306y06yt8s.jpg"></image>
+                    </view>
+                    <!-- 聊天气泡框 -->
+                    <view class="bubble">
+                        <view class="chat_info">
+                            <view class="member_info">
+                                <view class="member_home">
+                                    <view class="member_name">BEJ48-张笑盈</view>
+                                    <image class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                </view>
+                                <view class="team">E</view>
+                            </view>
+                            <view class="chat_content">你们过哪门子节？我有孙孙了？</view>
+                        </view>
+                        <image src="/images/juju/room/bubble_tail.png"></image>
+                    </view>
+                </view>
+                <!-- <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view class="chat">你好</view>
+                <view>class="chat">你好</view> -->
+            </view>
+        </view>
+    </scroll-view>
+</view>
