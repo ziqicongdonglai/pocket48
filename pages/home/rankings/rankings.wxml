@@ -94,6 +94,10 @@
             </scroll-view>
         </swiper-item>
         <swiper-item>
+            <!-- 为还没过生日公演的小偶像但开始可以送祝福的小偶像送祝福 -->
+            <view class="give_birth_bless">
+                <image src="/images/home/rankings/rankings_birthday_give.png"></image>
+            </view>
             <scroll-view style="height: 100%" scroll-y>
                 <!-- swiper height 800px 合适 -->
                 <view class="mt">
@@ -117,10 +121,6 @@
                                 <image src="/images/home/rankings/rankings_birthday_icon.png"></image>
                                 <view class="birth_num">{{item.birthNum}}</view>
                             </view>
-                        </view>
-                        <!-- 为还没过生日公演的小偶像但开始可以送祝福的小偶像送祝福 -->
-                        <view class="give_birth_bless">
-                            <image src="/images/home/rankings/rankings_birthday_give.png"></image>
                         </view>
                     </view>
                 </view>

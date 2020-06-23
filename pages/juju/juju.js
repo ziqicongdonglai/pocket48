@@ -11,6 +11,7 @@ Page({
     // 导航条文字
     navbar: ['房间', '动态'],
     currentTab: 0,
+    swiperHeight: '',
     // 成员房间数据列表
     roomlist: [
       {
@@ -343,6 +344,7 @@ Page({
    */
   onLoad: function (options) {
     app.editTabbar();
+    this.changeSwiperHeight();
   },
   /**
    * 生命周期函数--监听页面显示
@@ -369,12 +371,24 @@ Page({
     })
   },
   // 跳转到对应的小偶像的房间页面
-  toRoom: function() {
+  toRoom: function () {
     wx.navigateTo({
       url: '/pages/juju/room/room',
-      success: function(res){
+      success: function (res) {
         // success
       }
     })
+  },
+  changeSwiperHeight: function () {
+    console.log(this.data.currentTab);
+    if (this.data.currentTab == 0) {
+      this.setData({
+        swiperHeight: 2560
+      })
+    } else if (this.data.currentTab == 1) {
+      this.setData({
+        swiperHeight: 3710
+      })
+    }
   }
 })

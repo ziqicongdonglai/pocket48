@@ -14,7 +14,7 @@
             </view>
         </view>
         <!-- 滑动的主体部分 -->
-        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 4210rpx'>
+        <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 3710rpx'>
             <swiper-item>
                 <scroll-view style="height: 100%" scroll-y>
                     <!-- 搜索栏 -->

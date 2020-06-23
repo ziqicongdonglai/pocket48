@@ -15,6 +15,7 @@ Page({
     navbarcurrentTab: 0,
     features: [, , ,],
     swiperCurrent: 0,
+    swiperHeight: '',
     // 首页公演数据（6条）
     showlist: [
       {
@@ -350,6 +351,7 @@ Page({
    */
   onLoad: function (options) {
     app.editTabbar();
+    this.changeSwiperHeight();
   },
   /**
    * 生命周期函数--监听页面显示
@@ -437,5 +439,22 @@ Page({
         // success
       }
     })
+  },
+  changeSwiperHeight: function () {
+    console.log(this.data.currentTab);
+    if (this.data.currentTab == 0) {
+      this.setData({
+        swiperHeight: 5900
+      })
+    }
+    if (this.data.navbarcurrentTab == 0) {
+      this.setData({
+        swiperHeight: 1886
+      })
+    } else if (this.data.navbarcurrentTab == 1) {
+      this.setData({
+        swiperHeight: 9810
+      })
+    }
   }
 })
