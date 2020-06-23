@@ -97,6 +97,7 @@
   }
 }
 
+/* 聊天列表 */
 .chat_list {
   background-color: #fff;
   background-size: 70%;
@@ -104,6 +105,24 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+/* 时间分组 */
+.chat_time_group {
+  //   background-color: green;
+  .time_group {
+    display: flex;
+    justify-content: center;
+    .time {
+      color: #fff;
+      text-align: center;
+      border-radius: 10rpx;
+      padding: 15rpx;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 24rpx;
+    }
+  }
+}
+
 .chat {
   display: flex;
   align-items: center;
@@ -149,6 +168,11 @@
   }
   .chat_content {
     padding: 5rpx 0;
+    image {
+        width: 250rpx;
+        border-radius: 20rpx;
+        height: 300rpx;
+    }
   }
 }
 

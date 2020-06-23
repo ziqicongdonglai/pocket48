@@ -8,6 +8,7 @@
     "pages/home/mc/mc",
     "pages/juju/juju",
     "pages/juju/room/room",
+    "pages/juju/messageboard/messageboard",
     "pages/found/found",
     "pages/my/my",
     "pages/my/personalinformation/personalinformation",
