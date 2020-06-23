@@ -13,7 +13,7 @@ Page({
     // 创造营导航条
     topnavbar: ['训练生', '应援榜', '往期榜单'],
     navbarcurrentTab: 0,
-    features: [,,,],
+    features: [, , ,],
     swiperCurrent: 0,
     // 首页公演数据（6条）
     showlist: [
@@ -424,6 +424,15 @@ Page({
   toRankings: function () {
     wx.navigateTo({
       url: '/pages/home/rankings/rankings',
+      success: function (res) {
+        // success
+      }
+    })
+  },
+  // 跳转行程
+  toTrip: function () {
+    wx.navigateTo({
+      url: '/pages/home/trip/trip',
       success: function (res) {
         // success
       }

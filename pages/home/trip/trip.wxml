@@ -1,0 +1,45 @@
+<view>
+    <!-- 顶部区域 行程 返回 筛选 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel" bindtap="handleCancel">
+            <image src="/images/my/message/titlebar_return_black.png"></image>
+        </view>
+        <view class="titlebar_title">行程</view>
+        <view class="titlebar_right_features">
+            <image src="/images/home/idol/shuaixuan.png"></image>
+        </view>
+    </view>
+    <scroll-view style="height: 100%" scroll-y>
+        <view class="mt">
+            <!-- 行程列表 按月份 -->
+            <view class="trip_list" wx:for="{{tripList}}" wx:for-item="monthItem" wx:key="id">
+                <!-- 月份 -->
+                <view class="month_title">
+                    <view class="month">{{monthItem.month}}</view>
+                </view>
+                <!-- 每天的各个不同的行程 -->
+                <view class="trip" wx:for="{{monthItem.trips}}" wx:key="id">
+                    <!-- 日期 -->
+                    <view class="date">
+                        <view class="date_info">{{item.date}}</view>
+                        <view class="equal_now">以前</view>
+                    </view>
+                    <!-- 活动详情 -->
+                    <view class="activity_info">
+                        <view class="activity_title">{{item.activityTitle}}</view>
+                        <!-- 活动的标签 -->
+                        <view class="tags">
+                            <view class="tag" wx:for="{{item.tags}}" wx:for-item="tags" wx:key="id">
+                                {{tags.tag}}
+                            </view>
+                            <!-- <view class="tag">购票</view>
+                            <view class="tag">公演</view> -->
+                        </view>
+                        <!-- 活动演出描述 -->
+                        <view class="activity_explain">{{item.activityExplain}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
