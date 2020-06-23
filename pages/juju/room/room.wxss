@@ -99,6 +99,9 @@
   background-attachment: fixed;
 }
 /* 时间分组 */
+.chat_time_group {
+  margin-top: 30rpx;
+}
 .chat_time_group .time_group {
   display: flex;
   justify-content: center;
@@ -175,10 +178,10 @@
   text-align: center;
 }
 .bubble image {
-  width: 40rpx;
-  height: 40rpx;
+  width: 50rpx;
+  height: 50rpx;
   position: absolute;
-  left: -18rpx;
-  bottom: -15rpx;
+  left: -28rpx;
+  bottom: -8rpx;
   z-index: 0;
 }

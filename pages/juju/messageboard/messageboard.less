@@ -84,3 +84,132 @@
     height: 45rpx;
   }
 }
+
+/* 聊天列表 */
+.chat_list {
+  background-color: #f6f6f6;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* 时间分组 */
+.chat_time_group {
+  //   background-color: green;
+  margin-top: 30rpx;
+  .time_group {
+    display: flex;
+    justify-content: center;
+    .time {
+      color: #fff;
+      text-align: center;
+      border-radius: 10rpx;
+      padding: 15rpx;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 24rpx;
+    }
+  }
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  /* 头像 */
+  .head_img {
+    height: 150rpx;
+    display: flex;
+    align-items: flex-end;
+    image {
+      width: 80rpx;
+      height: 80rpx;
+      border-radius: 50%;
+      //   border: 2rpx solid red;
+    }
+  }
+  .chat_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .member_info {
+      display: flex;
+      align-items: center;
+      .member_home {
+        display: flex;
+        align-items: center;
+        .member_name {
+          color: #b4b4b4;
+        }
+        .home_user {
+          width: 30rpx;
+          height: 30rpx;
+          position: static;
+          left: none;
+          bottom: none;
+          z-index: 1;
+        }
+      }
+      .team {
+        margin-left: 20rpx;
+        background-color: #29b8b6;
+      }
+      .badges {
+        height: 50rpx;
+        margin-left: 20rpx;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        view {
+          margin-right: 10rpx;
+        }
+        .level_icon {
+          width: 50rpx;
+          height: 50rpx;
+          position: static;
+          left: none;
+          bottom: none;
+          z-index: 1;
+        }
+        .badges_icon {
+          width: 40rpx;
+          height: 40rpx;
+          position: static;
+          left: none;
+          bottom: none;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  .chat_content {
+    padding: 5rpx 0;
+    max-width: 450rpx;
+    image {
+      width: 250rpx;
+      border-radius: 20rpx;
+      height: 300rpx;
+    }
+  }
+}
+
+/* 聊天框 */
+.bubble {
+  background-color: #fff;
+  color: #000;
+  //   width: 200rpx;
+  border-radius: 30rpx;
+  position: relative;
+  margin-left: 30rpx;
+  padding: 30rpx 20rpx;
+  margin-top: 30rpx;
+  //   text-align: center;
+}
+.bubble image {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: -28rpx;
+  bottom: -8rpx;
+  z-index: 0;
+}

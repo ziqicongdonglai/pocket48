@@ -78,3 +78,124 @@
   width: 45rpx;
   height: 45rpx;
 }
+/* 聊天列表 */
+.chat_list {
+  background-color: #f6f6f6;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* 时间分组 */
+.chat_time_group {
+  margin-top: 30rpx;
+}
+.chat_time_group .time_group {
+  display: flex;
+  justify-content: center;
+}
+.chat_time_group .time_group .time {
+  color: #fff;
+  text-align: center;
+  border-radius: 10rpx;
+  padding: 15rpx;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 24rpx;
+}
+.chat {
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  /* 头像 */
+}
+.chat .head_img {
+  height: 150rpx;
+  display: flex;
+  align-items: flex-end;
+}
+.chat .head_img image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.chat .chat_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.chat .chat_info .member_info {
+  display: flex;
+  align-items: center;
+}
+.chat .chat_info .member_info .member_home {
+  display: flex;
+  align-items: center;
+}
+.chat .chat_info .member_info .member_home .member_name {
+  color: #b4b4b4;
+}
+.chat .chat_info .member_info .member_home .home_user {
+  width: 30rpx;
+  height: 30rpx;
+  position: static;
+  left: none;
+  bottom: none;
+  z-index: 1;
+}
+.chat .chat_info .member_info .team {
+  margin-left: 20rpx;
+  background-color: #29b8b6;
+}
+.chat .chat_info .member_info .badges {
+  height: 50rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.chat .chat_info .member_info .badges view {
+  margin-right: 10rpx;
+}
+.chat .chat_info .member_info .badges .level_icon {
+  width: 50rpx;
+  height: 50rpx;
+  position: static;
+  left: none;
+  bottom: none;
+  z-index: 1;
+}
+.chat .chat_info .member_info .badges .badges_icon {
+  width: 40rpx;
+  height: 40rpx;
+  position: static;
+  left: none;
+  bottom: none;
+  z-index: 1;
+}
+.chat .chat_content {
+  padding: 5rpx 0;
+  max-width: 450rpx;
+}
+.chat .chat_content image {
+  width: 250rpx;
+  border-radius: 20rpx;
+  height: 300rpx;
+}
+/* 聊天框 */
+.bubble {
+  background-color: #fff;
+  color: #000;
+  border-radius: 30rpx;
+  position: relative;
+  margin-left: 30rpx;
+  padding: 30rpx 20rpx;
+  margin-top: 30rpx;
+}
+.bubble image {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: -28rpx;
+  bottom: -8rpx;
+  z-index: 0;
+}

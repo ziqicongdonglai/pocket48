@@ -27,7 +27,8 @@
     <view class="arrow_more" bindtap="toMessageBoard">
         <image src="/images/juju/room/icon_juju_message_close.png"></image>
     </view>
-    <scroll-view style="height: 2710rpx" scroll-y>
+    <!-- 评论列表 -->
+    <scroll-view style="height: 2838rpx" scroll-y>
         <view class="mt">
             <view class="chat_list" style="background-image: url(https://wx2.sinaimg.cn/mw690/005FbhyYgy1gg28qrdblhj30hs0a03zh.jpg)">
                 <!-- 按时间分组 -->

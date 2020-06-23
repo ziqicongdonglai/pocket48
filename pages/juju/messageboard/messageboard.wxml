@@ -23,4 +23,66 @@
     <view class="arrow_more" bindtap="toRoom">
         <image src="/images/juju/room/icon_juju_message_open.png"></image>
     </view>
+    <!-- 评论列表 -->
+    <scroll-view style="height: 2910rpx" scroll-y>
+        <view class="mt">
+            <view class="chat_list" style="">
+                <!-- 按时间分组 -->
+                <view class="chat_time_group" wx:for="{{messageList}}" wx:key="id" wx:for-item="group">
+                    <!-- 时间 -->
+                    <view class="time_group">
+                        <view class="time">{{group.time}}</view>
+                    </view>
+                    <view class="chat" wx:for="{{group.messages}}" wx:key="id">
+                        <!-- 头像 -->
+                        <view class="head_img">
+                            <image lazy-load src="{{item.headImg}}"></image>
+                        </view>
+                        <block wx:if="{{item.contentImg}}">
+                            <view class="chat_content">
+                                <image src="{{item.contentImg}}"></image>
+                            </view>
+                        </block>
+                        <block wx:elif="{{item.contentText}}">
+                            <!-- 聊天气泡框 -->
+                            <view class="bubble">
+                                <view class="chat_info">
+                                    <view class="member_info">
+                                        <view class="member_home">
+                                            <view class="member_name">{{item.userName}}</view>
+                                            <image hidden="{{item.isHomeUser?false:true}}" class="home_user" src="/images/juju/room/ic_houseowner.png"></image>
+                                        </view>
+                                        <view class="team" hidden="{{item.teamName?false:true}}" style="background-color: {{item.teamColor}}">
+                                            {{item.teamName}}
+                                        </view>
+                                        <!-- 所有的用户展示的徽章 -->
+                                        <view class="badges" wx:for="{{item.badges}}" wx:for-item="badgesItem">
+                                            <!-- vip标识（可无） -->
+                                            <view class="vip">
+                                                <image src="{{badgesItem.vip}}" class="{{badgesItem.vip?'badges_icon':'img_hide'}}"></image>
+                                            </view>
+                                            <!-- 等级图标 -->
+                                            <view class="level">
+                                                <image class="level_icon" src="{{badgesItem.level}}"></image>
+                                            </view>
+                                            <!-- 等级徽章（可无） -->
+                                            <view class="badge_level">
+                                                <image src="{{badgesItem.badgeLevel}}" class="{{badgesItem.badgeLevel?'badges_icon':'img_hide'}}"></image>
+                                            </view>
+                                            <!-- 成就徽章（可无） -->
+                                            <view class="badge_activity">
+                                                <image src="{{badgesItem.badgeActive}}" class="{{badgesItem.badgeActive?'badges_icon':'img_hide'}}"></image>
+                                            </view>
+                                        </view>
+                                    </view>
+                                    <view class="chat_content">{{item.contentText}}</view>
+                                </view>
+                                <image src="/images/juju/room/bubble_tail.png"></image>
+                            </view>
+                        </block>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
 </view>

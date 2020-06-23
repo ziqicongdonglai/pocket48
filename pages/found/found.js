@@ -89,7 +89,7 @@ Page({
             'vip': '',
             'level': '/images/level/contributionlist_six.png',
             'badgeLevel': '/images/found/lastest/fans_badge_level_1.png',
-            'badgeActive': '/images/found/lastest/fans_badge_activityl_1.png'
+            'badgeActive': '/images/found/lastest/fans_badge_activity_1.png'
           }
         ],
         'dateTime': '2020-06-18 09:58:35',

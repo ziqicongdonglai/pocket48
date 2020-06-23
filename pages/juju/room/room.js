@@ -97,9 +97,7 @@ Page({
           }
         ]
       }
-    ],
-    // 留言板页面
-
+    ]
   },
   // 取消事件 返回到上一个页面
   handleCancel: function () {
@@ -114,7 +112,7 @@ Page({
   toMessageBoard: function () {
     wx.navigateTo({
       url: '/pages/juju/messageboard/messageboard',
-      success: function(res){
+      success: function (res) {
         // success
       }
     })
