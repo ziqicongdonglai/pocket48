@@ -131,8 +131,8 @@
   flex-direction: column;
 }
 .my_features .features .item_icon {
-  width: 50rpx;
-  height: 50rpx;
+  width: 60rpx;
+  height: 60rpx;
 }
 .my_features .features:nth-of-type(3n) {
   margin: 0 0 4rpx 0;

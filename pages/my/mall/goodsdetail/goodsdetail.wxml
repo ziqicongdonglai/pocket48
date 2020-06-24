@@ -12,7 +12,7 @@
         </view>
     </view>
     <!-- 滑动的主体部分 -->
-    <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 6000rpx'>
+    <swiper class="bar_swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style='height: 1360rpx'>
         <swiper-item>
             <scroll-view style="height: 100%" scroll-y>
                 <view class="mt">
