@@ -1,0 +1,82 @@
+.mt {
+  margin-top: 100rpx;
+}
+
+.trip_info {
+  padding-left: 20rpx;
+  background-color: #fff;
+  /* 顶部信息 */
+  .trip_info_top {
+      padding: 20rpx 0;
+      border-bottom: 2rpx solid #ccc;
+    /* 活动标题 */
+    .trip_title {
+      font-weight: 700;
+      font-size: 38rpx;
+    }
+    /* 活动介绍 */
+    .trip_explain {
+      font-size: 26rpx;
+      color: #a0a0a0;
+      padding: 10rpx 0;
+    }
+    /* 活动时间 */
+    .trip_time {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #9687e328;
+      border-radius: 30rpx;
+      width: 55%;
+      padding: 10rpx 0;
+      image {
+        width: 25rpx;
+        height: 25rpx;
+        padding: 0 10rpx;
+      }
+      .time {
+        color: #a0a0a0;
+      }
+    }
+  }
+  /* 活动的每项信息 */
+  .trip_info_item {
+    border-bottom: 2rpx solid #ccc;
+    padding: 20rpx 0;
+    /* 信息标题 */
+    .info_item_title {
+      border-left: 15rpx solid #7a66f5;
+      padding: 5rpx 0;
+      padding-left: 10rpx;
+    }
+    /* 信息内容 */
+    .info_item_content {
+      color: #a0a0a0;
+      padding-left: 15rpx;
+    }
+  }
+  .trip_info_item:last-child {
+    margin-top: 30rpx;
+  }
+}
+
+/* 分享按钮 */
+.share {
+  width: 200rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 0;
+  background-color: #fff;
+  border-radius: 30rpx;
+  margin-top: 120rpx;
+  image {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 10rpx;
+  }
+  .share_text {
+    font-size: 24rpx;
+  }
+}

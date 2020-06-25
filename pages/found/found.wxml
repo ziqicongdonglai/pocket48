@@ -54,19 +54,19 @@
                                         <view class="badges" wx:for="{{item.badges}}" wx:for-item="badgesItem">
                                             <!-- vip标识（可无） -->
                                             <view class="vip">
-                                                <image src="{{badgesItem.vip}}" class="{{badgesItem.vip?'':'img_hide'}}"></image>
+                                                <image src="{{badgesItem.vip}}" class="{{badgesItem.vip?'badge_icon':'img_hide'}}"></image>
                                             </view>
                                             <!-- 等级图标 -->
                                             <view class="level">
-                                                <image src="{{badgesItem.level}}"></image>
+                                                <image class="level_icon" src="{{badgesItem.level}}"></image>
                                             </view>
                                             <!-- 等级徽章（可无） -->
                                             <view class="badge_level">
-                                                <image src="{{badgesItem.badgeLevel}}" class="{{badgesItem.badgeLevel?'':'img_hide'}}"></image>
+                                                <image src="{{badgesItem.badgeLevel}}" class="{{badgesItem.badgeLevel?'badge_icon':'img_hide'}}"></image>
                                             </view>
                                             <!-- 成就徽章（可无） -->
                                             <view class="badge_activity">
-                                                <image src="{{badgesItem.badgeActive}}" class="{{badgesItem.badgeActive?'':'img_hide'}}"></image>
+                                                <image src="{{badgesItem.badgeActive}}" class="{{badgesItem.badgeActive?'badge_icon':'img_hide'}}"></image>
                                             </view>
                                         </view>
                                     </view>

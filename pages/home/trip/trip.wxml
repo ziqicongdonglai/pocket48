@@ -18,7 +18,7 @@
                     <view class="month">{{monthItem.month}}</view>
                 </view>
                 <!-- 每天的各个不同的行程 -->
-                <view class="trip" wx:for="{{monthItem.trips}}" wx:key="id">
+                <view class="trip" wx:for="{{monthItem.trips}}" wx:key="id" bindtap="toTripInfo">
                     <!-- 日期 -->
                     <view class="date">
                         <view class="date_info">{{item.date}}</view>

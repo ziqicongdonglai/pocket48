@@ -110,7 +110,7 @@
                             <scroll-view style="height: 100%" scroll-y>
                                 <view class="public_mt">
                                     <!-- 每一项公演 无论最新演出和历史回放都类似 -->
-                                    <view class="livebroadcast" wx:for="{{livebroadcastLiveList}}">
+                                    <view class="livebroadcast" wx:for="{{livebroadcastLiveList}}" wx:key="id">
                                         <!-- 公演主要信息 状态 时间 公演图片 -->
                                         <!-- 公演的图片用来做了背景图 -->
                                         <view class="livebroadcast_main" style="background-image: url({{item.livebroadcastImg}})">
@@ -140,7 +140,7 @@
                             <scroll-view style="height: 100%" scroll-y>
                                 <view class="public_mt">
                                     <!-- 每一项公演 无论最新演出和历史回放都类似 -->
-                                    <view class="livebroadcast" wx:for="{{livebroadcastPlaybackList}}">
+                                    <view class="livebroadcast" wx:for="{{livebroadcastPlaybackList}}" wx:key="id">
                                         <!-- 公演主要信息 状态 时间 公演图片 -->
                                         <!-- 公演的图片用来做了背景图 -->
                                         <view class="livebroadcast_main" style="background-image: url({{item.livebroadcastImg}})">

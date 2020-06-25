@@ -18,25 +18,25 @@ Component({
     mcSNHList: [
       {
         id: 1,
-        teamIcon: 'https://www.snh48.com/images/team_tag/s_team_s.jpg',
+        teamIcon: 'https://wx4.sinaimg.cn/mw690/005FbhyYly1gg32ij2qr2j302a01j3yb.jpg',
         teamName: 'SII',
         peopleNum: 52
       },
       {
         id: 2,
-        teamIcon: 'https://www.snh48.com/images/team_tag/s_team_n.jpg',
+        teamIcon: 'https://wx2.sinaimg.cn/mw690/005FbhyYly1gg32hxyhk5j302a01j743.jpg',
         teamName: 'NII',
         peopleNum: 1
       },
       {
         id: 3,
-        teamIcon: 'https://www.snh48.com/images/team_tag/s_team_h.jpg',
+        teamIcon: 'https://wx1.sinaimg.cn/mw690/005FbhyYly1gg32gxcvfrj302a01jjr8.jpg',
         teamName: 'HII',
         peopleNum: 13
       },
       {
         id: 4,
-        teamIcon: 'https://www.snh48.com/images/team_tag/s_team_x.jpg',
+        teamIcon: 'https://wx2.sinaimg.cn/mw690/005FbhyYly1gg32iuwdejj302a01jglf.jpg',
         teamName: 'X',
         peopleNum: 5
       }
@@ -44,19 +44,19 @@ Component({
     mcBEJList: [
       {
         id: 1,
-        teamIcon: 'https://www.snh48.com/images/team_tag/s_team_b.jpg',
+        teamIcon: 'https://wx2.sinaimg.cn/mw690/005FbhyYly1gg32g9c61aj302a01jdfn.jpg',
         teamName: 'B',
         peopleNum: 1
       },
       {
         id: 2,
-        teamIcon: 'https://www.snh48.com/images/team_tag/s_team_e.jpg',
+        teamIcon: 'https://wx1.sinaimg.cn/mw690/005FbhyYly1gg32gj50mkj302a01jmwz.jpg',
         teamName: 'E',
         peopleNum: 0
       },
       {
         id: 3,
-        teamIcon: 'https://www.snh48.com/images/team_tag/s_team_j.jpg',
+        teamIcon: 'https://wx2.sinaimg.cn/mw690/005FbhyYly1gg32hag08hj302a01j3yc.jpg',
         teamName: 'J',
         peopleNum: 0
       }
@@ -64,19 +64,19 @@ Component({
     mcGNZList: [
       {
         id: 1,
-        teamIcon: 'https://www.snh48.com/images/team_tag/s_team_g.jpg',
+        teamIcon: 'https://wx1.sinaimg.cn/mw690/005FbhyYly1gg32gpyushj302a01jwea.jpg',
         teamName: 'G',
         peopleNum: 0
       },
       {
         id: 2,
-        teamIcon: 'https://www.snh48.com/images/team_tag/s_team_niii.jpg',
+        teamIcon: 'https://wx4.sinaimg.cn/mw690/005FbhyYly1gg32i4by47j302a01j0sj.jpg',
         teamName: 'NIII',
         peopleNum: 2
       },
       {
         id: 3,
-        teamIcon: 'https://www.snh48.com/images/team_tag/s_team_z.jpg',
+        teamIcon: 'https://wx1.sinaimg.cn/mw690/005FbhyYly1gg32j4yf6lj302a01j3yb.jpg',
         teamName: 'Z',
         peopleNum: 2
       }

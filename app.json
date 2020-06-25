@@ -4,6 +4,7 @@
     "pages/home/show/show",
     "pages/home/idol/idol",
     "pages/home/trip/trip",
+    "pages/home/trip/tripdetails/tripdetails",
     "pages/home/rankings/rankings",
     "pages/home/music/music",
     "pages/home/mc/mc",

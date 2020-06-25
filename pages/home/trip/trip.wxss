@@ -55,7 +55,7 @@
   align-items: center;
   padding: 20rpx 0 20rpx 0;
   margin-left: 20rpx;
-  border-bottom: 2rpx solid #ccc;
+  border-bottom: 2rpx solid #d4d4d4;
   /* 日期 几号 */
   /* 活动详情 */
 }

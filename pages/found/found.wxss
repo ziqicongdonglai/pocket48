@@ -103,11 +103,11 @@
 .post_item .post_top .post_top_right .userinf .badges view {
   margin-right: 10rpx;
 }
-.post_item .post_top .post_top_right .userinf .badges image {
+.post_item .post_top .post_top_right .userinf .badges .level_icon {
   width: 50rpx;
   height: 50rpx;
 }
-.post_item .post_top .post_top_right .userinf .badges .vip image {
+.post_item .post_top .post_top_right .userinf .badges .badge_icon {
   width: 40rpx;
   height: 40rpx;
 }

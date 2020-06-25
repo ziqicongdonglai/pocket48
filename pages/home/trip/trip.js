@@ -413,5 +413,14 @@ Page({
         // success
       }
     })
+  },
+  // toTripInfo 行程详情页面
+  toTripInfo: function () {
+    wx.navigateTo({
+      url: '/pages/home/trip/tripdetails/tripdetails',
+      success: function(res){
+        // success
+      }
+    })
   }
 })

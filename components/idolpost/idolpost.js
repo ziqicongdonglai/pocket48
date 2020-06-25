@@ -146,7 +146,7 @@ Component({
       },
       {
         id: 7,
-        headImg: 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfujsebqqaj306y06yq2v.jpg',
+        headImg: 'https://wx3.sinaimg.cn/mw690/005FbhyYly1gg0w1qsvhtj306y06idfy.jpg',
         memberName: 'SNH48-许杨玉琢',
         team: 'HII',
         teamColor: '#f39a02',

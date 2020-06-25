@@ -160,7 +160,7 @@
   width: 335rpx;
 }
 .member_ranking .yingyuan_info {
-  flex: 1.02;
+  flex: 1.03;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

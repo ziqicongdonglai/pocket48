@@ -81,7 +81,7 @@ Page({
         'comments': '0',
       },
       {
-        id: 1,
+        id: 2,
         'headImg': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfru6cl530j306y06ywef.jpg',
         'fansName': 'Forever_LJ',
         badges: [
@@ -102,7 +102,7 @@ Page({
         'comments': '53',
       },
       {
-        id: 1,
+        id: 3,
         'headImg': 'https://wx4.sinaimg.cn/mw690/005FbhyYgy1gfwa0gyrj2j302s02sa9u.jpg',
         'fansName': '那一抹蒲公英的浅笑3',
         badges: [
@@ -123,7 +123,7 @@ Page({
         'comments': '2',
       },
       {
-        id: 1,
+        id: 4,
         'headImg': 'https://wx3.sinaimg.cn/mw690/005FbhyYgy1gfwecbjusrj306y06yglk.jpg',
         'fansName': '石竹君的颜饭',
         badges: [
@@ -149,7 +149,7 @@ Page({
         'comments': '2',
       },
       {
-        id: 1,
+        id: 5,
         'headImg': 'https://wx1.sinaimg.cn/mw690/005FbhyYgy1gfwepw0309j306y06y74g.jpg',
         'fansName': '雪覆小楼',
         badges: [
@@ -183,7 +183,7 @@ Page({
         'comments': '1',
       },
       {
-        id: 1,
+        id: 6,
         'headImg': 'https://wx2.sinaimg.cn/mw690/005FbhyYgy1gfweos1qi2j306y06y74a.jpg',
         'fansName': 'PTTNJJ',
         badges: [
