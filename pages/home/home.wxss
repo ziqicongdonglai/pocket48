@@ -141,9 +141,21 @@
   width: 17rpx;
   background: #dddddd;
 }
+/* 总决选投票通道进入的图片 */
+.total_runoff {
+  padding: 10rpx 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rpx 0;
+}
+.total_runoff image {
+  width: 710rpx;
+  height: 401rpx;
+}
 /* 热门公演 */
 .hot_show {
-  margin-top: 10rpx;
   width: 100%;
   height: 386rpx;
   background-color: #fff;

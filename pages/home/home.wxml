@@ -125,6 +125,10 @@
                             </block>
                         </view> -->
                     </view>
+                    <!-- 总选限定出现的投票通道图片 点击即可进入投票的页面（七选） -->
+                    <view class="total_runoff" bindtap="totalRunoff">
+                        <image lazy-load src="https://wx3.sinaimg.cn/mw690/005FbhyYgy1ggbqofeqwqj30e5080adz.jpg"></image>
+                    </view>
                     <!-- 热门公演 -->
                     <view class="hot_show">
                         <view class="home_title">

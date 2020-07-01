@@ -1,0 +1,27 @@
+<view>
+    <!-- 顶部区域 标题 返回 全部已读 -->
+    <view class="titlebar_top">
+        <view class="titlebar_cancel">
+            <image bindtap="handleCancel" src="/images/my/message/titlebar_return_black.png"></image>
+            <image bindtap="handleCancel" src="/images/home/square/home_close_icon.png"></image>
+        </view>
+        <view class="titlebar_title">第七届SNH48偶像年度人气总决选</view>
+    </view>
+    <view class="mt">
+        <!-- 顶部图片及票数区域 -->
+        <view class="total_runoff_info" style="background-image: url(https://www.snh48.com/attached/ad/2020-06-08/663048%E6%96%B0%E5%AE%98%E7%BD%91.jpg);">
+            <!-- 介绍文字 -->
+            <view class="introduce_text">
+                <!-- 总选介绍 -->
+                <view class="total_runoff_introduce_text">总选介绍</view>
+                <!-- 年度作品介绍 -->
+                <view class="total_runoff_introduce_text">年度作品介绍</view>
+            </view>
+        </view>
+        <!-- 投票数情况 已投票数 剩余票数 -->
+        <view class="vote_number_info">
+            <view class="vote_num">已投票数（0）</view>
+            <view class="vote_num">剩余票数（0）</view>
+        </view>
+    </view>
+</view>

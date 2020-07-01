@@ -456,5 +456,14 @@ Page({
         swiperHeight: 9810
       })
     }
+  },
+  // 跳转总决选投票
+  totalRunoff: function () {
+    wx.navigateTo({
+      url: '/pages/home/totalrunoff/totalrunoff',
+      success: function (res) {
+        // success
+      }
+    })
   }
 })
