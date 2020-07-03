@@ -49,13 +49,134 @@
     margin-top: 20rpx;
   }
 }
-  /* 票数情况 */
-  .vote_number_info {
+/* 票数情况 */
+.vote_number_info {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 20rpx 0;
+  .vote.num {
+  }
+}
+
+/* 中间的关于投票的部分 */
+.vote_features {
+  padding-left: 20rpx;
+  background-color: #fff;
+  margin: 20rpx 0;
+  .vote_features_info {
     display: flex;
-    justify-content: space-around;
-    background-color: #fff;
+    border-bottom: 2rpx solid #e5e5e5;
     padding: 20rpx 0;
-    .vote.num {
-        
+    align-items: center;
+    image {
+      width: 50rpx;
+      height: 50rpx;
+      margin-right: 20rpx;
     }
+    .features_info_text {
+    }
+  }
+}
+
+/* 导航栏 */
+.top_navbar {
+  text-align: center;
+  background-color: #fff;
+  height: 140rpx;
+  line-height: 140rpx;
+  margin-bottom: 3rpx;
+  padding: 0 10rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  .navbar_item {
+    width: 25%;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 40rpx;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    font-size: 40rpx;
+    box-sizing: border-box;
+    // border-right: 2rpx solid #ececec;
+    &:after {
+      content: "";
+      margin-left: 10rpx;
+      // padding-left: 15px;
+      border-left: 1px solid #c0c4cc;
+      height: 36rpx;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .navbar_item:nth-child(1) {
+    color: #96cdf0;
+  }
+  .navbar_item:nth-child(2) {
+    color: #fe2470;
+  }
+  .navbar_item:nth-child(3) {
+    color: #abc90f;
+  }
+  .navbar_item:nth-child(4) {
+    color: #b4006e;
+  }
+  .navbar_item:last-child {
+    border-right: none;
+    // padding-left: 10rpx;
+    &:after {
+      content: "";
+      border-left: none;
+    }
+  }
+  .active {
+    border-bottom: 4rpx solid #d7c8ff;
+  }
+}
+
+.team_navbar {
+  text-align: center;
+  background-color: #fff;
+  // height: 140rpx;
+  // line-height: 140rpx;
+  margin-bottom: 3rpx;
+  padding: 0 10rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  // justify-content: space-around;
+  .team_navbar_item {
+    // width: 25%;
+    // height: 100rpx;
+    // line-height: 100rpx;
+    padding: 8rpx 16rpx;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    font-size: 28rpx;
+    box-sizing: border-box;
+    border: 2rpx solid;
+    border-radius: 30rpx;
+    margin-right: 10rpx;
+  }
+  .team_navbar_item:last-child {
+
+  }
+  .active {
+    color: #fff !important;
+  }
+  .team_navbar_item:nth-child(1).active {
+    background-color: #87ceeb !important;
+  }
+  .team_navbar_item:nth-child(2).active {
+    background-color: #ad87b8 !important;
+  }
+  .team_navbar_item:nth-child(3).active {
+    background-color: #f39a02 !important;
+  }
+  .team_navbar_item:nth-child(4).active {
+    background-color: #a8cd25 !important;
+  }
 }

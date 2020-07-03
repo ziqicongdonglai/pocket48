@@ -51,3 +51,105 @@
   background-color: #fff;
   padding: 20rpx 0;
 }
+/* 中间的关于投票的部分 */
+.vote_features {
+  padding-left: 20rpx;
+  background-color: #fff;
+  margin: 20rpx 0;
+}
+.vote_features .vote_features_info {
+  display: flex;
+  border-bottom: 2rpx solid #e5e5e5;
+  padding: 20rpx 0;
+  align-items: center;
+}
+.vote_features .vote_features_info image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+/* 导航栏 */
+.top_navbar {
+  background-color: #fff;
+  height: 140rpx;
+  line-height: 140rpx;
+  margin-bottom: 3rpx;
+  padding: 0 10rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.top_navbar .navbar_item {
+  width: 25%;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+  font-size: 40rpx;
+  box-sizing: border-box;
+}
+.top_navbar .navbar_item:after {
+  content: "";
+  margin-left: 10rpx;
+  border-left: 1px solid #c0c4cc;
+  height: 36rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.top_navbar .navbar_item:nth-child(1) {
+  color: #96cdf0;
+}
+.top_navbar .navbar_item:nth-child(2) {
+  color: #fe2470;
+}
+.top_navbar .navbar_item:nth-child(3) {
+  color: #abc90f;
+}
+.top_navbar .navbar_item:nth-child(4) {
+  color: #b4006e;
+}
+.top_navbar .navbar_item:last-child {
+  border-right: none;
+}
+.top_navbar .navbar_item:last-child:after {
+  content: "";
+  border-left: none;
+}
+.top_navbar .active {
+  border-bottom: 4rpx solid #d7c8ff;
+}
+.team_navbar {
+  background-color: #fff;
+  margin-bottom: 3rpx;
+  padding: 0 10rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.team_navbar .team_navbar_item {
+  padding: 8rpx 16rpx;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  border: 2rpx solid;
+  border-radius: 30rpx;
+  margin-right: 10rpx;
+}
+.team_navbar .active {
+  color: #fff !important;
+}
+.team_navbar .team_navbar_item:nth-child(1).active {
+  background-color: #87ceeb !important;
+}
+.team_navbar .team_navbar_item:nth-child(2).active {
+  background-color: #ad87b8 !important;
+}
+.team_navbar .team_navbar_item:nth-child(3).active {
+  background-color: #f39a02 !important;
+}
+.team_navbar .team_navbar_item:nth-child(4).active {
+  background-color: #a8cd25 !important;
+}

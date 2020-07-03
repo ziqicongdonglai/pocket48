@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/home/home",
     "pages/home/totalrunoff/totalrunoff",
+    "pages/home/home",
     "pages/home/show/show",
     "pages/home/idol/idol",
     "pages/home/trip/trip",

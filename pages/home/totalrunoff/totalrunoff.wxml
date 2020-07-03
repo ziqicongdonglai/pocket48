@@ -7,21 +7,90 @@
         </view>
         <view class="titlebar_title">第七届SNH48偶像年度人气总决选</view>
     </view>
-    <view class="mt">
-        <!-- 顶部图片及票数区域 -->
-        <view class="total_runoff_info" style="background-image: url(https://www.snh48.com/attached/ad/2020-06-08/663048%E6%96%B0%E5%AE%98%E7%BD%91.jpg);">
-            <!-- 介绍文字 -->
-            <view class="introduce_text">
-                <!-- 总选介绍 -->
-                <view class="total_runoff_introduce_text">总选介绍</view>
-                <!-- 年度作品介绍 -->
-                <view class="total_runoff_introduce_text">年度作品介绍</view>
+    <scroll-view style="height: 100%" scroll-y>
+        <view class="mt">
+            <!-- 顶部区域 -->
+            <view class="top_info">
+                <!-- 顶部图片及票数区域 -->
+                <view class="total_runoff_info" style="background-image: url(https://www.snh48.com/attached/ad/2020-06-08/663048%E6%96%B0%E5%AE%98%E7%BD%91.jpg);">
+                    <!-- 介绍文字 -->
+                    <view class="introduce_text">
+                        <!-- 总选介绍 -->
+                        <view class="total_runoff_introduce_text">总选介绍</view>
+                        <!-- 年度作品介绍 -->
+                        <view class="total_runoff_introduce_text">年度作品介绍</view>
+                    </view>
+                </view>
+                <!-- 投票数情况 已投票数 剩余票数 -->
+                <view class="vote_number_info">
+                    <view class="vote_num">已投票数（0）</view>
+                    <view class="vote_num">剩余票数（0）</view>
+                </view>
             </view>
+            <!-- 中间的关于投票的一些功能 激活投票券 获得投票券 故障申诉 绑定等等 -->
+            <view class="vote_features">
+                <view class="vote_features_info">
+                    <image src="/images/home/totalrunoff/active_vote.png"></image>
+                    <view class="features_info_text">激活投票券</view>
+                </view>
+                <view class="vote_features_info">
+                    <image src="/images/home/totalrunoff/get_vote.png"></image>
+                    <view class="features_info_text">获得投票券</view>
+                </view>
+                <view class="vote_features_info">
+                    <image src="/images/home/totalrunoff/record_vote.png"></image>
+                    <view class="features_info_text">投票记录</view>
+                </view>
+                <view class="vote_features_info">
+                    <image src="/images/home/totalrunoff/fault _complaints.png"></image>
+                    <view class="features_info_text">故障申诉</view>
+                </view>
+                <view class="vote_features_info">
+                    <image src="/images/home/totalrunoff/bind_account.png"></image>
+                    <view class="features_info_text">绑定丝瓜账号</view>
+                </view>
+                <view class="vote_features_info">
+                    <image src="/images/home/totalrunoff/bind_account.png"></image>
+                    <view class="features_info_text">绑定微信</view>
+                </view>
+                <view class="vote_features_info">
+                    <image src="/images/home/totalrunoff/receive_vote.png"></image>
+                    <view class="features_info_text">投票权领取</view>
+                </view>
+            </view>
+            <!-- 团分组队伍分组 -->
+            <view class="top_navbar">
+                <view wx:for="{{navbar}}" wx:for-item="group" data-idx="{{index}}" class="navbar_item {{currentTab==index ? 'active' : ''}}" wx:key="unique" catchtap="navbarTap">
+                    {{group}}
+                </view>
+            </view>
+            <!-- 每个团的各个队伍 -->
+            <!-- SNH48 -->
+            <view wx:if="{{currentTab==0}}">
+                <view class="team_navbar">
+                    <view wx:for="{{teamList}}" wx:for-index="teamidx" wx:for-item="team" data-teamidx="{{teamidx}}" class="team_navbar_item {{teamTab==teamidx ? 'active' : ''}}" wx:key="unique" catchtap="teambarTap" style="color: {{team.teamColor}}; border-color: {{team.teamColor}};">
+                        {{team.teamName}}
+                    </view>
+                </view>
+                <view hidden="{{teamTab!==0}}">
+                    TEAM SII
+                </view>
+                <view hidden="{{teamTab!==1}}">
+                    TEAM NII
+                </view>
+                <view hidden="{{teamTab!==2}}">
+                    TEAM HII
+                </view>
+                <view hidden="{{teamTab!==3}}">
+                    TEAM X
+                </view>
+            </view>
+            <!-- BEJ48 -->
+            <view wx:elif="{{currentTab==1}}">BEJ48队伍</view>
+            <!-- GNZ48 -->
+            <view wx:elif="{{currentTab==2}}">GNZ48队伍</view>
+            <!-- IDOLS Ft -->
+            <view wx:elif="{{currentTab==3}}">IDOLS Ft队伍</view>
         </view>
-        <!-- 投票数情况 已投票数 剩余票数 -->
-        <view class="vote_number_info">
-            <view class="vote_num">已投票数（0）</view>
-            <view class="vote_num">剩余票数（0）</view>
-        </view>
-    </view>
+    </scroll-view>
 </view>
